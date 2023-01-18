@@ -5,7 +5,7 @@ import _m0 from "protobufjs/minimal";
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
 import { BrowserHeaders } from "browser-headers";
 
-export const protobufPackage = "terra.market.v1beta1";
+export const protobufPackage = "jmes.market.v1beta1";
 
 /** MsgSwap represents a message to swap coin to another denom. */
 export interface MsgSwap {
@@ -412,7 +412,7 @@ export class MsgClientImpl implements Msg {
 }
 
 export const MsgDesc = {
-  serviceName: "terra.market.v1beta1.Msg",
+  serviceName: "jmes.market.v1beta1.Msg",
 };
 
 export const MsgSwapDesc: UnaryMethodDefinitionish = {

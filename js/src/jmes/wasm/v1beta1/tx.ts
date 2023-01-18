@@ -5,7 +5,7 @@ import _m0 from "protobufjs/minimal";
 import { BrowserHeaders } from "browser-headers";
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
 
-export const protobufPackage = "terra.wasm.v1beta1";
+export const protobufPackage = "jmes.wasm.v1beta1";
 
 /**
  * MsgStoreCode represents a message to submit
@@ -1274,7 +1274,7 @@ export class MsgClientImpl implements Msg {
 }
 
 export const MsgDesc = {
-  serviceName: "terra.wasm.v1beta1.Msg",
+  serviceName: "jmes.wasm.v1beta1.Msg",
 };
 
 export const MsgStoreCodeDesc: UnaryMethodDefinitionish = {

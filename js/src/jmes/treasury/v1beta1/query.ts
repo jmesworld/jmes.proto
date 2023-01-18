@@ -2,11 +2,11 @@
 import Long from "long";
 import { grpc } from "@improbable-eng/grpc-web";
 import _m0 from "protobufjs/minimal";
-import { Params } from "../../../terra/treasury/v1beta1/treasury";
+import { Params } from "./treasury";
 import { BrowserHeaders } from "browser-headers";
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
 
-export const protobufPackage = "terra.treasury.v1beta1";
+export const protobufPackage = "jmes.treasury.v1beta1";
 
 /** QueryTaxRateRequest is the request type for the Query/TaxRate RPC method. */
 export interface QueryTaxRateRequest {}
@@ -1074,7 +1074,7 @@ export class QueryClientImpl implements Query {
 }
 
 export const QueryDesc = {
-  serviceName: "terra.treasury.v1beta1.Query",
+  serviceName: "jmes.treasury.v1beta1.Query",
 };
 
 export const QueryTaxRateDesc: UnaryMethodDefinitionish = {

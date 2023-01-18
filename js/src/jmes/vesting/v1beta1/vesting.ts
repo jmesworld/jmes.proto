@@ -3,7 +3,7 @@ import Long from "long";
 import _m0 from "protobufjs/minimal";
 import { BaseVestingAccount } from "../../../cosmos/vesting/v1beta1/vesting";
 
-export const protobufPackage = "terra.vesting.v1beta1";
+export const protobufPackage = "jmes.vesting.v1beta1";
 
 /**
  * LazyGradedVestingAccount implements the LazyGradedVestingAccount interface. It vests all

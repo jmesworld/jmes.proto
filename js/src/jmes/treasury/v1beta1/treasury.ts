@@ -3,7 +3,7 @@ import Long from "long";
 import _m0 from "protobufjs/minimal";
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
 
-export const protobufPackage = "terra.treasury.v1beta1";
+export const protobufPackage = "jmes.treasury.v1beta1";
 
 /** Params defines the parameters for the oracle module. */
 export interface Params {

@@ -4,7 +4,7 @@ import { grpc } from "@improbable-eng/grpc-web";
 import _m0 from "protobufjs/minimal";
 import { BrowserHeaders } from "browser-headers";
 
-export const protobufPackage = "terra.oracle.v1beta1";
+export const protobufPackage = "jmes.oracle.v1beta1";
 
 /**
  * MsgAggregateExchangeRatePrevote represents a message to submit
@@ -500,7 +500,7 @@ export class MsgClientImpl implements Msg {
 }
 
 export const MsgDesc = {
-  serviceName: "terra.oracle.v1beta1.Msg",
+  serviceName: "jmes.oracle.v1beta1.Msg",
 };
 
 export const MsgAggregateExchangeRatePrevoteDesc: UnaryMethodDefinitionish = {

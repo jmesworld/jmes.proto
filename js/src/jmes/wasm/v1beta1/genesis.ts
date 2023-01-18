@@ -1,9 +1,9 @@
 /* eslint-disable */
 import Long from "long";
 import _m0 from "protobufjs/minimal";
-import { Params, CodeInfo, ContractInfo } from "../../../terra/wasm/v1beta1/wasm";
+import { Params, CodeInfo, ContractInfo } from "./wasm";
 
-export const protobufPackage = "terra.wasm.v1beta1";
+export const protobufPackage = "jmes.wasm.v1beta1";
 
 /** GenesisState defines the oracle module's genesis state. */
 export interface GenesisState {

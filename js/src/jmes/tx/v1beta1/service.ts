@@ -6,7 +6,7 @@ import { Tx } from "../../../cosmos/tx/v1beta1/tx";
 import { BrowserHeaders } from "browser-headers";
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
 
-export const protobufPackage = "terra.tx.v1beta1";
+export const protobufPackage = "jmes.tx.v1beta1";
 
 /**
  * ComputeTaxRequest is the request type for the Service.ComputeTax
@@ -163,7 +163,7 @@ export class ServiceClientImpl implements Service {
 }
 
 export const ServiceDesc = {
-  serviceName: "terra.tx.v1beta1.Service",
+  serviceName: "jmes.tx.v1beta1.Service",
 };
 
 export const ServiceComputeTaxDesc: UnaryMethodDefinitionish = {

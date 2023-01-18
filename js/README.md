@@ -1,4 +1,4 @@
-# terra.proto
+# jmes.proto
 
 ## Maintenance
 

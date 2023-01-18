@@ -3,10 +3,10 @@ import Long from "long";
 import { grpc } from "@improbable-eng/grpc-web";
 import _m0 from "protobufjs/minimal";
 import { Coin } from "../../../cosmos/base/v1beta1/coin";
-import { Params } from "../../../terra/market/v1beta1/market";
+import { Params } from "./market";
 import { BrowserHeaders } from "browser-headers";
 
-export const protobufPackage = "terra.market.v1beta1";
+export const protobufPackage = "jmes.market.v1beta1";
 
 /** QuerySwapRequest is the request type for the Query/Swap RPC method. */
 export interface QuerySwapRequest {
@@ -22,13 +22,13 @@ export interface QuerySwapResponse {
   returnCoin?: Coin;
 }
 
-/** QueryTerraPoolDeltaRequest is the request type for the Query/TerraPoolDelta RPC method. */
-export interface QueryTerraPoolDeltaRequest {}
+/** QueryJmesPoolDeltaRequest is the request type for the Query/JmesPoolDelta RPC method. */
+export interface QueryJmesPoolDeltaRequest {}
 
-/** QueryTerraPoolDeltaResponse is the response type for the Query/TerraPoolDelta RPC method. */
-export interface QueryTerraPoolDeltaResponse {
-  /** terra_pool_delta defines the gap between the TerraPool and the TerraBasePool */
-  terraPoolDelta: Uint8Array;
+/** QueryJmesPoolDeltaResponse is the response type for the Query/JmesPoolDelta RPC method. */
+export interface QueryJmesPoolDeltaResponse {
+  /** jmes_pool_delta defines the gap between the JmesPool and the JmesBasePool */
+  jmesPoolDelta: Uint8Array;
 }
 
 /** QueryParamsRequest is the request type for the Query/Params RPC method. */
@@ -168,17 +168,17 @@ export const QuerySwapResponse = {
   },
 };
 
-const baseQueryTerraPoolDeltaRequest: object = {};
+const baseQueryJmesPoolDeltaRequest: object = {};
 
-export const QueryTerraPoolDeltaRequest = {
-  encode(_: QueryTerraPoolDeltaRequest, writer: _m0.Writer = _m0.Writer.create()): _m0.Writer {
+export const QueryJmesPoolDeltaRequest = {
+  encode(_: QueryJmesPoolDeltaRequest, writer: _m0.Writer = _m0.Writer.create()): _m0.Writer {
     return writer;
   },
 
-  decode(input: _m0.Reader | Uint8Array, length?: number): QueryTerraPoolDeltaRequest {
+  decode(input: _m0.Reader | Uint8Array, length?: number): QueryJmesPoolDeltaRequest {
     const reader = input instanceof _m0.Reader ? input : new _m0.Reader(input);
     let end = length === undefined ? reader.len : reader.pos + length;
-    const message = { ...baseQueryTerraPoolDeltaRequest } as QueryTerraPoolDeltaRequest;
+    const message = { ...baseQueryJmesPoolDeltaRequest } as QueryJmesPoolDeltaRequest;
     while (reader.pos < end) {
       const tag = reader.uint32();
       switch (tag >>> 3) {
@@ -190,42 +190,42 @@ export const QueryTerraPoolDeltaRequest = {
     return message;
   },
 
-  fromJSON(_: any): QueryTerraPoolDeltaRequest {
-    const message = { ...baseQueryTerraPoolDeltaRequest } as QueryTerraPoolDeltaRequest;
+  fromJSON(_: any): QueryJmesPoolDeltaRequest {
+    const message = { ...baseQueryJmesPoolDeltaRequest } as QueryJmesPoolDeltaRequest;
     return message;
   },
 
-  toJSON(_: QueryTerraPoolDeltaRequest): unknown {
+  toJSON(_: QueryJmesPoolDeltaRequest): unknown {
     const obj: any = {};
     return obj;
   },
 
-  fromPartial(_: DeepPartial<QueryTerraPoolDeltaRequest>): QueryTerraPoolDeltaRequest {
-    const message = { ...baseQueryTerraPoolDeltaRequest } as QueryTerraPoolDeltaRequest;
+  fromPartial(_: DeepPartial<QueryJmesPoolDeltaRequest>): QueryJmesPoolDeltaRequest {
+    const message = { ...baseQueryJmesPoolDeltaRequest } as QueryJmesPoolDeltaRequest;
     return message;
   },
 };
 
-const baseQueryTerraPoolDeltaResponse: object = {};
+const baseQueryJmesPoolDeltaResponse: object = {};
 
-export const QueryTerraPoolDeltaResponse = {
-  encode(message: QueryTerraPoolDeltaResponse, writer: _m0.Writer = _m0.Writer.create()): _m0.Writer {
-    if (message.terraPoolDelta.length !== 0) {
-      writer.uint32(10).bytes(message.terraPoolDelta);
+export const QueryJmesPoolDeltaResponse = {
+  encode(message: QueryJmesPoolDeltaResponse, writer: _m0.Writer = _m0.Writer.create()): _m0.Writer {
+    if (message.jmesPoolDelta.length !== 0) {
+      writer.uint32(10).bytes(message.jmesPoolDelta);
     }
     return writer;
   },
 
-  decode(input: _m0.Reader | Uint8Array, length?: number): QueryTerraPoolDeltaResponse {
+  decode(input: _m0.Reader | Uint8Array, length?: number): QueryJmesPoolDeltaResponse {
     const reader = input instanceof _m0.Reader ? input : new _m0.Reader(input);
     let end = length === undefined ? reader.len : reader.pos + length;
-    const message = { ...baseQueryTerraPoolDeltaResponse } as QueryTerraPoolDeltaResponse;
-    message.terraPoolDelta = new Uint8Array();
+    const message = { ...baseQueryJmesPoolDeltaResponse } as QueryJmesPoolDeltaResponse;
+    message.jmesPoolDelta = new Uint8Array();
     while (reader.pos < end) {
       const tag = reader.uint32();
       switch (tag >>> 3) {
         case 1:
-          message.terraPoolDelta = reader.bytes();
+          message.jmesPoolDelta = reader.bytes();
           break;
         default:
           reader.skipType(tag & 7);
@@ -235,30 +235,30 @@ export const QueryTerraPoolDeltaResponse = {
     return message;
   },
 
-  fromJSON(object: any): QueryTerraPoolDeltaResponse {
-    const message = { ...baseQueryTerraPoolDeltaResponse } as QueryTerraPoolDeltaResponse;
-    message.terraPoolDelta = new Uint8Array();
-    if (object.terraPoolDelta !== undefined && object.terraPoolDelta !== null) {
-      message.terraPoolDelta = bytesFromBase64(object.terraPoolDelta);
+  fromJSON(object: any): QueryJmesPoolDeltaResponse {
+    const message = { ...baseQueryJmesPoolDeltaResponse } as QueryJmesPoolDeltaResponse;
+    message.jmesPoolDelta = new Uint8Array();
+    if (object.jmesPoolDelta !== undefined && object.jmesPoolDelta !== null) {
+      message.jmesPoolDelta = bytesFromBase64(object.jmesPoolDelta);
     }
     return message;
   },
 
-  toJSON(message: QueryTerraPoolDeltaResponse): unknown {
+  toJSON(message: QueryJmesPoolDeltaResponse): unknown {
     const obj: any = {};
-    message.terraPoolDelta !== undefined &&
-      (obj.terraPoolDelta = base64FromBytes(
-        message.terraPoolDelta !== undefined ? message.terraPoolDelta : new Uint8Array(),
+    message.jmesPoolDelta !== undefined &&
+      (obj.jmesPoolDelta = base64FromBytes(
+        message.jmesPoolDelta !== undefined ? message.jmesPoolDelta : new Uint8Array(),
       ));
     return obj;
   },
 
-  fromPartial(object: DeepPartial<QueryTerraPoolDeltaResponse>): QueryTerraPoolDeltaResponse {
-    const message = { ...baseQueryTerraPoolDeltaResponse } as QueryTerraPoolDeltaResponse;
-    if (object.terraPoolDelta !== undefined && object.terraPoolDelta !== null) {
-      message.terraPoolDelta = object.terraPoolDelta;
+  fromPartial(object: DeepPartial<QueryJmesPoolDeltaResponse>): QueryJmesPoolDeltaResponse {
+    const message = { ...baseQueryJmesPoolDeltaResponse } as QueryJmesPoolDeltaResponse;
+    if (object.jmesPoolDelta !== undefined && object.jmesPoolDelta !== null) {
+      message.jmesPoolDelta = object.jmesPoolDelta;
     } else {
-      message.terraPoolDelta = new Uint8Array();
+      message.jmesPoolDelta = new Uint8Array();
     }
     return message;
   },
@@ -361,11 +361,11 @@ export const QueryParamsResponse = {
 export interface Query {
   /** Swap returns simulated swap amount. */
   Swap(request: DeepPartial<QuerySwapRequest>, metadata?: grpc.Metadata): Promise<QuerySwapResponse>;
-  /** TerraPoolDelta returns terra_pool_delta amount. */
-  TerraPoolDelta(
-    request: DeepPartial<QueryTerraPoolDeltaRequest>,
+  /** JmesPoolDelta returns jmes_pool_delta amount. */
+  JmesPoolDelta(
+    request: DeepPartial<QueryJmesPoolDeltaRequest>,
     metadata?: grpc.Metadata,
-  ): Promise<QueryTerraPoolDeltaResponse>;
+  ): Promise<QueryJmesPoolDeltaResponse>;
   /** Params queries all parameters. */
   Params(request: DeepPartial<QueryParamsRequest>, metadata?: grpc.Metadata): Promise<QueryParamsResponse>;
 }
@@ -376,7 +376,7 @@ export class QueryClientImpl implements Query {
   constructor(rpc: Rpc) {
     this.rpc = rpc;
     this.Swap = this.Swap.bind(this);
-    this.TerraPoolDelta = this.TerraPoolDelta.bind(this);
+    this.JmesPoolDelta = this.JmesPoolDelta.bind(this);
     this.Params = this.Params.bind(this);
   }
 
@@ -384,11 +384,11 @@ export class QueryClientImpl implements Query {
     return this.rpc.unary(QuerySwapDesc, QuerySwapRequest.fromPartial(request), metadata);
   }
 
-  TerraPoolDelta(
-    request: DeepPartial<QueryTerraPoolDeltaRequest>,
+  JmesPoolDelta(
+    request: DeepPartial<QueryJmesPoolDeltaRequest>,
     metadata?: grpc.Metadata,
-  ): Promise<QueryTerraPoolDeltaResponse> {
-    return this.rpc.unary(QueryTerraPoolDeltaDesc, QueryTerraPoolDeltaRequest.fromPartial(request), metadata);
+  ): Promise<QueryJmesPoolDeltaResponse> {
+    return this.rpc.unary(QueryJmesPoolDeltaDesc, QueryJmesPoolDeltaRequest.fromPartial(request), metadata);
   }
 
   Params(request: DeepPartial<QueryParamsRequest>, metadata?: grpc.Metadata): Promise<QueryParamsResponse> {
@@ -397,7 +397,7 @@ export class QueryClientImpl implements Query {
 }
 
 export const QueryDesc = {
-  serviceName: "terra.market.v1beta1.Query",
+  serviceName: "jmes.market.v1beta1.Query",
 };
 
 export const QuerySwapDesc: UnaryMethodDefinitionish = {
@@ -422,20 +422,20 @@ export const QuerySwapDesc: UnaryMethodDefinitionish = {
   } as any,
 };
 
-export const QueryTerraPoolDeltaDesc: UnaryMethodDefinitionish = {
-  methodName: "TerraPoolDelta",
+export const QueryJmesPoolDeltaDesc: UnaryMethodDefinitionish = {
+  methodName: "JmesPoolDelta",
   service: QueryDesc,
   requestStream: false,
   responseStream: false,
   requestType: {
     serializeBinary() {
-      return QueryTerraPoolDeltaRequest.encode(this).finish();
+      return QueryJmesPoolDeltaRequest.encode(this).finish();
     },
   } as any,
   responseType: {
     deserializeBinary(data: Uint8Array) {
       return {
-        ...QueryTerraPoolDeltaResponse.decode(data),
+        ...QueryJmesPoolDeltaResponse.decode(data),
         toObject() {
           return this;
         },

@@ -6,9 +6,9 @@ import {
   ExchangeRateTuple,
   AggregateExchangeRatePrevote,
   AggregateExchangeRateVote,
-} from "../../../terra/oracle/v1beta1/oracle";
+} from "./oracle";
 
-export const protobufPackage = "terra.oracle.v1beta1";
+export const protobufPackage = "jmes.oracle.v1beta1";
 
 /** GenesisState defines the oracle module's genesis state. */
 export interface GenesisState {
