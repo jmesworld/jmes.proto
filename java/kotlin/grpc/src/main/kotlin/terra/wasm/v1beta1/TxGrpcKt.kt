@@ -1,4 +1,4 @@
-package terra.wasm.v1beta1
+package jmes.wasm.v1beta1
 
 import io.grpc.CallOptions
 import io.grpc.CallOptions.DEFAULT
@@ -23,10 +23,10 @@ import kotlin.coroutines.CoroutineContext
 import kotlin.coroutines.EmptyCoroutineContext
 import kotlin.jvm.JvmOverloads
 import kotlin.jvm.JvmStatic
-import terra.wasm.v1beta1.MsgGrpc.getServiceDescriptor
+import jmes.wasm.v1beta1.MsgGrpc.getServiceDescriptor
 
 /**
- * Holder for Kotlin coroutine-based client and server APIs for terra.wasm.v1beta1.Msg.
+ * Holder for Kotlin coroutine-based client and server APIs for jmes.wasm.v1beta1.Msg.
  */
 object MsgGrpcKt {
   const val SERVICE_NAME: String = MsgGrpc.SERVICE_NAME
@@ -67,7 +67,7 @@ object MsgGrpcKt {
     get() = MsgGrpc.getClearContractAdminMethod()
 
   /**
-   * A stub for issuing RPCs to a(n) terra.wasm.v1beta1.Msg service as suspending coroutines.
+   * A stub for issuing RPCs to a(n) jmes.wasm.v1beta1.Msg service as suspending coroutines.
    */
   @StubFor(MsgGrpc::class)
   class MsgCoroutineStub @JvmOverloads constructor(
@@ -203,13 +203,13 @@ object MsgGrpcKt {
     )}
 
   /**
-   * Skeletal implementation of the terra.wasm.v1beta1.Msg service based on Kotlin coroutines.
+   * Skeletal implementation of the jmes.wasm.v1beta1.Msg service based on Kotlin coroutines.
    */
   abstract class MsgCoroutineImplBase(
     coroutineContext: CoroutineContext = EmptyCoroutineContext
   ) : AbstractCoroutineServerImpl(coroutineContext) {
     /**
-     * Returns the response to an RPC for terra.wasm.v1beta1.Msg.StoreCode.
+     * Returns the response to an RPC for jmes.wasm.v1beta1.Msg.StoreCode.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -220,10 +220,10 @@ object MsgGrpcKt {
      * @param request The request from the client.
      */
     open suspend fun storeCode(request: Tx.MsgStoreCode): Tx.MsgStoreCodeResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.wasm.v1beta1.Msg.StoreCode is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.wasm.v1beta1.Msg.StoreCode is unimplemented"))
 
     /**
-     * Returns the response to an RPC for terra.wasm.v1beta1.Msg.MigrateCode.
+     * Returns the response to an RPC for jmes.wasm.v1beta1.Msg.MigrateCode.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -234,10 +234,10 @@ object MsgGrpcKt {
      * @param request The request from the client.
      */
     open suspend fun migrateCode(request: Tx.MsgMigrateCode): Tx.MsgMigrateCodeResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.wasm.v1beta1.Msg.MigrateCode is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.wasm.v1beta1.Msg.MigrateCode is unimplemented"))
 
     /**
-     * Returns the response to an RPC for terra.wasm.v1beta1.Msg.InstantiateContract.
+     * Returns the response to an RPC for jmes.wasm.v1beta1.Msg.InstantiateContract.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -249,10 +249,10 @@ object MsgGrpcKt {
      */
     open suspend fun instantiateContract(request: Tx.MsgInstantiateContract):
         Tx.MsgInstantiateContractResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.wasm.v1beta1.Msg.InstantiateContract is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.wasm.v1beta1.Msg.InstantiateContract is unimplemented"))
 
     /**
-     * Returns the response to an RPC for terra.wasm.v1beta1.Msg.ExecuteContract.
+     * Returns the response to an RPC for jmes.wasm.v1beta1.Msg.ExecuteContract.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -264,10 +264,10 @@ object MsgGrpcKt {
      */
     open suspend fun executeContract(request: Tx.MsgExecuteContract): Tx.MsgExecuteContractResponse
         = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.wasm.v1beta1.Msg.ExecuteContract is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.wasm.v1beta1.Msg.ExecuteContract is unimplemented"))
 
     /**
-     * Returns the response to an RPC for terra.wasm.v1beta1.Msg.MigrateContract.
+     * Returns the response to an RPC for jmes.wasm.v1beta1.Msg.MigrateContract.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -279,10 +279,10 @@ object MsgGrpcKt {
      */
     open suspend fun migrateContract(request: Tx.MsgMigrateContract): Tx.MsgMigrateContractResponse
         = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.wasm.v1beta1.Msg.MigrateContract is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.wasm.v1beta1.Msg.MigrateContract is unimplemented"))
 
     /**
-     * Returns the response to an RPC for terra.wasm.v1beta1.Msg.UpdateContractAdmin.
+     * Returns the response to an RPC for jmes.wasm.v1beta1.Msg.UpdateContractAdmin.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -294,10 +294,10 @@ object MsgGrpcKt {
      */
     open suspend fun updateContractAdmin(request: Tx.MsgUpdateContractAdmin):
         Tx.MsgUpdateContractAdminResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.wasm.v1beta1.Msg.UpdateContractAdmin is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.wasm.v1beta1.Msg.UpdateContractAdmin is unimplemented"))
 
     /**
-     * Returns the response to an RPC for terra.wasm.v1beta1.Msg.ClearContractAdmin.
+     * Returns the response to an RPC for jmes.wasm.v1beta1.Msg.ClearContractAdmin.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -309,7 +309,7 @@ object MsgGrpcKt {
      */
     open suspend fun clearContractAdmin(request: Tx.MsgClearContractAdmin):
         Tx.MsgClearContractAdminResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.wasm.v1beta1.Msg.ClearContractAdmin is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.wasm.v1beta1.Msg.ClearContractAdmin is unimplemented"))
 
     final override fun bindService(): ServerServiceDefinition = builder(getServiceDescriptor())
       .addMethod(unaryServerMethodDefinition(

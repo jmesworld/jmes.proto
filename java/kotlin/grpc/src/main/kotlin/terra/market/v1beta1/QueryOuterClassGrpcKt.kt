@@ -1,4 +1,4 @@
-package terra.market.v1beta1
+package jmes.market.v1beta1
 
 import io.grpc.CallOptions
 import io.grpc.CallOptions.DEFAULT
@@ -23,10 +23,10 @@ import kotlin.coroutines.CoroutineContext
 import kotlin.coroutines.EmptyCoroutineContext
 import kotlin.jvm.JvmOverloads
 import kotlin.jvm.JvmStatic
-import terra.market.v1beta1.QueryGrpc.getServiceDescriptor
+import jmes.market.v1beta1.QueryGrpc.getServiceDescriptor
 
 /**
- * Holder for Kotlin coroutine-based client and server APIs for terra.market.v1beta1.Query.
+ * Holder for Kotlin coroutine-based client and server APIs for jmes.market.v1beta1.Query.
  */
 object QueryGrpcKt {
   const val SERVICE_NAME: String = QueryGrpc.SERVICE_NAME
@@ -40,10 +40,10 @@ object QueryGrpcKt {
     @JvmStatic
     get() = QueryGrpc.getSwapMethod()
 
-  val terraPoolDeltaMethod: MethodDescriptor<QueryOuterClass.QueryTerraPoolDeltaRequest,
-      QueryOuterClass.QueryTerraPoolDeltaResponse>
+  val jmesPoolDeltaMethod: MethodDescriptor<QueryOuterClass.QueryJmesPoolDeltaRequest,
+      QueryOuterClass.QueryJmesPoolDeltaResponse>
     @JvmStatic
-    get() = QueryGrpc.getTerraPoolDeltaMethod()
+    get() = QueryGrpc.getJmesPoolDeltaMethod()
 
   val paramsMethod: MethodDescriptor<QueryOuterClass.QueryParamsRequest,
       QueryOuterClass.QueryParamsResponse>
@@ -51,7 +51,7 @@ object QueryGrpcKt {
     get() = QueryGrpc.getParamsMethod()
 
   /**
-   * A stub for issuing RPCs to a(n) terra.market.v1beta1.Query service as suspending coroutines.
+   * A stub for issuing RPCs to a(n) jmes.market.v1beta1.Query service as suspending coroutines.
    */
   @StubFor(QueryGrpc::class)
   class QueryCoroutineStub @JvmOverloads constructor(
@@ -89,10 +89,10 @@ object QueryGrpcKt {
      *
      * @return The single response from the server.
      */
-    suspend fun terraPoolDelta(request: QueryOuterClass.QueryTerraPoolDeltaRequest):
-        QueryOuterClass.QueryTerraPoolDeltaResponse = unaryRpc(
+    suspend fun jmesPoolDelta(request: QueryOuterClass.QueryJmesPoolDeltaRequest):
+        QueryOuterClass.QueryJmesPoolDeltaResponse = unaryRpc(
       channel,
-      QueryGrpc.getTerraPoolDeltaMethod(),
+      QueryGrpc.getJmesPoolDeltaMethod(),
       request,
       callOptions,
       Metadata()
@@ -117,13 +117,13 @@ object QueryGrpcKt {
     )}
 
   /**
-   * Skeletal implementation of the terra.market.v1beta1.Query service based on Kotlin coroutines.
+   * Skeletal implementation of the jmes.market.v1beta1.Query service based on Kotlin coroutines.
    */
   abstract class QueryCoroutineImplBase(
     coroutineContext: CoroutineContext = EmptyCoroutineContext
   ) : AbstractCoroutineServerImpl(coroutineContext) {
     /**
-     * Returns the response to an RPC for terra.market.v1beta1.Query.Swap.
+     * Returns the response to an RPC for jmes.market.v1beta1.Query.Swap.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -135,10 +135,10 @@ object QueryGrpcKt {
      */
     open suspend fun swap(request: QueryOuterClass.QuerySwapRequest):
         QueryOuterClass.QuerySwapResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.market.v1beta1.Query.Swap is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.market.v1beta1.Query.Swap is unimplemented"))
 
     /**
-     * Returns the response to an RPC for terra.market.v1beta1.Query.TerraPoolDelta.
+     * Returns the response to an RPC for jmes.market.v1beta1.Query.JmesPoolDelta.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -148,12 +148,12 @@ object QueryGrpcKt {
      *
      * @param request The request from the client.
      */
-    open suspend fun terraPoolDelta(request: QueryOuterClass.QueryTerraPoolDeltaRequest):
-        QueryOuterClass.QueryTerraPoolDeltaResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.market.v1beta1.Query.TerraPoolDelta is unimplemented"))
+    open suspend fun jmesPoolDelta(request: QueryOuterClass.QueryJmesPoolDeltaRequest):
+        QueryOuterClass.QueryJmesPoolDeltaResponse = throw
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.market.v1beta1.Query.JmesPoolDelta is unimplemented"))
 
     /**
-     * Returns the response to an RPC for terra.market.v1beta1.Query.Params.
+     * Returns the response to an RPC for jmes.market.v1beta1.Query.Params.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -165,7 +165,7 @@ object QueryGrpcKt {
      */
     open suspend fun params(request: QueryOuterClass.QueryParamsRequest):
         QueryOuterClass.QueryParamsResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.market.v1beta1.Query.Params is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.market.v1beta1.Query.Params is unimplemented"))
 
     final override fun bindService(): ServerServiceDefinition = builder(getServiceDescriptor())
       .addMethod(unaryServerMethodDefinition(
@@ -175,8 +175,8 @@ object QueryGrpcKt {
     ))
       .addMethod(unaryServerMethodDefinition(
       context = this.context,
-      descriptor = QueryGrpc.getTerraPoolDeltaMethod(),
-      implementation = ::terraPoolDelta
+      descriptor = QueryGrpc.getJmesPoolDeltaMethod(),
+      implementation = ::jmesPoolDelta
     ))
       .addMethod(unaryServerMethodDefinition(
       context = this.context,

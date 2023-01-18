@@ -11,7 +11,7 @@ mkdir -p "$OUT_DIR"
 
 echo "Processing proto files ..."
 ALLIANCED_DIR="../allianced/proto"
-TERRAD_THIRD_PARTY_DIR="../terrad/third_party/proto"
+TERRAD_THIRD_PARTY_DIR="../jmesd/third_party/proto"
 
 protoc \
   --plugin="protoc-gen-ts_proto=${PROTOC_GEN_TS_PROTO_PATH}" \

@@ -14,15 +14,15 @@
     "access": "public"
   },
   "files": [
-    "**/alliance/",
-    "**/confio/",
-    "**/cosmos/",
-    "**/cosmos_proto/",
+    "alliance/",
+    "confio/",
+    "cosmos/",
+    "cosmos_proto/",
     "cosmwasm/",
-    "**/gogoproto/",
-    "**/google/",
-    "**/ibc/",
-    "**/tendermint/",
+    "gogoproto/",
+    "google/",
+    "ibc/",
+    "tendermint/",
     "*.md"
   ],
   "scripts": {

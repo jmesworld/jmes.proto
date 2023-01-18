@@ -8,7 +8,7 @@ exports.UpdateInstantiateConfigProposal = exports.AccessConfigUpdate = exports.U
 const long_1 = __importDefault(require("long"));
 const minimal_1 = __importDefault(require("protobufjs/minimal"));
 const types_1 = require("../../../cosmwasm/wasm/v1/types");
-const coin_1 = require("../../../src/cosmos/base/v1beta1/coin");
+const coin_1 = require("../../../cosmos/base/v1beta1/coin");
 exports.protobufPackage = "cosmwasm.wasm.v1";
 const baseStoreCodeProposal = { title: "", description: "", runAs: "" };
 exports.StoreCodeProposal = {

@@ -1,4 +1,4 @@
-package terra.wasm.v1beta1
+package jmes.wasm.v1beta1
 
 import io.grpc.CallOptions
 import io.grpc.CallOptions.DEFAULT
@@ -23,10 +23,10 @@ import kotlin.coroutines.CoroutineContext
 import kotlin.coroutines.EmptyCoroutineContext
 import kotlin.jvm.JvmOverloads
 import kotlin.jvm.JvmStatic
-import terra.wasm.v1beta1.QueryGrpc.getServiceDescriptor
+import jmes.wasm.v1beta1.QueryGrpc.getServiceDescriptor
 
 /**
- * Holder for Kotlin coroutine-based client and server APIs for terra.wasm.v1beta1.Query.
+ * Holder for Kotlin coroutine-based client and server APIs for jmes.wasm.v1beta1.Query.
  */
 object QueryGrpcKt {
   const val SERVICE_NAME: String = QueryGrpc.SERVICE_NAME
@@ -66,7 +66,7 @@ object QueryGrpcKt {
     get() = QueryGrpc.getParamsMethod()
 
   /**
-   * A stub for issuing RPCs to a(n) terra.wasm.v1beta1.Query service as suspending coroutines.
+   * A stub for issuing RPCs to a(n) jmes.wasm.v1beta1.Query service as suspending coroutines.
    */
   @StubFor(QueryGrpc::class)
   class QueryCoroutineStub @JvmOverloads constructor(
@@ -186,13 +186,13 @@ object QueryGrpcKt {
     )}
 
   /**
-   * Skeletal implementation of the terra.wasm.v1beta1.Query service based on Kotlin coroutines.
+   * Skeletal implementation of the jmes.wasm.v1beta1.Query service based on Kotlin coroutines.
    */
   abstract class QueryCoroutineImplBase(
     coroutineContext: CoroutineContext = EmptyCoroutineContext
   ) : AbstractCoroutineServerImpl(coroutineContext) {
     /**
-     * Returns the response to an RPC for terra.wasm.v1beta1.Query.CodeInfo.
+     * Returns the response to an RPC for jmes.wasm.v1beta1.Query.CodeInfo.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -204,10 +204,10 @@ object QueryGrpcKt {
      */
     open suspend fun codeInfo(request: QueryOuterClass.QueryCodeInfoRequest):
         QueryOuterClass.QueryCodeInfoResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.wasm.v1beta1.Query.CodeInfo is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.wasm.v1beta1.Query.CodeInfo is unimplemented"))
 
     /**
-     * Returns the response to an RPC for terra.wasm.v1beta1.Query.ByteCode.
+     * Returns the response to an RPC for jmes.wasm.v1beta1.Query.ByteCode.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -219,10 +219,10 @@ object QueryGrpcKt {
      */
     open suspend fun byteCode(request: QueryOuterClass.QueryByteCodeRequest):
         QueryOuterClass.QueryByteCodeResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.wasm.v1beta1.Query.ByteCode is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.wasm.v1beta1.Query.ByteCode is unimplemented"))
 
     /**
-     * Returns the response to an RPC for terra.wasm.v1beta1.Query.ContractInfo.
+     * Returns the response to an RPC for jmes.wasm.v1beta1.Query.ContractInfo.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -234,10 +234,10 @@ object QueryGrpcKt {
      */
     open suspend fun contractInfo(request: QueryOuterClass.QueryContractInfoRequest):
         QueryOuterClass.QueryContractInfoResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.wasm.v1beta1.Query.ContractInfo is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.wasm.v1beta1.Query.ContractInfo is unimplemented"))
 
     /**
-     * Returns the response to an RPC for terra.wasm.v1beta1.Query.ContractStore.
+     * Returns the response to an RPC for jmes.wasm.v1beta1.Query.ContractStore.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -249,10 +249,10 @@ object QueryGrpcKt {
      */
     open suspend fun contractStore(request: QueryOuterClass.QueryContractStoreRequest):
         QueryOuterClass.QueryContractStoreResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.wasm.v1beta1.Query.ContractStore is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.wasm.v1beta1.Query.ContractStore is unimplemented"))
 
     /**
-     * Returns the response to an RPC for terra.wasm.v1beta1.Query.RawStore.
+     * Returns the response to an RPC for jmes.wasm.v1beta1.Query.RawStore.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -264,10 +264,10 @@ object QueryGrpcKt {
      */
     open suspend fun rawStore(request: QueryOuterClass.QueryRawStoreRequest):
         QueryOuterClass.QueryRawStoreResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.wasm.v1beta1.Query.RawStore is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.wasm.v1beta1.Query.RawStore is unimplemented"))
 
     /**
-     * Returns the response to an RPC for terra.wasm.v1beta1.Query.Params.
+     * Returns the response to an RPC for jmes.wasm.v1beta1.Query.Params.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -279,7 +279,7 @@ object QueryGrpcKt {
      */
     open suspend fun params(request: QueryOuterClass.QueryParamsRequest):
         QueryOuterClass.QueryParamsResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.wasm.v1beta1.Query.Params is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.wasm.v1beta1.Query.Params is unimplemented"))
 
     final override fun bindService(): ServerServiceDefinition = builder(getServiceDescriptor())
       .addMethod(unaryServerMethodDefinition(

@@ -1,4 +1,4 @@
-package terra.treasury.v1beta1
+package jmes.treasury.v1beta1
 
 import io.grpc.CallOptions
 import io.grpc.CallOptions.DEFAULT
@@ -23,10 +23,10 @@ import kotlin.coroutines.CoroutineContext
 import kotlin.coroutines.EmptyCoroutineContext
 import kotlin.jvm.JvmOverloads
 import kotlin.jvm.JvmStatic
-import terra.treasury.v1beta1.QueryGrpc.getServiceDescriptor
+import jmes.treasury.v1beta1.QueryGrpc.getServiceDescriptor
 
 /**
- * Holder for Kotlin coroutine-based client and server APIs for terra.treasury.v1beta1.Query.
+ * Holder for Kotlin coroutine-based client and server APIs for jmes.treasury.v1beta1.Query.
  */
 object QueryGrpcKt {
   const val SERVICE_NAME: String = QueryGrpc.SERVICE_NAME
@@ -76,7 +76,7 @@ object QueryGrpcKt {
     get() = QueryGrpc.getParamsMethod()
 
   /**
-   * A stub for issuing RPCs to a(n) terra.treasury.v1beta1.Query service as suspending coroutines.
+   * A stub for issuing RPCs to a(n) jmes.treasury.v1beta1.Query service as suspending coroutines.
    */
   @StubFor(QueryGrpc::class)
   class QueryCoroutineStub @JvmOverloads constructor(
@@ -232,13 +232,13 @@ object QueryGrpcKt {
     )}
 
   /**
-   * Skeletal implementation of the terra.treasury.v1beta1.Query service based on Kotlin coroutines.
+   * Skeletal implementation of the jmes.treasury.v1beta1.Query service based on Kotlin coroutines.
    */
   abstract class QueryCoroutineImplBase(
     coroutineContext: CoroutineContext = EmptyCoroutineContext
   ) : AbstractCoroutineServerImpl(coroutineContext) {
     /**
-     * Returns the response to an RPC for terra.treasury.v1beta1.Query.TaxRate.
+     * Returns the response to an RPC for jmes.treasury.v1beta1.Query.TaxRate.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -250,10 +250,10 @@ object QueryGrpcKt {
      */
     open suspend fun taxRate(request: QueryOuterClass.QueryTaxRateRequest):
         QueryOuterClass.QueryTaxRateResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.treasury.v1beta1.Query.TaxRate is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.treasury.v1beta1.Query.TaxRate is unimplemented"))
 
     /**
-     * Returns the response to an RPC for terra.treasury.v1beta1.Query.TaxCap.
+     * Returns the response to an RPC for jmes.treasury.v1beta1.Query.TaxCap.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -265,10 +265,10 @@ object QueryGrpcKt {
      */
     open suspend fun taxCap(request: QueryOuterClass.QueryTaxCapRequest):
         QueryOuterClass.QueryTaxCapResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.treasury.v1beta1.Query.TaxCap is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.treasury.v1beta1.Query.TaxCap is unimplemented"))
 
     /**
-     * Returns the response to an RPC for terra.treasury.v1beta1.Query.TaxCaps.
+     * Returns the response to an RPC for jmes.treasury.v1beta1.Query.TaxCaps.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -280,10 +280,10 @@ object QueryGrpcKt {
      */
     open suspend fun taxCaps(request: QueryOuterClass.QueryTaxCapsRequest):
         QueryOuterClass.QueryTaxCapsResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.treasury.v1beta1.Query.TaxCaps is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.treasury.v1beta1.Query.TaxCaps is unimplemented"))
 
     /**
-     * Returns the response to an RPC for terra.treasury.v1beta1.Query.RewardWeight.
+     * Returns the response to an RPC for jmes.treasury.v1beta1.Query.RewardWeight.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -295,10 +295,10 @@ object QueryGrpcKt {
      */
     open suspend fun rewardWeight(request: QueryOuterClass.QueryRewardWeightRequest):
         QueryOuterClass.QueryRewardWeightResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.treasury.v1beta1.Query.RewardWeight is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.treasury.v1beta1.Query.RewardWeight is unimplemented"))
 
     /**
-     * Returns the response to an RPC for terra.treasury.v1beta1.Query.SeigniorageProceeds.
+     * Returns the response to an RPC for jmes.treasury.v1beta1.Query.SeigniorageProceeds.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -310,10 +310,10 @@ object QueryGrpcKt {
      */
     open suspend fun seigniorageProceeds(request: QueryOuterClass.QuerySeigniorageProceedsRequest):
         QueryOuterClass.QuerySeigniorageProceedsResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.treasury.v1beta1.Query.SeigniorageProceeds is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.treasury.v1beta1.Query.SeigniorageProceeds is unimplemented"))
 
     /**
-     * Returns the response to an RPC for terra.treasury.v1beta1.Query.TaxProceeds.
+     * Returns the response to an RPC for jmes.treasury.v1beta1.Query.TaxProceeds.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -325,10 +325,10 @@ object QueryGrpcKt {
      */
     open suspend fun taxProceeds(request: QueryOuterClass.QueryTaxProceedsRequest):
         QueryOuterClass.QueryTaxProceedsResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.treasury.v1beta1.Query.TaxProceeds is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.treasury.v1beta1.Query.TaxProceeds is unimplemented"))
 
     /**
-     * Returns the response to an RPC for terra.treasury.v1beta1.Query.Indicators.
+     * Returns the response to an RPC for jmes.treasury.v1beta1.Query.Indicators.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -340,10 +340,10 @@ object QueryGrpcKt {
      */
     open suspend fun indicators(request: QueryOuterClass.QueryIndicatorsRequest):
         QueryOuterClass.QueryIndicatorsResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.treasury.v1beta1.Query.Indicators is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.treasury.v1beta1.Query.Indicators is unimplemented"))
 
     /**
-     * Returns the response to an RPC for terra.treasury.v1beta1.Query.Params.
+     * Returns the response to an RPC for jmes.treasury.v1beta1.Query.Params.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -355,7 +355,7 @@ object QueryGrpcKt {
      */
     open suspend fun params(request: QueryOuterClass.QueryParamsRequest):
         QueryOuterClass.QueryParamsResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.treasury.v1beta1.Query.Params is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.treasury.v1beta1.Query.Params is unimplemented"))
 
     final override fun bindService(): ServerServiceDefinition = builder(getServiceDescriptor())
       .addMethod(unaryServerMethodDefinition(

@@ -1,4 +1,4 @@
-package terra.wasm.v1beta1;
+package jmes.wasm.v1beta1;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
@@ -9,38 +9,38 @@ import static io.grpc.MethodDescriptor.generateFullMethodName;
  */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler (version 1.40.1)",
-    comments = "Source: terra/wasm/v1beta1/query.proto")
+    comments = "Source: jmes/wasm/v1beta1/query.proto")
 @io.grpc.stub.annotations.GrpcGenerated
 public final class QueryGrpc {
 
   private QueryGrpc() {}
 
-  public static final String SERVICE_NAME = "terra.wasm.v1beta1.Query";
+  public static final String SERVICE_NAME = "jmes.wasm.v1beta1.Query";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<terra.wasm.v1beta1.QueryOuterClass.QueryCodeInfoRequest,
-      terra.wasm.v1beta1.QueryOuterClass.QueryCodeInfoResponse> getCodeInfoMethod;
+  private static volatile io.grpc.MethodDescriptor<jmes.wasm.v1beta1.QueryOuterClass.QueryCodeInfoRequest,
+      jmes.wasm.v1beta1.QueryOuterClass.QueryCodeInfoResponse> getCodeInfoMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "CodeInfo",
-      requestType = terra.wasm.v1beta1.QueryOuterClass.QueryCodeInfoRequest.class,
-      responseType = terra.wasm.v1beta1.QueryOuterClass.QueryCodeInfoResponse.class,
+      requestType = jmes.wasm.v1beta1.QueryOuterClass.QueryCodeInfoRequest.class,
+      responseType = jmes.wasm.v1beta1.QueryOuterClass.QueryCodeInfoResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.wasm.v1beta1.QueryOuterClass.QueryCodeInfoRequest,
-      terra.wasm.v1beta1.QueryOuterClass.QueryCodeInfoResponse> getCodeInfoMethod() {
-    io.grpc.MethodDescriptor<terra.wasm.v1beta1.QueryOuterClass.QueryCodeInfoRequest, terra.wasm.v1beta1.QueryOuterClass.QueryCodeInfoResponse> getCodeInfoMethod;
+  public static io.grpc.MethodDescriptor<jmes.wasm.v1beta1.QueryOuterClass.QueryCodeInfoRequest,
+      jmes.wasm.v1beta1.QueryOuterClass.QueryCodeInfoResponse> getCodeInfoMethod() {
+    io.grpc.MethodDescriptor<jmes.wasm.v1beta1.QueryOuterClass.QueryCodeInfoRequest, jmes.wasm.v1beta1.QueryOuterClass.QueryCodeInfoResponse> getCodeInfoMethod;
     if ((getCodeInfoMethod = QueryGrpc.getCodeInfoMethod) == null) {
       synchronized (QueryGrpc.class) {
         if ((getCodeInfoMethod = QueryGrpc.getCodeInfoMethod) == null) {
           QueryGrpc.getCodeInfoMethod = getCodeInfoMethod =
-              io.grpc.MethodDescriptor.<terra.wasm.v1beta1.QueryOuterClass.QueryCodeInfoRequest, terra.wasm.v1beta1.QueryOuterClass.QueryCodeInfoResponse>newBuilder()
+              io.grpc.MethodDescriptor.<jmes.wasm.v1beta1.QueryOuterClass.QueryCodeInfoRequest, jmes.wasm.v1beta1.QueryOuterClass.QueryCodeInfoResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "CodeInfo"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.wasm.v1beta1.QueryOuterClass.QueryCodeInfoRequest.getDefaultInstance()))
+                  jmes.wasm.v1beta1.QueryOuterClass.QueryCodeInfoRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.wasm.v1beta1.QueryOuterClass.QueryCodeInfoResponse.getDefaultInstance()))
+                  jmes.wasm.v1beta1.QueryOuterClass.QueryCodeInfoResponse.getDefaultInstance()))
               .setSchemaDescriptor(new QueryMethodDescriptorSupplier("CodeInfo"))
               .build();
         }
@@ -49,29 +49,29 @@ public final class QueryGrpc {
     return getCodeInfoMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<terra.wasm.v1beta1.QueryOuterClass.QueryByteCodeRequest,
-      terra.wasm.v1beta1.QueryOuterClass.QueryByteCodeResponse> getByteCodeMethod;
+  private static volatile io.grpc.MethodDescriptor<jmes.wasm.v1beta1.QueryOuterClass.QueryByteCodeRequest,
+      jmes.wasm.v1beta1.QueryOuterClass.QueryByteCodeResponse> getByteCodeMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "ByteCode",
-      requestType = terra.wasm.v1beta1.QueryOuterClass.QueryByteCodeRequest.class,
-      responseType = terra.wasm.v1beta1.QueryOuterClass.QueryByteCodeResponse.class,
+      requestType = jmes.wasm.v1beta1.QueryOuterClass.QueryByteCodeRequest.class,
+      responseType = jmes.wasm.v1beta1.QueryOuterClass.QueryByteCodeResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.wasm.v1beta1.QueryOuterClass.QueryByteCodeRequest,
-      terra.wasm.v1beta1.QueryOuterClass.QueryByteCodeResponse> getByteCodeMethod() {
-    io.grpc.MethodDescriptor<terra.wasm.v1beta1.QueryOuterClass.QueryByteCodeRequest, terra.wasm.v1beta1.QueryOuterClass.QueryByteCodeResponse> getByteCodeMethod;
+  public static io.grpc.MethodDescriptor<jmes.wasm.v1beta1.QueryOuterClass.QueryByteCodeRequest,
+      jmes.wasm.v1beta1.QueryOuterClass.QueryByteCodeResponse> getByteCodeMethod() {
+    io.grpc.MethodDescriptor<jmes.wasm.v1beta1.QueryOuterClass.QueryByteCodeRequest, jmes.wasm.v1beta1.QueryOuterClass.QueryByteCodeResponse> getByteCodeMethod;
     if ((getByteCodeMethod = QueryGrpc.getByteCodeMethod) == null) {
       synchronized (QueryGrpc.class) {
         if ((getByteCodeMethod = QueryGrpc.getByteCodeMethod) == null) {
           QueryGrpc.getByteCodeMethod = getByteCodeMethod =
-              io.grpc.MethodDescriptor.<terra.wasm.v1beta1.QueryOuterClass.QueryByteCodeRequest, terra.wasm.v1beta1.QueryOuterClass.QueryByteCodeResponse>newBuilder()
+              io.grpc.MethodDescriptor.<jmes.wasm.v1beta1.QueryOuterClass.QueryByteCodeRequest, jmes.wasm.v1beta1.QueryOuterClass.QueryByteCodeResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ByteCode"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.wasm.v1beta1.QueryOuterClass.QueryByteCodeRequest.getDefaultInstance()))
+                  jmes.wasm.v1beta1.QueryOuterClass.QueryByteCodeRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.wasm.v1beta1.QueryOuterClass.QueryByteCodeResponse.getDefaultInstance()))
+                  jmes.wasm.v1beta1.QueryOuterClass.QueryByteCodeResponse.getDefaultInstance()))
               .setSchemaDescriptor(new QueryMethodDescriptorSupplier("ByteCode"))
               .build();
         }
@@ -80,29 +80,29 @@ public final class QueryGrpc {
     return getByteCodeMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<terra.wasm.v1beta1.QueryOuterClass.QueryContractInfoRequest,
-      terra.wasm.v1beta1.QueryOuterClass.QueryContractInfoResponse> getContractInfoMethod;
+  private static volatile io.grpc.MethodDescriptor<jmes.wasm.v1beta1.QueryOuterClass.QueryContractInfoRequest,
+      jmes.wasm.v1beta1.QueryOuterClass.QueryContractInfoResponse> getContractInfoMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "ContractInfo",
-      requestType = terra.wasm.v1beta1.QueryOuterClass.QueryContractInfoRequest.class,
-      responseType = terra.wasm.v1beta1.QueryOuterClass.QueryContractInfoResponse.class,
+      requestType = jmes.wasm.v1beta1.QueryOuterClass.QueryContractInfoRequest.class,
+      responseType = jmes.wasm.v1beta1.QueryOuterClass.QueryContractInfoResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.wasm.v1beta1.QueryOuterClass.QueryContractInfoRequest,
-      terra.wasm.v1beta1.QueryOuterClass.QueryContractInfoResponse> getContractInfoMethod() {
-    io.grpc.MethodDescriptor<terra.wasm.v1beta1.QueryOuterClass.QueryContractInfoRequest, terra.wasm.v1beta1.QueryOuterClass.QueryContractInfoResponse> getContractInfoMethod;
+  public static io.grpc.MethodDescriptor<jmes.wasm.v1beta1.QueryOuterClass.QueryContractInfoRequest,
+      jmes.wasm.v1beta1.QueryOuterClass.QueryContractInfoResponse> getContractInfoMethod() {
+    io.grpc.MethodDescriptor<jmes.wasm.v1beta1.QueryOuterClass.QueryContractInfoRequest, jmes.wasm.v1beta1.QueryOuterClass.QueryContractInfoResponse> getContractInfoMethod;
     if ((getContractInfoMethod = QueryGrpc.getContractInfoMethod) == null) {
       synchronized (QueryGrpc.class) {
         if ((getContractInfoMethod = QueryGrpc.getContractInfoMethod) == null) {
           QueryGrpc.getContractInfoMethod = getContractInfoMethod =
-              io.grpc.MethodDescriptor.<terra.wasm.v1beta1.QueryOuterClass.QueryContractInfoRequest, terra.wasm.v1beta1.QueryOuterClass.QueryContractInfoResponse>newBuilder()
+              io.grpc.MethodDescriptor.<jmes.wasm.v1beta1.QueryOuterClass.QueryContractInfoRequest, jmes.wasm.v1beta1.QueryOuterClass.QueryContractInfoResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ContractInfo"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.wasm.v1beta1.QueryOuterClass.QueryContractInfoRequest.getDefaultInstance()))
+                  jmes.wasm.v1beta1.QueryOuterClass.QueryContractInfoRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.wasm.v1beta1.QueryOuterClass.QueryContractInfoResponse.getDefaultInstance()))
+                  jmes.wasm.v1beta1.QueryOuterClass.QueryContractInfoResponse.getDefaultInstance()))
               .setSchemaDescriptor(new QueryMethodDescriptorSupplier("ContractInfo"))
               .build();
         }
@@ -111,29 +111,29 @@ public final class QueryGrpc {
     return getContractInfoMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<terra.wasm.v1beta1.QueryOuterClass.QueryContractStoreRequest,
-      terra.wasm.v1beta1.QueryOuterClass.QueryContractStoreResponse> getContractStoreMethod;
+  private static volatile io.grpc.MethodDescriptor<jmes.wasm.v1beta1.QueryOuterClass.QueryContractStoreRequest,
+      jmes.wasm.v1beta1.QueryOuterClass.QueryContractStoreResponse> getContractStoreMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "ContractStore",
-      requestType = terra.wasm.v1beta1.QueryOuterClass.QueryContractStoreRequest.class,
-      responseType = terra.wasm.v1beta1.QueryOuterClass.QueryContractStoreResponse.class,
+      requestType = jmes.wasm.v1beta1.QueryOuterClass.QueryContractStoreRequest.class,
+      responseType = jmes.wasm.v1beta1.QueryOuterClass.QueryContractStoreResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.wasm.v1beta1.QueryOuterClass.QueryContractStoreRequest,
-      terra.wasm.v1beta1.QueryOuterClass.QueryContractStoreResponse> getContractStoreMethod() {
-    io.grpc.MethodDescriptor<terra.wasm.v1beta1.QueryOuterClass.QueryContractStoreRequest, terra.wasm.v1beta1.QueryOuterClass.QueryContractStoreResponse> getContractStoreMethod;
+  public static io.grpc.MethodDescriptor<jmes.wasm.v1beta1.QueryOuterClass.QueryContractStoreRequest,
+      jmes.wasm.v1beta1.QueryOuterClass.QueryContractStoreResponse> getContractStoreMethod() {
+    io.grpc.MethodDescriptor<jmes.wasm.v1beta1.QueryOuterClass.QueryContractStoreRequest, jmes.wasm.v1beta1.QueryOuterClass.QueryContractStoreResponse> getContractStoreMethod;
     if ((getContractStoreMethod = QueryGrpc.getContractStoreMethod) == null) {
       synchronized (QueryGrpc.class) {
         if ((getContractStoreMethod = QueryGrpc.getContractStoreMethod) == null) {
           QueryGrpc.getContractStoreMethod = getContractStoreMethod =
-              io.grpc.MethodDescriptor.<terra.wasm.v1beta1.QueryOuterClass.QueryContractStoreRequest, terra.wasm.v1beta1.QueryOuterClass.QueryContractStoreResponse>newBuilder()
+              io.grpc.MethodDescriptor.<jmes.wasm.v1beta1.QueryOuterClass.QueryContractStoreRequest, jmes.wasm.v1beta1.QueryOuterClass.QueryContractStoreResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ContractStore"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.wasm.v1beta1.QueryOuterClass.QueryContractStoreRequest.getDefaultInstance()))
+                  jmes.wasm.v1beta1.QueryOuterClass.QueryContractStoreRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.wasm.v1beta1.QueryOuterClass.QueryContractStoreResponse.getDefaultInstance()))
+                  jmes.wasm.v1beta1.QueryOuterClass.QueryContractStoreResponse.getDefaultInstance()))
               .setSchemaDescriptor(new QueryMethodDescriptorSupplier("ContractStore"))
               .build();
         }
@@ -142,29 +142,29 @@ public final class QueryGrpc {
     return getContractStoreMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<terra.wasm.v1beta1.QueryOuterClass.QueryRawStoreRequest,
-      terra.wasm.v1beta1.QueryOuterClass.QueryRawStoreResponse> getRawStoreMethod;
+  private static volatile io.grpc.MethodDescriptor<jmes.wasm.v1beta1.QueryOuterClass.QueryRawStoreRequest,
+      jmes.wasm.v1beta1.QueryOuterClass.QueryRawStoreResponse> getRawStoreMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "RawStore",
-      requestType = terra.wasm.v1beta1.QueryOuterClass.QueryRawStoreRequest.class,
-      responseType = terra.wasm.v1beta1.QueryOuterClass.QueryRawStoreResponse.class,
+      requestType = jmes.wasm.v1beta1.QueryOuterClass.QueryRawStoreRequest.class,
+      responseType = jmes.wasm.v1beta1.QueryOuterClass.QueryRawStoreResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.wasm.v1beta1.QueryOuterClass.QueryRawStoreRequest,
-      terra.wasm.v1beta1.QueryOuterClass.QueryRawStoreResponse> getRawStoreMethod() {
-    io.grpc.MethodDescriptor<terra.wasm.v1beta1.QueryOuterClass.QueryRawStoreRequest, terra.wasm.v1beta1.QueryOuterClass.QueryRawStoreResponse> getRawStoreMethod;
+  public static io.grpc.MethodDescriptor<jmes.wasm.v1beta1.QueryOuterClass.QueryRawStoreRequest,
+      jmes.wasm.v1beta1.QueryOuterClass.QueryRawStoreResponse> getRawStoreMethod() {
+    io.grpc.MethodDescriptor<jmes.wasm.v1beta1.QueryOuterClass.QueryRawStoreRequest, jmes.wasm.v1beta1.QueryOuterClass.QueryRawStoreResponse> getRawStoreMethod;
     if ((getRawStoreMethod = QueryGrpc.getRawStoreMethod) == null) {
       synchronized (QueryGrpc.class) {
         if ((getRawStoreMethod = QueryGrpc.getRawStoreMethod) == null) {
           QueryGrpc.getRawStoreMethod = getRawStoreMethod =
-              io.grpc.MethodDescriptor.<terra.wasm.v1beta1.QueryOuterClass.QueryRawStoreRequest, terra.wasm.v1beta1.QueryOuterClass.QueryRawStoreResponse>newBuilder()
+              io.grpc.MethodDescriptor.<jmes.wasm.v1beta1.QueryOuterClass.QueryRawStoreRequest, jmes.wasm.v1beta1.QueryOuterClass.QueryRawStoreResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "RawStore"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.wasm.v1beta1.QueryOuterClass.QueryRawStoreRequest.getDefaultInstance()))
+                  jmes.wasm.v1beta1.QueryOuterClass.QueryRawStoreRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.wasm.v1beta1.QueryOuterClass.QueryRawStoreResponse.getDefaultInstance()))
+                  jmes.wasm.v1beta1.QueryOuterClass.QueryRawStoreResponse.getDefaultInstance()))
               .setSchemaDescriptor(new QueryMethodDescriptorSupplier("RawStore"))
               .build();
         }
@@ -173,29 +173,29 @@ public final class QueryGrpc {
     return getRawStoreMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<terra.wasm.v1beta1.QueryOuterClass.QueryParamsRequest,
-      terra.wasm.v1beta1.QueryOuterClass.QueryParamsResponse> getParamsMethod;
+  private static volatile io.grpc.MethodDescriptor<jmes.wasm.v1beta1.QueryOuterClass.QueryParamsRequest,
+      jmes.wasm.v1beta1.QueryOuterClass.QueryParamsResponse> getParamsMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "Params",
-      requestType = terra.wasm.v1beta1.QueryOuterClass.QueryParamsRequest.class,
-      responseType = terra.wasm.v1beta1.QueryOuterClass.QueryParamsResponse.class,
+      requestType = jmes.wasm.v1beta1.QueryOuterClass.QueryParamsRequest.class,
+      responseType = jmes.wasm.v1beta1.QueryOuterClass.QueryParamsResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.wasm.v1beta1.QueryOuterClass.QueryParamsRequest,
-      terra.wasm.v1beta1.QueryOuterClass.QueryParamsResponse> getParamsMethod() {
-    io.grpc.MethodDescriptor<terra.wasm.v1beta1.QueryOuterClass.QueryParamsRequest, terra.wasm.v1beta1.QueryOuterClass.QueryParamsResponse> getParamsMethod;
+  public static io.grpc.MethodDescriptor<jmes.wasm.v1beta1.QueryOuterClass.QueryParamsRequest,
+      jmes.wasm.v1beta1.QueryOuterClass.QueryParamsResponse> getParamsMethod() {
+    io.grpc.MethodDescriptor<jmes.wasm.v1beta1.QueryOuterClass.QueryParamsRequest, jmes.wasm.v1beta1.QueryOuterClass.QueryParamsResponse> getParamsMethod;
     if ((getParamsMethod = QueryGrpc.getParamsMethod) == null) {
       synchronized (QueryGrpc.class) {
         if ((getParamsMethod = QueryGrpc.getParamsMethod) == null) {
           QueryGrpc.getParamsMethod = getParamsMethod =
-              io.grpc.MethodDescriptor.<terra.wasm.v1beta1.QueryOuterClass.QueryParamsRequest, terra.wasm.v1beta1.QueryOuterClass.QueryParamsResponse>newBuilder()
+              io.grpc.MethodDescriptor.<jmes.wasm.v1beta1.QueryOuterClass.QueryParamsRequest, jmes.wasm.v1beta1.QueryOuterClass.QueryParamsResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "Params"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.wasm.v1beta1.QueryOuterClass.QueryParamsRequest.getDefaultInstance()))
+                  jmes.wasm.v1beta1.QueryOuterClass.QueryParamsRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.wasm.v1beta1.QueryOuterClass.QueryParamsResponse.getDefaultInstance()))
+                  jmes.wasm.v1beta1.QueryOuterClass.QueryParamsResponse.getDefaultInstance()))
               .setSchemaDescriptor(new QueryMethodDescriptorSupplier("Params"))
               .build();
         }
@@ -260,8 +260,8 @@ public final class QueryGrpc {
      * CodeInfo returns the stored code info
      * </pre>
      */
-    public void codeInfo(terra.wasm.v1beta1.QueryOuterClass.QueryCodeInfoRequest request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.QueryOuterClass.QueryCodeInfoResponse> responseObserver) {
+    public void codeInfo(jmes.wasm.v1beta1.QueryOuterClass.QueryCodeInfoRequest request,
+        io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.QueryOuterClass.QueryCodeInfoResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getCodeInfoMethod(), responseObserver);
     }
 
@@ -270,8 +270,8 @@ public final class QueryGrpc {
      * ByteCode returns the stored byte code
      * </pre>
      */
-    public void byteCode(terra.wasm.v1beta1.QueryOuterClass.QueryByteCodeRequest request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.QueryOuterClass.QueryByteCodeResponse> responseObserver) {
+    public void byteCode(jmes.wasm.v1beta1.QueryOuterClass.QueryByteCodeRequest request,
+        io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.QueryOuterClass.QueryByteCodeResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getByteCodeMethod(), responseObserver);
     }
 
@@ -280,8 +280,8 @@ public final class QueryGrpc {
      * ContractInfo returns the stored contract info
      * </pre>
      */
-    public void contractInfo(terra.wasm.v1beta1.QueryOuterClass.QueryContractInfoRequest request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.QueryOuterClass.QueryContractInfoResponse> responseObserver) {
+    public void contractInfo(jmes.wasm.v1beta1.QueryOuterClass.QueryContractInfoRequest request,
+        io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.QueryOuterClass.QueryContractInfoResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getContractInfoMethod(), responseObserver);
     }
 
@@ -290,8 +290,8 @@ public final class QueryGrpc {
      * ContractStore return smart query result from the contract
      * </pre>
      */
-    public void contractStore(terra.wasm.v1beta1.QueryOuterClass.QueryContractStoreRequest request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.QueryOuterClass.QueryContractStoreResponse> responseObserver) {
+    public void contractStore(jmes.wasm.v1beta1.QueryOuterClass.QueryContractStoreRequest request,
+        io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.QueryOuterClass.QueryContractStoreResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getContractStoreMethod(), responseObserver);
     }
 
@@ -300,8 +300,8 @@ public final class QueryGrpc {
      * RawStore return single key from the raw store data of a contract
      * </pre>
      */
-    public void rawStore(terra.wasm.v1beta1.QueryOuterClass.QueryRawStoreRequest request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.QueryOuterClass.QueryRawStoreResponse> responseObserver) {
+    public void rawStore(jmes.wasm.v1beta1.QueryOuterClass.QueryRawStoreRequest request,
+        io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.QueryOuterClass.QueryRawStoreResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getRawStoreMethod(), responseObserver);
     }
 
@@ -310,8 +310,8 @@ public final class QueryGrpc {
      * Params queries all parameters.
      * </pre>
      */
-    public void params(terra.wasm.v1beta1.QueryOuterClass.QueryParamsRequest request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.QueryOuterClass.QueryParamsResponse> responseObserver) {
+    public void params(jmes.wasm.v1beta1.QueryOuterClass.QueryParamsRequest request,
+        io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.QueryOuterClass.QueryParamsResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getParamsMethod(), responseObserver);
     }
 
@@ -321,43 +321,43 @@ public final class QueryGrpc {
             getCodeInfoMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.wasm.v1beta1.QueryOuterClass.QueryCodeInfoRequest,
-                terra.wasm.v1beta1.QueryOuterClass.QueryCodeInfoResponse>(
+                jmes.wasm.v1beta1.QueryOuterClass.QueryCodeInfoRequest,
+                jmes.wasm.v1beta1.QueryOuterClass.QueryCodeInfoResponse>(
                   this, METHODID_CODE_INFO)))
           .addMethod(
             getByteCodeMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.wasm.v1beta1.QueryOuterClass.QueryByteCodeRequest,
-                terra.wasm.v1beta1.QueryOuterClass.QueryByteCodeResponse>(
+                jmes.wasm.v1beta1.QueryOuterClass.QueryByteCodeRequest,
+                jmes.wasm.v1beta1.QueryOuterClass.QueryByteCodeResponse>(
                   this, METHODID_BYTE_CODE)))
           .addMethod(
             getContractInfoMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.wasm.v1beta1.QueryOuterClass.QueryContractInfoRequest,
-                terra.wasm.v1beta1.QueryOuterClass.QueryContractInfoResponse>(
+                jmes.wasm.v1beta1.QueryOuterClass.QueryContractInfoRequest,
+                jmes.wasm.v1beta1.QueryOuterClass.QueryContractInfoResponse>(
                   this, METHODID_CONTRACT_INFO)))
           .addMethod(
             getContractStoreMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.wasm.v1beta1.QueryOuterClass.QueryContractStoreRequest,
-                terra.wasm.v1beta1.QueryOuterClass.QueryContractStoreResponse>(
+                jmes.wasm.v1beta1.QueryOuterClass.QueryContractStoreRequest,
+                jmes.wasm.v1beta1.QueryOuterClass.QueryContractStoreResponse>(
                   this, METHODID_CONTRACT_STORE)))
           .addMethod(
             getRawStoreMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.wasm.v1beta1.QueryOuterClass.QueryRawStoreRequest,
-                terra.wasm.v1beta1.QueryOuterClass.QueryRawStoreResponse>(
+                jmes.wasm.v1beta1.QueryOuterClass.QueryRawStoreRequest,
+                jmes.wasm.v1beta1.QueryOuterClass.QueryRawStoreResponse>(
                   this, METHODID_RAW_STORE)))
           .addMethod(
             getParamsMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.wasm.v1beta1.QueryOuterClass.QueryParamsRequest,
-                terra.wasm.v1beta1.QueryOuterClass.QueryParamsResponse>(
+                jmes.wasm.v1beta1.QueryOuterClass.QueryParamsRequest,
+                jmes.wasm.v1beta1.QueryOuterClass.QueryParamsResponse>(
                   this, METHODID_PARAMS)))
           .build();
     }
@@ -385,8 +385,8 @@ public final class QueryGrpc {
      * CodeInfo returns the stored code info
      * </pre>
      */
-    public void codeInfo(terra.wasm.v1beta1.QueryOuterClass.QueryCodeInfoRequest request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.QueryOuterClass.QueryCodeInfoResponse> responseObserver) {
+    public void codeInfo(jmes.wasm.v1beta1.QueryOuterClass.QueryCodeInfoRequest request,
+        io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.QueryOuterClass.QueryCodeInfoResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getCodeInfoMethod(), getCallOptions()), request, responseObserver);
     }
@@ -396,8 +396,8 @@ public final class QueryGrpc {
      * ByteCode returns the stored byte code
      * </pre>
      */
-    public void byteCode(terra.wasm.v1beta1.QueryOuterClass.QueryByteCodeRequest request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.QueryOuterClass.QueryByteCodeResponse> responseObserver) {
+    public void byteCode(jmes.wasm.v1beta1.QueryOuterClass.QueryByteCodeRequest request,
+        io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.QueryOuterClass.QueryByteCodeResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getByteCodeMethod(), getCallOptions()), request, responseObserver);
     }
@@ -407,8 +407,8 @@ public final class QueryGrpc {
      * ContractInfo returns the stored contract info
      * </pre>
      */
-    public void contractInfo(terra.wasm.v1beta1.QueryOuterClass.QueryContractInfoRequest request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.QueryOuterClass.QueryContractInfoResponse> responseObserver) {
+    public void contractInfo(jmes.wasm.v1beta1.QueryOuterClass.QueryContractInfoRequest request,
+        io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.QueryOuterClass.QueryContractInfoResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getContractInfoMethod(), getCallOptions()), request, responseObserver);
     }
@@ -418,8 +418,8 @@ public final class QueryGrpc {
      * ContractStore return smart query result from the contract
      * </pre>
      */
-    public void contractStore(terra.wasm.v1beta1.QueryOuterClass.QueryContractStoreRequest request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.QueryOuterClass.QueryContractStoreResponse> responseObserver) {
+    public void contractStore(jmes.wasm.v1beta1.QueryOuterClass.QueryContractStoreRequest request,
+        io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.QueryOuterClass.QueryContractStoreResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getContractStoreMethod(), getCallOptions()), request, responseObserver);
     }
@@ -429,8 +429,8 @@ public final class QueryGrpc {
      * RawStore return single key from the raw store data of a contract
      * </pre>
      */
-    public void rawStore(terra.wasm.v1beta1.QueryOuterClass.QueryRawStoreRequest request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.QueryOuterClass.QueryRawStoreResponse> responseObserver) {
+    public void rawStore(jmes.wasm.v1beta1.QueryOuterClass.QueryRawStoreRequest request,
+        io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.QueryOuterClass.QueryRawStoreResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getRawStoreMethod(), getCallOptions()), request, responseObserver);
     }
@@ -440,8 +440,8 @@ public final class QueryGrpc {
      * Params queries all parameters.
      * </pre>
      */
-    public void params(terra.wasm.v1beta1.QueryOuterClass.QueryParamsRequest request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.QueryOuterClass.QueryParamsResponse> responseObserver) {
+    public void params(jmes.wasm.v1beta1.QueryOuterClass.QueryParamsRequest request,
+        io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.QueryOuterClass.QueryParamsResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getParamsMethod(), getCallOptions()), request, responseObserver);
     }
@@ -469,7 +469,7 @@ public final class QueryGrpc {
      * CodeInfo returns the stored code info
      * </pre>
      */
-    public terra.wasm.v1beta1.QueryOuterClass.QueryCodeInfoResponse codeInfo(terra.wasm.v1beta1.QueryOuterClass.QueryCodeInfoRequest request) {
+    public jmes.wasm.v1beta1.QueryOuterClass.QueryCodeInfoResponse codeInfo(jmes.wasm.v1beta1.QueryOuterClass.QueryCodeInfoRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getCodeInfoMethod(), getCallOptions(), request);
     }
@@ -479,7 +479,7 @@ public final class QueryGrpc {
      * ByteCode returns the stored byte code
      * </pre>
      */
-    public terra.wasm.v1beta1.QueryOuterClass.QueryByteCodeResponse byteCode(terra.wasm.v1beta1.QueryOuterClass.QueryByteCodeRequest request) {
+    public jmes.wasm.v1beta1.QueryOuterClass.QueryByteCodeResponse byteCode(jmes.wasm.v1beta1.QueryOuterClass.QueryByteCodeRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getByteCodeMethod(), getCallOptions(), request);
     }
@@ -489,7 +489,7 @@ public final class QueryGrpc {
      * ContractInfo returns the stored contract info
      * </pre>
      */
-    public terra.wasm.v1beta1.QueryOuterClass.QueryContractInfoResponse contractInfo(terra.wasm.v1beta1.QueryOuterClass.QueryContractInfoRequest request) {
+    public jmes.wasm.v1beta1.QueryOuterClass.QueryContractInfoResponse contractInfo(jmes.wasm.v1beta1.QueryOuterClass.QueryContractInfoRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getContractInfoMethod(), getCallOptions(), request);
     }
@@ -499,7 +499,7 @@ public final class QueryGrpc {
      * ContractStore return smart query result from the contract
      * </pre>
      */
-    public terra.wasm.v1beta1.QueryOuterClass.QueryContractStoreResponse contractStore(terra.wasm.v1beta1.QueryOuterClass.QueryContractStoreRequest request) {
+    public jmes.wasm.v1beta1.QueryOuterClass.QueryContractStoreResponse contractStore(jmes.wasm.v1beta1.QueryOuterClass.QueryContractStoreRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getContractStoreMethod(), getCallOptions(), request);
     }
@@ -509,7 +509,7 @@ public final class QueryGrpc {
      * RawStore return single key from the raw store data of a contract
      * </pre>
      */
-    public terra.wasm.v1beta1.QueryOuterClass.QueryRawStoreResponse rawStore(terra.wasm.v1beta1.QueryOuterClass.QueryRawStoreRequest request) {
+    public jmes.wasm.v1beta1.QueryOuterClass.QueryRawStoreResponse rawStore(jmes.wasm.v1beta1.QueryOuterClass.QueryRawStoreRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getRawStoreMethod(), getCallOptions(), request);
     }
@@ -519,7 +519,7 @@ public final class QueryGrpc {
      * Params queries all parameters.
      * </pre>
      */
-    public terra.wasm.v1beta1.QueryOuterClass.QueryParamsResponse params(terra.wasm.v1beta1.QueryOuterClass.QueryParamsRequest request) {
+    public jmes.wasm.v1beta1.QueryOuterClass.QueryParamsResponse params(jmes.wasm.v1beta1.QueryOuterClass.QueryParamsRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getParamsMethod(), getCallOptions(), request);
     }
@@ -547,8 +547,8 @@ public final class QueryGrpc {
      * CodeInfo returns the stored code info
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.wasm.v1beta1.QueryOuterClass.QueryCodeInfoResponse> codeInfo(
-        terra.wasm.v1beta1.QueryOuterClass.QueryCodeInfoRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<jmes.wasm.v1beta1.QueryOuterClass.QueryCodeInfoResponse> codeInfo(
+        jmes.wasm.v1beta1.QueryOuterClass.QueryCodeInfoRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getCodeInfoMethod(), getCallOptions()), request);
     }
@@ -558,8 +558,8 @@ public final class QueryGrpc {
      * ByteCode returns the stored byte code
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.wasm.v1beta1.QueryOuterClass.QueryByteCodeResponse> byteCode(
-        terra.wasm.v1beta1.QueryOuterClass.QueryByteCodeRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<jmes.wasm.v1beta1.QueryOuterClass.QueryByteCodeResponse> byteCode(
+        jmes.wasm.v1beta1.QueryOuterClass.QueryByteCodeRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getByteCodeMethod(), getCallOptions()), request);
     }
@@ -569,8 +569,8 @@ public final class QueryGrpc {
      * ContractInfo returns the stored contract info
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.wasm.v1beta1.QueryOuterClass.QueryContractInfoResponse> contractInfo(
-        terra.wasm.v1beta1.QueryOuterClass.QueryContractInfoRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<jmes.wasm.v1beta1.QueryOuterClass.QueryContractInfoResponse> contractInfo(
+        jmes.wasm.v1beta1.QueryOuterClass.QueryContractInfoRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getContractInfoMethod(), getCallOptions()), request);
     }
@@ -580,8 +580,8 @@ public final class QueryGrpc {
      * ContractStore return smart query result from the contract
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.wasm.v1beta1.QueryOuterClass.QueryContractStoreResponse> contractStore(
-        terra.wasm.v1beta1.QueryOuterClass.QueryContractStoreRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<jmes.wasm.v1beta1.QueryOuterClass.QueryContractStoreResponse> contractStore(
+        jmes.wasm.v1beta1.QueryOuterClass.QueryContractStoreRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getContractStoreMethod(), getCallOptions()), request);
     }
@@ -591,8 +591,8 @@ public final class QueryGrpc {
      * RawStore return single key from the raw store data of a contract
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.wasm.v1beta1.QueryOuterClass.QueryRawStoreResponse> rawStore(
-        terra.wasm.v1beta1.QueryOuterClass.QueryRawStoreRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<jmes.wasm.v1beta1.QueryOuterClass.QueryRawStoreResponse> rawStore(
+        jmes.wasm.v1beta1.QueryOuterClass.QueryRawStoreRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getRawStoreMethod(), getCallOptions()), request);
     }
@@ -602,8 +602,8 @@ public final class QueryGrpc {
      * Params queries all parameters.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.wasm.v1beta1.QueryOuterClass.QueryParamsResponse> params(
-        terra.wasm.v1beta1.QueryOuterClass.QueryParamsRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<jmes.wasm.v1beta1.QueryOuterClass.QueryParamsResponse> params(
+        jmes.wasm.v1beta1.QueryOuterClass.QueryParamsRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getParamsMethod(), getCallOptions()), request);
     }
@@ -634,28 +634,28 @@ public final class QueryGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_CODE_INFO:
-          serviceImpl.codeInfo((terra.wasm.v1beta1.QueryOuterClass.QueryCodeInfoRequest) request,
-              (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.QueryOuterClass.QueryCodeInfoResponse>) responseObserver);
+          serviceImpl.codeInfo((jmes.wasm.v1beta1.QueryOuterClass.QueryCodeInfoRequest) request,
+              (io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.QueryOuterClass.QueryCodeInfoResponse>) responseObserver);
           break;
         case METHODID_BYTE_CODE:
-          serviceImpl.byteCode((terra.wasm.v1beta1.QueryOuterClass.QueryByteCodeRequest) request,
-              (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.QueryOuterClass.QueryByteCodeResponse>) responseObserver);
+          serviceImpl.byteCode((jmes.wasm.v1beta1.QueryOuterClass.QueryByteCodeRequest) request,
+              (io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.QueryOuterClass.QueryByteCodeResponse>) responseObserver);
           break;
         case METHODID_CONTRACT_INFO:
-          serviceImpl.contractInfo((terra.wasm.v1beta1.QueryOuterClass.QueryContractInfoRequest) request,
-              (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.QueryOuterClass.QueryContractInfoResponse>) responseObserver);
+          serviceImpl.contractInfo((jmes.wasm.v1beta1.QueryOuterClass.QueryContractInfoRequest) request,
+              (io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.QueryOuterClass.QueryContractInfoResponse>) responseObserver);
           break;
         case METHODID_CONTRACT_STORE:
-          serviceImpl.contractStore((terra.wasm.v1beta1.QueryOuterClass.QueryContractStoreRequest) request,
-              (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.QueryOuterClass.QueryContractStoreResponse>) responseObserver);
+          serviceImpl.contractStore((jmes.wasm.v1beta1.QueryOuterClass.QueryContractStoreRequest) request,
+              (io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.QueryOuterClass.QueryContractStoreResponse>) responseObserver);
           break;
         case METHODID_RAW_STORE:
-          serviceImpl.rawStore((terra.wasm.v1beta1.QueryOuterClass.QueryRawStoreRequest) request,
-              (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.QueryOuterClass.QueryRawStoreResponse>) responseObserver);
+          serviceImpl.rawStore((jmes.wasm.v1beta1.QueryOuterClass.QueryRawStoreRequest) request,
+              (io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.QueryOuterClass.QueryRawStoreResponse>) responseObserver);
           break;
         case METHODID_PARAMS:
-          serviceImpl.params((terra.wasm.v1beta1.QueryOuterClass.QueryParamsRequest) request,
-              (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.QueryOuterClass.QueryParamsResponse>) responseObserver);
+          serviceImpl.params((jmes.wasm.v1beta1.QueryOuterClass.QueryParamsRequest) request,
+              (io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.QueryOuterClass.QueryParamsResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -679,7 +679,7 @@ public final class QueryGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return terra.wasm.v1beta1.QueryOuterClass.getDescriptor();
+      return jmes.wasm.v1beta1.QueryOuterClass.getDescriptor();
     }
 
     @java.lang.Override

@@ -1,4 +1,4 @@
-package terra.tx.v1beta1
+package jmes.tx.v1beta1
 
 import io.grpc.CallOptions
 import io.grpc.CallOptions.DEFAULT
@@ -20,10 +20,10 @@ import kotlin.coroutines.CoroutineContext
 import kotlin.coroutines.EmptyCoroutineContext
 import kotlin.jvm.JvmOverloads
 import kotlin.jvm.JvmStatic
-import terra.tx.v1beta1.ServiceGrpc.getServiceDescriptor
+import jmes.tx.v1beta1.ServiceGrpc.getServiceDescriptor
 
 /**
- * Holder for Kotlin coroutine-based client and server APIs for terra.tx.v1beta1.Service.
+ * Holder for Kotlin coroutine-based client and server APIs for jmes.tx.v1beta1.Service.
  */
 object ServiceGrpcKt {
   const val SERVICE_NAME: String = ServiceGrpc.SERVICE_NAME
@@ -38,7 +38,7 @@ object ServiceGrpcKt {
     get() = ServiceGrpc.getComputeTaxMethod()
 
   /**
-   * A stub for issuing RPCs to a(n) terra.tx.v1beta1.Service service as suspending coroutines.
+   * A stub for issuing RPCs to a(n) jmes.tx.v1beta1.Service service as suspending coroutines.
    */
   @StubFor(ServiceGrpc::class)
   class ServiceCoroutineStub @JvmOverloads constructor(
@@ -69,13 +69,13 @@ object ServiceGrpcKt {
     )}
 
   /**
-   * Skeletal implementation of the terra.tx.v1beta1.Service service based on Kotlin coroutines.
+   * Skeletal implementation of the jmes.tx.v1beta1.Service service based on Kotlin coroutines.
    */
   abstract class ServiceCoroutineImplBase(
     coroutineContext: CoroutineContext = EmptyCoroutineContext
   ) : AbstractCoroutineServerImpl(coroutineContext) {
     /**
-     * Returns the response to an RPC for terra.tx.v1beta1.Service.ComputeTax.
+     * Returns the response to an RPC for jmes.tx.v1beta1.Service.ComputeTax.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [io.grpc.Status].  If this method fails with a [java.util.concurrent.CancellationException],
@@ -87,7 +87,7 @@ object ServiceGrpcKt {
      */
     open suspend fun computeTax(request: ServiceOuterClass.ComputeTaxRequest):
         ServiceOuterClass.ComputeTaxResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.tx.v1beta1.Service.ComputeTax is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.tx.v1beta1.Service.ComputeTax is unimplemented"))
 
     final override fun bindService(): ServerServiceDefinition = builder(getServiceDescriptor())
       .addMethod(unaryServerMethodDefinition(

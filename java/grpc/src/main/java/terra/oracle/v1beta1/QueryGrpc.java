@@ -1,4 +1,4 @@
-package terra.oracle.v1beta1;
+package jmes.oracle.v1beta1;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
@@ -9,38 +9,38 @@ import static io.grpc.MethodDescriptor.generateFullMethodName;
  */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler (version 1.40.1)",
-    comments = "Source: terra/oracle/v1beta1/query.proto")
+    comments = "Source: jmes/oracle/v1beta1/query.proto")
 @io.grpc.stub.annotations.GrpcGenerated
 public final class QueryGrpc {
 
   private QueryGrpc() {}
 
-  public static final String SERVICE_NAME = "terra.oracle.v1beta1.Query";
+  public static final String SERVICE_NAME = "jmes.oracle.v1beta1.Query";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRateRequest,
-      terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRateResponse> getExchangeRateMethod;
+  private static volatile io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRateRequest,
+      jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRateResponse> getExchangeRateMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "ExchangeRate",
-      requestType = terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRateRequest.class,
-      responseType = terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRateResponse.class,
+      requestType = jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRateRequest.class,
+      responseType = jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRateResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRateRequest,
-      terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRateResponse> getExchangeRateMethod() {
-    io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRateRequest, terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRateResponse> getExchangeRateMethod;
+  public static io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRateRequest,
+      jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRateResponse> getExchangeRateMethod() {
+    io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRateRequest, jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRateResponse> getExchangeRateMethod;
     if ((getExchangeRateMethod = QueryGrpc.getExchangeRateMethod) == null) {
       synchronized (QueryGrpc.class) {
         if ((getExchangeRateMethod = QueryGrpc.getExchangeRateMethod) == null) {
           QueryGrpc.getExchangeRateMethod = getExchangeRateMethod =
-              io.grpc.MethodDescriptor.<terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRateRequest, terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRateResponse>newBuilder()
+              io.grpc.MethodDescriptor.<jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRateRequest, jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRateResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ExchangeRate"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRateRequest.getDefaultInstance()))
+                  jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRateRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRateResponse.getDefaultInstance()))
+                  jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRateResponse.getDefaultInstance()))
               .setSchemaDescriptor(new QueryMethodDescriptorSupplier("ExchangeRate"))
               .build();
         }
@@ -49,29 +49,29 @@ public final class QueryGrpc {
     return getExchangeRateMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesRequest,
-      terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesResponse> getExchangeRatesMethod;
+  private static volatile io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesRequest,
+      jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesResponse> getExchangeRatesMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "ExchangeRates",
-      requestType = terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesRequest.class,
-      responseType = terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesResponse.class,
+      requestType = jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesRequest.class,
+      responseType = jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesRequest,
-      terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesResponse> getExchangeRatesMethod() {
-    io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesRequest, terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesResponse> getExchangeRatesMethod;
+  public static io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesRequest,
+      jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesResponse> getExchangeRatesMethod() {
+    io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesRequest, jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesResponse> getExchangeRatesMethod;
     if ((getExchangeRatesMethod = QueryGrpc.getExchangeRatesMethod) == null) {
       synchronized (QueryGrpc.class) {
         if ((getExchangeRatesMethod = QueryGrpc.getExchangeRatesMethod) == null) {
           QueryGrpc.getExchangeRatesMethod = getExchangeRatesMethod =
-              io.grpc.MethodDescriptor.<terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesRequest, terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesResponse>newBuilder()
+              io.grpc.MethodDescriptor.<jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesRequest, jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ExchangeRates"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesRequest.getDefaultInstance()))
+                  jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesResponse.getDefaultInstance()))
+                  jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesResponse.getDefaultInstance()))
               .setSchemaDescriptor(new QueryMethodDescriptorSupplier("ExchangeRates"))
               .build();
         }
@@ -80,29 +80,29 @@ public final class QueryGrpc {
     return getExchangeRatesMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxRequest,
-      terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxResponse> getTobinTaxMethod;
+  private static volatile io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxRequest,
+      jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxResponse> getTobinTaxMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "TobinTax",
-      requestType = terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxRequest.class,
-      responseType = terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxResponse.class,
+      requestType = jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxRequest.class,
+      responseType = jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxRequest,
-      terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxResponse> getTobinTaxMethod() {
-    io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxRequest, terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxResponse> getTobinTaxMethod;
+  public static io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxRequest,
+      jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxResponse> getTobinTaxMethod() {
+    io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxRequest, jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxResponse> getTobinTaxMethod;
     if ((getTobinTaxMethod = QueryGrpc.getTobinTaxMethod) == null) {
       synchronized (QueryGrpc.class) {
         if ((getTobinTaxMethod = QueryGrpc.getTobinTaxMethod) == null) {
           QueryGrpc.getTobinTaxMethod = getTobinTaxMethod =
-              io.grpc.MethodDescriptor.<terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxRequest, terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxResponse>newBuilder()
+              io.grpc.MethodDescriptor.<jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxRequest, jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "TobinTax"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxRequest.getDefaultInstance()))
+                  jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxResponse.getDefaultInstance()))
+                  jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxResponse.getDefaultInstance()))
               .setSchemaDescriptor(new QueryMethodDescriptorSupplier("TobinTax"))
               .build();
         }
@@ -111,29 +111,29 @@ public final class QueryGrpc {
     return getTobinTaxMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesRequest,
-      terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesResponse> getTobinTaxesMethod;
+  private static volatile io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesRequest,
+      jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesResponse> getTobinTaxesMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "TobinTaxes",
-      requestType = terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesRequest.class,
-      responseType = terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesResponse.class,
+      requestType = jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesRequest.class,
+      responseType = jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesRequest,
-      terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesResponse> getTobinTaxesMethod() {
-    io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesRequest, terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesResponse> getTobinTaxesMethod;
+  public static io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesRequest,
+      jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesResponse> getTobinTaxesMethod() {
+    io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesRequest, jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesResponse> getTobinTaxesMethod;
     if ((getTobinTaxesMethod = QueryGrpc.getTobinTaxesMethod) == null) {
       synchronized (QueryGrpc.class) {
         if ((getTobinTaxesMethod = QueryGrpc.getTobinTaxesMethod) == null) {
           QueryGrpc.getTobinTaxesMethod = getTobinTaxesMethod =
-              io.grpc.MethodDescriptor.<terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesRequest, terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesResponse>newBuilder()
+              io.grpc.MethodDescriptor.<jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesRequest, jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "TobinTaxes"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesRequest.getDefaultInstance()))
+                  jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesResponse.getDefaultInstance()))
+                  jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesResponse.getDefaultInstance()))
               .setSchemaDescriptor(new QueryMethodDescriptorSupplier("TobinTaxes"))
               .build();
         }
@@ -142,29 +142,29 @@ public final class QueryGrpc {
     return getTobinTaxesMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryActivesRequest,
-      terra.oracle.v1beta1.QueryOuterClass.QueryActivesResponse> getActivesMethod;
+  private static volatile io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryActivesRequest,
+      jmes.oracle.v1beta1.QueryOuterClass.QueryActivesResponse> getActivesMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "Actives",
-      requestType = terra.oracle.v1beta1.QueryOuterClass.QueryActivesRequest.class,
-      responseType = terra.oracle.v1beta1.QueryOuterClass.QueryActivesResponse.class,
+      requestType = jmes.oracle.v1beta1.QueryOuterClass.QueryActivesRequest.class,
+      responseType = jmes.oracle.v1beta1.QueryOuterClass.QueryActivesResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryActivesRequest,
-      terra.oracle.v1beta1.QueryOuterClass.QueryActivesResponse> getActivesMethod() {
-    io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryActivesRequest, terra.oracle.v1beta1.QueryOuterClass.QueryActivesResponse> getActivesMethod;
+  public static io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryActivesRequest,
+      jmes.oracle.v1beta1.QueryOuterClass.QueryActivesResponse> getActivesMethod() {
+    io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryActivesRequest, jmes.oracle.v1beta1.QueryOuterClass.QueryActivesResponse> getActivesMethod;
     if ((getActivesMethod = QueryGrpc.getActivesMethod) == null) {
       synchronized (QueryGrpc.class) {
         if ((getActivesMethod = QueryGrpc.getActivesMethod) == null) {
           QueryGrpc.getActivesMethod = getActivesMethod =
-              io.grpc.MethodDescriptor.<terra.oracle.v1beta1.QueryOuterClass.QueryActivesRequest, terra.oracle.v1beta1.QueryOuterClass.QueryActivesResponse>newBuilder()
+              io.grpc.MethodDescriptor.<jmes.oracle.v1beta1.QueryOuterClass.QueryActivesRequest, jmes.oracle.v1beta1.QueryOuterClass.QueryActivesResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "Actives"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.oracle.v1beta1.QueryOuterClass.QueryActivesRequest.getDefaultInstance()))
+                  jmes.oracle.v1beta1.QueryOuterClass.QueryActivesRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.oracle.v1beta1.QueryOuterClass.QueryActivesResponse.getDefaultInstance()))
+                  jmes.oracle.v1beta1.QueryOuterClass.QueryActivesResponse.getDefaultInstance()))
               .setSchemaDescriptor(new QueryMethodDescriptorSupplier("Actives"))
               .build();
         }
@@ -173,29 +173,29 @@ public final class QueryGrpc {
     return getActivesMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsRequest,
-      terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsResponse> getVoteTargetsMethod;
+  private static volatile io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsRequest,
+      jmes.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsResponse> getVoteTargetsMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "VoteTargets",
-      requestType = terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsRequest.class,
-      responseType = terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsResponse.class,
+      requestType = jmes.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsRequest.class,
+      responseType = jmes.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsRequest,
-      terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsResponse> getVoteTargetsMethod() {
-    io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsRequest, terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsResponse> getVoteTargetsMethod;
+  public static io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsRequest,
+      jmes.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsResponse> getVoteTargetsMethod() {
+    io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsRequest, jmes.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsResponse> getVoteTargetsMethod;
     if ((getVoteTargetsMethod = QueryGrpc.getVoteTargetsMethod) == null) {
       synchronized (QueryGrpc.class) {
         if ((getVoteTargetsMethod = QueryGrpc.getVoteTargetsMethod) == null) {
           QueryGrpc.getVoteTargetsMethod = getVoteTargetsMethod =
-              io.grpc.MethodDescriptor.<terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsRequest, terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsResponse>newBuilder()
+              io.grpc.MethodDescriptor.<jmes.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsRequest, jmes.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "VoteTargets"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsRequest.getDefaultInstance()))
+                  jmes.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsResponse.getDefaultInstance()))
+                  jmes.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsResponse.getDefaultInstance()))
               .setSchemaDescriptor(new QueryMethodDescriptorSupplier("VoteTargets"))
               .build();
         }
@@ -204,29 +204,29 @@ public final class QueryGrpc {
     return getVoteTargetsMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationRequest,
-      terra.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationResponse> getFeederDelegationMethod;
+  private static volatile io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationRequest,
+      jmes.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationResponse> getFeederDelegationMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "FeederDelegation",
-      requestType = terra.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationRequest.class,
-      responseType = terra.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationResponse.class,
+      requestType = jmes.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationRequest.class,
+      responseType = jmes.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationRequest,
-      terra.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationResponse> getFeederDelegationMethod() {
-    io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationRequest, terra.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationResponse> getFeederDelegationMethod;
+  public static io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationRequest,
+      jmes.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationResponse> getFeederDelegationMethod() {
+    io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationRequest, jmes.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationResponse> getFeederDelegationMethod;
     if ((getFeederDelegationMethod = QueryGrpc.getFeederDelegationMethod) == null) {
       synchronized (QueryGrpc.class) {
         if ((getFeederDelegationMethod = QueryGrpc.getFeederDelegationMethod) == null) {
           QueryGrpc.getFeederDelegationMethod = getFeederDelegationMethod =
-              io.grpc.MethodDescriptor.<terra.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationRequest, terra.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationResponse>newBuilder()
+              io.grpc.MethodDescriptor.<jmes.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationRequest, jmes.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "FeederDelegation"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationRequest.getDefaultInstance()))
+                  jmes.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationResponse.getDefaultInstance()))
+                  jmes.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationResponse.getDefaultInstance()))
               .setSchemaDescriptor(new QueryMethodDescriptorSupplier("FeederDelegation"))
               .build();
         }
@@ -235,29 +235,29 @@ public final class QueryGrpc {
     return getFeederDelegationMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryMissCounterRequest,
-      terra.oracle.v1beta1.QueryOuterClass.QueryMissCounterResponse> getMissCounterMethod;
+  private static volatile io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryMissCounterRequest,
+      jmes.oracle.v1beta1.QueryOuterClass.QueryMissCounterResponse> getMissCounterMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "MissCounter",
-      requestType = terra.oracle.v1beta1.QueryOuterClass.QueryMissCounterRequest.class,
-      responseType = terra.oracle.v1beta1.QueryOuterClass.QueryMissCounterResponse.class,
+      requestType = jmes.oracle.v1beta1.QueryOuterClass.QueryMissCounterRequest.class,
+      responseType = jmes.oracle.v1beta1.QueryOuterClass.QueryMissCounterResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryMissCounterRequest,
-      terra.oracle.v1beta1.QueryOuterClass.QueryMissCounterResponse> getMissCounterMethod() {
-    io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryMissCounterRequest, terra.oracle.v1beta1.QueryOuterClass.QueryMissCounterResponse> getMissCounterMethod;
+  public static io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryMissCounterRequest,
+      jmes.oracle.v1beta1.QueryOuterClass.QueryMissCounterResponse> getMissCounterMethod() {
+    io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryMissCounterRequest, jmes.oracle.v1beta1.QueryOuterClass.QueryMissCounterResponse> getMissCounterMethod;
     if ((getMissCounterMethod = QueryGrpc.getMissCounterMethod) == null) {
       synchronized (QueryGrpc.class) {
         if ((getMissCounterMethod = QueryGrpc.getMissCounterMethod) == null) {
           QueryGrpc.getMissCounterMethod = getMissCounterMethod =
-              io.grpc.MethodDescriptor.<terra.oracle.v1beta1.QueryOuterClass.QueryMissCounterRequest, terra.oracle.v1beta1.QueryOuterClass.QueryMissCounterResponse>newBuilder()
+              io.grpc.MethodDescriptor.<jmes.oracle.v1beta1.QueryOuterClass.QueryMissCounterRequest, jmes.oracle.v1beta1.QueryOuterClass.QueryMissCounterResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "MissCounter"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.oracle.v1beta1.QueryOuterClass.QueryMissCounterRequest.getDefaultInstance()))
+                  jmes.oracle.v1beta1.QueryOuterClass.QueryMissCounterRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.oracle.v1beta1.QueryOuterClass.QueryMissCounterResponse.getDefaultInstance()))
+                  jmes.oracle.v1beta1.QueryOuterClass.QueryMissCounterResponse.getDefaultInstance()))
               .setSchemaDescriptor(new QueryMethodDescriptorSupplier("MissCounter"))
               .build();
         }
@@ -266,29 +266,29 @@ public final class QueryGrpc {
     return getMissCounterMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteRequest,
-      terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteResponse> getAggregatePrevoteMethod;
+  private static volatile io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteRequest,
+      jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteResponse> getAggregatePrevoteMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "AggregatePrevote",
-      requestType = terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteRequest.class,
-      responseType = terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteResponse.class,
+      requestType = jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteRequest.class,
+      responseType = jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteRequest,
-      terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteResponse> getAggregatePrevoteMethod() {
-    io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteRequest, terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteResponse> getAggregatePrevoteMethod;
+  public static io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteRequest,
+      jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteResponse> getAggregatePrevoteMethod() {
+    io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteRequest, jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteResponse> getAggregatePrevoteMethod;
     if ((getAggregatePrevoteMethod = QueryGrpc.getAggregatePrevoteMethod) == null) {
       synchronized (QueryGrpc.class) {
         if ((getAggregatePrevoteMethod = QueryGrpc.getAggregatePrevoteMethod) == null) {
           QueryGrpc.getAggregatePrevoteMethod = getAggregatePrevoteMethod =
-              io.grpc.MethodDescriptor.<terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteRequest, terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteResponse>newBuilder()
+              io.grpc.MethodDescriptor.<jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteRequest, jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "AggregatePrevote"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteRequest.getDefaultInstance()))
+                  jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteResponse.getDefaultInstance()))
+                  jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteResponse.getDefaultInstance()))
               .setSchemaDescriptor(new QueryMethodDescriptorSupplier("AggregatePrevote"))
               .build();
         }
@@ -297,29 +297,29 @@ public final class QueryGrpc {
     return getAggregatePrevoteMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesRequest,
-      terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesResponse> getAggregatePrevotesMethod;
+  private static volatile io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesRequest,
+      jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesResponse> getAggregatePrevotesMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "AggregatePrevotes",
-      requestType = terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesRequest.class,
-      responseType = terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesResponse.class,
+      requestType = jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesRequest.class,
+      responseType = jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesRequest,
-      terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesResponse> getAggregatePrevotesMethod() {
-    io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesRequest, terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesResponse> getAggregatePrevotesMethod;
+  public static io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesRequest,
+      jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesResponse> getAggregatePrevotesMethod() {
+    io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesRequest, jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesResponse> getAggregatePrevotesMethod;
     if ((getAggregatePrevotesMethod = QueryGrpc.getAggregatePrevotesMethod) == null) {
       synchronized (QueryGrpc.class) {
         if ((getAggregatePrevotesMethod = QueryGrpc.getAggregatePrevotesMethod) == null) {
           QueryGrpc.getAggregatePrevotesMethod = getAggregatePrevotesMethod =
-              io.grpc.MethodDescriptor.<terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesRequest, terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesResponse>newBuilder()
+              io.grpc.MethodDescriptor.<jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesRequest, jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "AggregatePrevotes"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesRequest.getDefaultInstance()))
+                  jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesResponse.getDefaultInstance()))
+                  jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesResponse.getDefaultInstance()))
               .setSchemaDescriptor(new QueryMethodDescriptorSupplier("AggregatePrevotes"))
               .build();
         }
@@ -328,29 +328,29 @@ public final class QueryGrpc {
     return getAggregatePrevotesMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteRequest,
-      terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteResponse> getAggregateVoteMethod;
+  private static volatile io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteRequest,
+      jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteResponse> getAggregateVoteMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "AggregateVote",
-      requestType = terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteRequest.class,
-      responseType = terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteResponse.class,
+      requestType = jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteRequest.class,
+      responseType = jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteRequest,
-      terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteResponse> getAggregateVoteMethod() {
-    io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteRequest, terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteResponse> getAggregateVoteMethod;
+  public static io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteRequest,
+      jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteResponse> getAggregateVoteMethod() {
+    io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteRequest, jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteResponse> getAggregateVoteMethod;
     if ((getAggregateVoteMethod = QueryGrpc.getAggregateVoteMethod) == null) {
       synchronized (QueryGrpc.class) {
         if ((getAggregateVoteMethod = QueryGrpc.getAggregateVoteMethod) == null) {
           QueryGrpc.getAggregateVoteMethod = getAggregateVoteMethod =
-              io.grpc.MethodDescriptor.<terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteRequest, terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteResponse>newBuilder()
+              io.grpc.MethodDescriptor.<jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteRequest, jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "AggregateVote"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteRequest.getDefaultInstance()))
+                  jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteResponse.getDefaultInstance()))
+                  jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteResponse.getDefaultInstance()))
               .setSchemaDescriptor(new QueryMethodDescriptorSupplier("AggregateVote"))
               .build();
         }
@@ -359,29 +359,29 @@ public final class QueryGrpc {
     return getAggregateVoteMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesRequest,
-      terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesResponse> getAggregateVotesMethod;
+  private static volatile io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesRequest,
+      jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesResponse> getAggregateVotesMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "AggregateVotes",
-      requestType = terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesRequest.class,
-      responseType = terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesResponse.class,
+      requestType = jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesRequest.class,
+      responseType = jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesRequest,
-      terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesResponse> getAggregateVotesMethod() {
-    io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesRequest, terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesResponse> getAggregateVotesMethod;
+  public static io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesRequest,
+      jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesResponse> getAggregateVotesMethod() {
+    io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesRequest, jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesResponse> getAggregateVotesMethod;
     if ((getAggregateVotesMethod = QueryGrpc.getAggregateVotesMethod) == null) {
       synchronized (QueryGrpc.class) {
         if ((getAggregateVotesMethod = QueryGrpc.getAggregateVotesMethod) == null) {
           QueryGrpc.getAggregateVotesMethod = getAggregateVotesMethod =
-              io.grpc.MethodDescriptor.<terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesRequest, terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesResponse>newBuilder()
+              io.grpc.MethodDescriptor.<jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesRequest, jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "AggregateVotes"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesRequest.getDefaultInstance()))
+                  jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesResponse.getDefaultInstance()))
+                  jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesResponse.getDefaultInstance()))
               .setSchemaDescriptor(new QueryMethodDescriptorSupplier("AggregateVotes"))
               .build();
         }
@@ -390,29 +390,29 @@ public final class QueryGrpc {
     return getAggregateVotesMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryParamsRequest,
-      terra.oracle.v1beta1.QueryOuterClass.QueryParamsResponse> getParamsMethod;
+  private static volatile io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryParamsRequest,
+      jmes.oracle.v1beta1.QueryOuterClass.QueryParamsResponse> getParamsMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "Params",
-      requestType = terra.oracle.v1beta1.QueryOuterClass.QueryParamsRequest.class,
-      responseType = terra.oracle.v1beta1.QueryOuterClass.QueryParamsResponse.class,
+      requestType = jmes.oracle.v1beta1.QueryOuterClass.QueryParamsRequest.class,
+      responseType = jmes.oracle.v1beta1.QueryOuterClass.QueryParamsResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryParamsRequest,
-      terra.oracle.v1beta1.QueryOuterClass.QueryParamsResponse> getParamsMethod() {
-    io.grpc.MethodDescriptor<terra.oracle.v1beta1.QueryOuterClass.QueryParamsRequest, terra.oracle.v1beta1.QueryOuterClass.QueryParamsResponse> getParamsMethod;
+  public static io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryParamsRequest,
+      jmes.oracle.v1beta1.QueryOuterClass.QueryParamsResponse> getParamsMethod() {
+    io.grpc.MethodDescriptor<jmes.oracle.v1beta1.QueryOuterClass.QueryParamsRequest, jmes.oracle.v1beta1.QueryOuterClass.QueryParamsResponse> getParamsMethod;
     if ((getParamsMethod = QueryGrpc.getParamsMethod) == null) {
       synchronized (QueryGrpc.class) {
         if ((getParamsMethod = QueryGrpc.getParamsMethod) == null) {
           QueryGrpc.getParamsMethod = getParamsMethod =
-              io.grpc.MethodDescriptor.<terra.oracle.v1beta1.QueryOuterClass.QueryParamsRequest, terra.oracle.v1beta1.QueryOuterClass.QueryParamsResponse>newBuilder()
+              io.grpc.MethodDescriptor.<jmes.oracle.v1beta1.QueryOuterClass.QueryParamsRequest, jmes.oracle.v1beta1.QueryOuterClass.QueryParamsResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "Params"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.oracle.v1beta1.QueryOuterClass.QueryParamsRequest.getDefaultInstance()))
+                  jmes.oracle.v1beta1.QueryOuterClass.QueryParamsRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.oracle.v1beta1.QueryOuterClass.QueryParamsResponse.getDefaultInstance()))
+                  jmes.oracle.v1beta1.QueryOuterClass.QueryParamsResponse.getDefaultInstance()))
               .setSchemaDescriptor(new QueryMethodDescriptorSupplier("Params"))
               .build();
         }
@@ -477,8 +477,8 @@ public final class QueryGrpc {
      * ExchangeRate returns exchange rate of a denom
      * </pre>
      */
-    public void exchangeRate(terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRateRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRateResponse> responseObserver) {
+    public void exchangeRate(jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRateRequest request,
+        io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRateResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getExchangeRateMethod(), responseObserver);
     }
 
@@ -487,8 +487,8 @@ public final class QueryGrpc {
      * ExchangeRates returns exchange rates of all denoms
      * </pre>
      */
-    public void exchangeRates(terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesResponse> responseObserver) {
+    public void exchangeRates(jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesRequest request,
+        io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getExchangeRatesMethod(), responseObserver);
     }
 
@@ -497,8 +497,8 @@ public final class QueryGrpc {
      * TobinTax returns tobin tax of a denom
      * </pre>
      */
-    public void tobinTax(terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxResponse> responseObserver) {
+    public void tobinTax(jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxRequest request,
+        io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getTobinTaxMethod(), responseObserver);
     }
 
@@ -507,8 +507,8 @@ public final class QueryGrpc {
      * TobinTaxes returns tobin taxes of all denoms
      * </pre>
      */
-    public void tobinTaxes(terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesResponse> responseObserver) {
+    public void tobinTaxes(jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesRequest request,
+        io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getTobinTaxesMethod(), responseObserver);
     }
 
@@ -517,8 +517,8 @@ public final class QueryGrpc {
      * Actives returns all active denoms
      * </pre>
      */
-    public void actives(terra.oracle.v1beta1.QueryOuterClass.QueryActivesRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryActivesResponse> responseObserver) {
+    public void actives(jmes.oracle.v1beta1.QueryOuterClass.QueryActivesRequest request,
+        io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryActivesResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getActivesMethod(), responseObserver);
     }
 
@@ -527,8 +527,8 @@ public final class QueryGrpc {
      * VoteTargets returns all vote target denoms
      * </pre>
      */
-    public void voteTargets(terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsResponse> responseObserver) {
+    public void voteTargets(jmes.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsRequest request,
+        io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getVoteTargetsMethod(), responseObserver);
     }
 
@@ -537,8 +537,8 @@ public final class QueryGrpc {
      * FeederDelegation returns feeder delegation of a validator
      * </pre>
      */
-    public void feederDelegation(terra.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationResponse> responseObserver) {
+    public void feederDelegation(jmes.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationRequest request,
+        io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getFeederDelegationMethod(), responseObserver);
     }
 
@@ -547,8 +547,8 @@ public final class QueryGrpc {
      * MissCounter returns oracle miss counter of a validator
      * </pre>
      */
-    public void missCounter(terra.oracle.v1beta1.QueryOuterClass.QueryMissCounterRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryMissCounterResponse> responseObserver) {
+    public void missCounter(jmes.oracle.v1beta1.QueryOuterClass.QueryMissCounterRequest request,
+        io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryMissCounterResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getMissCounterMethod(), responseObserver);
     }
 
@@ -557,8 +557,8 @@ public final class QueryGrpc {
      * AggregatePrevote returns an aggregate prevote of a validator
      * </pre>
      */
-    public void aggregatePrevote(terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteResponse> responseObserver) {
+    public void aggregatePrevote(jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteRequest request,
+        io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getAggregatePrevoteMethod(), responseObserver);
     }
 
@@ -567,8 +567,8 @@ public final class QueryGrpc {
      * AggregatePrevotes returns aggregate prevotes of all validators
      * </pre>
      */
-    public void aggregatePrevotes(terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesResponse> responseObserver) {
+    public void aggregatePrevotes(jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesRequest request,
+        io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getAggregatePrevotesMethod(), responseObserver);
     }
 
@@ -577,8 +577,8 @@ public final class QueryGrpc {
      * AggregateVote returns an aggregate vote of a validator
      * </pre>
      */
-    public void aggregateVote(terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteResponse> responseObserver) {
+    public void aggregateVote(jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteRequest request,
+        io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getAggregateVoteMethod(), responseObserver);
     }
 
@@ -587,8 +587,8 @@ public final class QueryGrpc {
      * AggregateVotes returns aggregate votes of all validators
      * </pre>
      */
-    public void aggregateVotes(terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesResponse> responseObserver) {
+    public void aggregateVotes(jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesRequest request,
+        io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getAggregateVotesMethod(), responseObserver);
     }
 
@@ -597,8 +597,8 @@ public final class QueryGrpc {
      * Params queries all parameters.
      * </pre>
      */
-    public void params(terra.oracle.v1beta1.QueryOuterClass.QueryParamsRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryParamsResponse> responseObserver) {
+    public void params(jmes.oracle.v1beta1.QueryOuterClass.QueryParamsRequest request,
+        io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryParamsResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getParamsMethod(), responseObserver);
     }
 
@@ -608,92 +608,92 @@ public final class QueryGrpc {
             getExchangeRateMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRateRequest,
-                terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRateResponse>(
+                jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRateRequest,
+                jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRateResponse>(
                   this, METHODID_EXCHANGE_RATE)))
           .addMethod(
             getExchangeRatesMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesRequest,
-                terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesResponse>(
+                jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesRequest,
+                jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesResponse>(
                   this, METHODID_EXCHANGE_RATES)))
           .addMethod(
             getTobinTaxMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxRequest,
-                terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxResponse>(
+                jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxRequest,
+                jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxResponse>(
                   this, METHODID_TOBIN_TAX)))
           .addMethod(
             getTobinTaxesMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesRequest,
-                terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesResponse>(
+                jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesRequest,
+                jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesResponse>(
                   this, METHODID_TOBIN_TAXES)))
           .addMethod(
             getActivesMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.oracle.v1beta1.QueryOuterClass.QueryActivesRequest,
-                terra.oracle.v1beta1.QueryOuterClass.QueryActivesResponse>(
+                jmes.oracle.v1beta1.QueryOuterClass.QueryActivesRequest,
+                jmes.oracle.v1beta1.QueryOuterClass.QueryActivesResponse>(
                   this, METHODID_ACTIVES)))
           .addMethod(
             getVoteTargetsMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsRequest,
-                terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsResponse>(
+                jmes.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsRequest,
+                jmes.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsResponse>(
                   this, METHODID_VOTE_TARGETS)))
           .addMethod(
             getFeederDelegationMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationRequest,
-                terra.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationResponse>(
+                jmes.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationRequest,
+                jmes.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationResponse>(
                   this, METHODID_FEEDER_DELEGATION)))
           .addMethod(
             getMissCounterMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.oracle.v1beta1.QueryOuterClass.QueryMissCounterRequest,
-                terra.oracle.v1beta1.QueryOuterClass.QueryMissCounterResponse>(
+                jmes.oracle.v1beta1.QueryOuterClass.QueryMissCounterRequest,
+                jmes.oracle.v1beta1.QueryOuterClass.QueryMissCounterResponse>(
                   this, METHODID_MISS_COUNTER)))
           .addMethod(
             getAggregatePrevoteMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteRequest,
-                terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteResponse>(
+                jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteRequest,
+                jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteResponse>(
                   this, METHODID_AGGREGATE_PREVOTE)))
           .addMethod(
             getAggregatePrevotesMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesRequest,
-                terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesResponse>(
+                jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesRequest,
+                jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesResponse>(
                   this, METHODID_AGGREGATE_PREVOTES)))
           .addMethod(
             getAggregateVoteMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteRequest,
-                terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteResponse>(
+                jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteRequest,
+                jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteResponse>(
                   this, METHODID_AGGREGATE_VOTE)))
           .addMethod(
             getAggregateVotesMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesRequest,
-                terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesResponse>(
+                jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesRequest,
+                jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesResponse>(
                   this, METHODID_AGGREGATE_VOTES)))
           .addMethod(
             getParamsMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.oracle.v1beta1.QueryOuterClass.QueryParamsRequest,
-                terra.oracle.v1beta1.QueryOuterClass.QueryParamsResponse>(
+                jmes.oracle.v1beta1.QueryOuterClass.QueryParamsRequest,
+                jmes.oracle.v1beta1.QueryOuterClass.QueryParamsResponse>(
                   this, METHODID_PARAMS)))
           .build();
     }
@@ -721,8 +721,8 @@ public final class QueryGrpc {
      * ExchangeRate returns exchange rate of a denom
      * </pre>
      */
-    public void exchangeRate(terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRateRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRateResponse> responseObserver) {
+    public void exchangeRate(jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRateRequest request,
+        io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRateResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getExchangeRateMethod(), getCallOptions()), request, responseObserver);
     }
@@ -732,8 +732,8 @@ public final class QueryGrpc {
      * ExchangeRates returns exchange rates of all denoms
      * </pre>
      */
-    public void exchangeRates(terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesResponse> responseObserver) {
+    public void exchangeRates(jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesRequest request,
+        io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getExchangeRatesMethod(), getCallOptions()), request, responseObserver);
     }
@@ -743,8 +743,8 @@ public final class QueryGrpc {
      * TobinTax returns tobin tax of a denom
      * </pre>
      */
-    public void tobinTax(terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxResponse> responseObserver) {
+    public void tobinTax(jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxRequest request,
+        io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getTobinTaxMethod(), getCallOptions()), request, responseObserver);
     }
@@ -754,8 +754,8 @@ public final class QueryGrpc {
      * TobinTaxes returns tobin taxes of all denoms
      * </pre>
      */
-    public void tobinTaxes(terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesResponse> responseObserver) {
+    public void tobinTaxes(jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesRequest request,
+        io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getTobinTaxesMethod(), getCallOptions()), request, responseObserver);
     }
@@ -765,8 +765,8 @@ public final class QueryGrpc {
      * Actives returns all active denoms
      * </pre>
      */
-    public void actives(terra.oracle.v1beta1.QueryOuterClass.QueryActivesRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryActivesResponse> responseObserver) {
+    public void actives(jmes.oracle.v1beta1.QueryOuterClass.QueryActivesRequest request,
+        io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryActivesResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getActivesMethod(), getCallOptions()), request, responseObserver);
     }
@@ -776,8 +776,8 @@ public final class QueryGrpc {
      * VoteTargets returns all vote target denoms
      * </pre>
      */
-    public void voteTargets(terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsResponse> responseObserver) {
+    public void voteTargets(jmes.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsRequest request,
+        io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getVoteTargetsMethod(), getCallOptions()), request, responseObserver);
     }
@@ -787,8 +787,8 @@ public final class QueryGrpc {
      * FeederDelegation returns feeder delegation of a validator
      * </pre>
      */
-    public void feederDelegation(terra.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationResponse> responseObserver) {
+    public void feederDelegation(jmes.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationRequest request,
+        io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getFeederDelegationMethod(), getCallOptions()), request, responseObserver);
     }
@@ -798,8 +798,8 @@ public final class QueryGrpc {
      * MissCounter returns oracle miss counter of a validator
      * </pre>
      */
-    public void missCounter(terra.oracle.v1beta1.QueryOuterClass.QueryMissCounterRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryMissCounterResponse> responseObserver) {
+    public void missCounter(jmes.oracle.v1beta1.QueryOuterClass.QueryMissCounterRequest request,
+        io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryMissCounterResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getMissCounterMethod(), getCallOptions()), request, responseObserver);
     }
@@ -809,8 +809,8 @@ public final class QueryGrpc {
      * AggregatePrevote returns an aggregate prevote of a validator
      * </pre>
      */
-    public void aggregatePrevote(terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteResponse> responseObserver) {
+    public void aggregatePrevote(jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteRequest request,
+        io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getAggregatePrevoteMethod(), getCallOptions()), request, responseObserver);
     }
@@ -820,8 +820,8 @@ public final class QueryGrpc {
      * AggregatePrevotes returns aggregate prevotes of all validators
      * </pre>
      */
-    public void aggregatePrevotes(terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesResponse> responseObserver) {
+    public void aggregatePrevotes(jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesRequest request,
+        io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getAggregatePrevotesMethod(), getCallOptions()), request, responseObserver);
     }
@@ -831,8 +831,8 @@ public final class QueryGrpc {
      * AggregateVote returns an aggregate vote of a validator
      * </pre>
      */
-    public void aggregateVote(terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteResponse> responseObserver) {
+    public void aggregateVote(jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteRequest request,
+        io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getAggregateVoteMethod(), getCallOptions()), request, responseObserver);
     }
@@ -842,8 +842,8 @@ public final class QueryGrpc {
      * AggregateVotes returns aggregate votes of all validators
      * </pre>
      */
-    public void aggregateVotes(terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesResponse> responseObserver) {
+    public void aggregateVotes(jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesRequest request,
+        io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getAggregateVotesMethod(), getCallOptions()), request, responseObserver);
     }
@@ -853,8 +853,8 @@ public final class QueryGrpc {
      * Params queries all parameters.
      * </pre>
      */
-    public void params(terra.oracle.v1beta1.QueryOuterClass.QueryParamsRequest request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryParamsResponse> responseObserver) {
+    public void params(jmes.oracle.v1beta1.QueryOuterClass.QueryParamsRequest request,
+        io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryParamsResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getParamsMethod(), getCallOptions()), request, responseObserver);
     }
@@ -882,7 +882,7 @@ public final class QueryGrpc {
      * ExchangeRate returns exchange rate of a denom
      * </pre>
      */
-    public terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRateResponse exchangeRate(terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRateRequest request) {
+    public jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRateResponse exchangeRate(jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRateRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getExchangeRateMethod(), getCallOptions(), request);
     }
@@ -892,7 +892,7 @@ public final class QueryGrpc {
      * ExchangeRates returns exchange rates of all denoms
      * </pre>
      */
-    public terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesResponse exchangeRates(terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesRequest request) {
+    public jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesResponse exchangeRates(jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getExchangeRatesMethod(), getCallOptions(), request);
     }
@@ -902,7 +902,7 @@ public final class QueryGrpc {
      * TobinTax returns tobin tax of a denom
      * </pre>
      */
-    public terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxResponse tobinTax(terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxRequest request) {
+    public jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxResponse tobinTax(jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getTobinTaxMethod(), getCallOptions(), request);
     }
@@ -912,7 +912,7 @@ public final class QueryGrpc {
      * TobinTaxes returns tobin taxes of all denoms
      * </pre>
      */
-    public terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesResponse tobinTaxes(terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesRequest request) {
+    public jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesResponse tobinTaxes(jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getTobinTaxesMethod(), getCallOptions(), request);
     }
@@ -922,7 +922,7 @@ public final class QueryGrpc {
      * Actives returns all active denoms
      * </pre>
      */
-    public terra.oracle.v1beta1.QueryOuterClass.QueryActivesResponse actives(terra.oracle.v1beta1.QueryOuterClass.QueryActivesRequest request) {
+    public jmes.oracle.v1beta1.QueryOuterClass.QueryActivesResponse actives(jmes.oracle.v1beta1.QueryOuterClass.QueryActivesRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getActivesMethod(), getCallOptions(), request);
     }
@@ -932,7 +932,7 @@ public final class QueryGrpc {
      * VoteTargets returns all vote target denoms
      * </pre>
      */
-    public terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsResponse voteTargets(terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsRequest request) {
+    public jmes.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsResponse voteTargets(jmes.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getVoteTargetsMethod(), getCallOptions(), request);
     }
@@ -942,7 +942,7 @@ public final class QueryGrpc {
      * FeederDelegation returns feeder delegation of a validator
      * </pre>
      */
-    public terra.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationResponse feederDelegation(terra.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationRequest request) {
+    public jmes.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationResponse feederDelegation(jmes.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getFeederDelegationMethod(), getCallOptions(), request);
     }
@@ -952,7 +952,7 @@ public final class QueryGrpc {
      * MissCounter returns oracle miss counter of a validator
      * </pre>
      */
-    public terra.oracle.v1beta1.QueryOuterClass.QueryMissCounterResponse missCounter(terra.oracle.v1beta1.QueryOuterClass.QueryMissCounterRequest request) {
+    public jmes.oracle.v1beta1.QueryOuterClass.QueryMissCounterResponse missCounter(jmes.oracle.v1beta1.QueryOuterClass.QueryMissCounterRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getMissCounterMethod(), getCallOptions(), request);
     }
@@ -962,7 +962,7 @@ public final class QueryGrpc {
      * AggregatePrevote returns an aggregate prevote of a validator
      * </pre>
      */
-    public terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteResponse aggregatePrevote(terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteRequest request) {
+    public jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteResponse aggregatePrevote(jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getAggregatePrevoteMethod(), getCallOptions(), request);
     }
@@ -972,7 +972,7 @@ public final class QueryGrpc {
      * AggregatePrevotes returns aggregate prevotes of all validators
      * </pre>
      */
-    public terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesResponse aggregatePrevotes(terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesRequest request) {
+    public jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesResponse aggregatePrevotes(jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getAggregatePrevotesMethod(), getCallOptions(), request);
     }
@@ -982,7 +982,7 @@ public final class QueryGrpc {
      * AggregateVote returns an aggregate vote of a validator
      * </pre>
      */
-    public terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteResponse aggregateVote(terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteRequest request) {
+    public jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteResponse aggregateVote(jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getAggregateVoteMethod(), getCallOptions(), request);
     }
@@ -992,7 +992,7 @@ public final class QueryGrpc {
      * AggregateVotes returns aggregate votes of all validators
      * </pre>
      */
-    public terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesResponse aggregateVotes(terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesRequest request) {
+    public jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesResponse aggregateVotes(jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getAggregateVotesMethod(), getCallOptions(), request);
     }
@@ -1002,7 +1002,7 @@ public final class QueryGrpc {
      * Params queries all parameters.
      * </pre>
      */
-    public terra.oracle.v1beta1.QueryOuterClass.QueryParamsResponse params(terra.oracle.v1beta1.QueryOuterClass.QueryParamsRequest request) {
+    public jmes.oracle.v1beta1.QueryOuterClass.QueryParamsResponse params(jmes.oracle.v1beta1.QueryOuterClass.QueryParamsRequest request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getParamsMethod(), getCallOptions(), request);
     }
@@ -1030,8 +1030,8 @@ public final class QueryGrpc {
      * ExchangeRate returns exchange rate of a denom
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRateResponse> exchangeRate(
-        terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRateRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRateResponse> exchangeRate(
+        jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRateRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getExchangeRateMethod(), getCallOptions()), request);
     }
@@ -1041,8 +1041,8 @@ public final class QueryGrpc {
      * ExchangeRates returns exchange rates of all denoms
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesResponse> exchangeRates(
-        terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesResponse> exchangeRates(
+        jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getExchangeRatesMethod(), getCallOptions()), request);
     }
@@ -1052,8 +1052,8 @@ public final class QueryGrpc {
      * TobinTax returns tobin tax of a denom
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxResponse> tobinTax(
-        terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxResponse> tobinTax(
+        jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getTobinTaxMethod(), getCallOptions()), request);
     }
@@ -1063,8 +1063,8 @@ public final class QueryGrpc {
      * TobinTaxes returns tobin taxes of all denoms
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesResponse> tobinTaxes(
-        terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesResponse> tobinTaxes(
+        jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getTobinTaxesMethod(), getCallOptions()), request);
     }
@@ -1074,8 +1074,8 @@ public final class QueryGrpc {
      * Actives returns all active denoms
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.oracle.v1beta1.QueryOuterClass.QueryActivesResponse> actives(
-        terra.oracle.v1beta1.QueryOuterClass.QueryActivesRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<jmes.oracle.v1beta1.QueryOuterClass.QueryActivesResponse> actives(
+        jmes.oracle.v1beta1.QueryOuterClass.QueryActivesRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getActivesMethod(), getCallOptions()), request);
     }
@@ -1085,8 +1085,8 @@ public final class QueryGrpc {
      * VoteTargets returns all vote target denoms
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsResponse> voteTargets(
-        terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<jmes.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsResponse> voteTargets(
+        jmes.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getVoteTargetsMethod(), getCallOptions()), request);
     }
@@ -1096,8 +1096,8 @@ public final class QueryGrpc {
      * FeederDelegation returns feeder delegation of a validator
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationResponse> feederDelegation(
-        terra.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<jmes.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationResponse> feederDelegation(
+        jmes.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getFeederDelegationMethod(), getCallOptions()), request);
     }
@@ -1107,8 +1107,8 @@ public final class QueryGrpc {
      * MissCounter returns oracle miss counter of a validator
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.oracle.v1beta1.QueryOuterClass.QueryMissCounterResponse> missCounter(
-        terra.oracle.v1beta1.QueryOuterClass.QueryMissCounterRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<jmes.oracle.v1beta1.QueryOuterClass.QueryMissCounterResponse> missCounter(
+        jmes.oracle.v1beta1.QueryOuterClass.QueryMissCounterRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getMissCounterMethod(), getCallOptions()), request);
     }
@@ -1118,8 +1118,8 @@ public final class QueryGrpc {
      * AggregatePrevote returns an aggregate prevote of a validator
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteResponse> aggregatePrevote(
-        terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteResponse> aggregatePrevote(
+        jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getAggregatePrevoteMethod(), getCallOptions()), request);
     }
@@ -1129,8 +1129,8 @@ public final class QueryGrpc {
      * AggregatePrevotes returns aggregate prevotes of all validators
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesResponse> aggregatePrevotes(
-        terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesResponse> aggregatePrevotes(
+        jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getAggregatePrevotesMethod(), getCallOptions()), request);
     }
@@ -1140,8 +1140,8 @@ public final class QueryGrpc {
      * AggregateVote returns an aggregate vote of a validator
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteResponse> aggregateVote(
-        terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteResponse> aggregateVote(
+        jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getAggregateVoteMethod(), getCallOptions()), request);
     }
@@ -1151,8 +1151,8 @@ public final class QueryGrpc {
      * AggregateVotes returns aggregate votes of all validators
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesResponse> aggregateVotes(
-        terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesResponse> aggregateVotes(
+        jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getAggregateVotesMethod(), getCallOptions()), request);
     }
@@ -1162,8 +1162,8 @@ public final class QueryGrpc {
      * Params queries all parameters.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.oracle.v1beta1.QueryOuterClass.QueryParamsResponse> params(
-        terra.oracle.v1beta1.QueryOuterClass.QueryParamsRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<jmes.oracle.v1beta1.QueryOuterClass.QueryParamsResponse> params(
+        jmes.oracle.v1beta1.QueryOuterClass.QueryParamsRequest request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getParamsMethod(), getCallOptions()), request);
     }
@@ -1201,56 +1201,56 @@ public final class QueryGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_EXCHANGE_RATE:
-          serviceImpl.exchangeRate((terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRateRequest) request,
-              (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRateResponse>) responseObserver);
+          serviceImpl.exchangeRate((jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRateRequest) request,
+              (io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRateResponse>) responseObserver);
           break;
         case METHODID_EXCHANGE_RATES:
-          serviceImpl.exchangeRates((terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesRequest) request,
-              (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesResponse>) responseObserver);
+          serviceImpl.exchangeRates((jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesRequest) request,
+              (io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryExchangeRatesResponse>) responseObserver);
           break;
         case METHODID_TOBIN_TAX:
-          serviceImpl.tobinTax((terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxRequest) request,
-              (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxResponse>) responseObserver);
+          serviceImpl.tobinTax((jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxRequest) request,
+              (io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxResponse>) responseObserver);
           break;
         case METHODID_TOBIN_TAXES:
-          serviceImpl.tobinTaxes((terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesRequest) request,
-              (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesResponse>) responseObserver);
+          serviceImpl.tobinTaxes((jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesRequest) request,
+              (io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryTobinTaxesResponse>) responseObserver);
           break;
         case METHODID_ACTIVES:
-          serviceImpl.actives((terra.oracle.v1beta1.QueryOuterClass.QueryActivesRequest) request,
-              (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryActivesResponse>) responseObserver);
+          serviceImpl.actives((jmes.oracle.v1beta1.QueryOuterClass.QueryActivesRequest) request,
+              (io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryActivesResponse>) responseObserver);
           break;
         case METHODID_VOTE_TARGETS:
-          serviceImpl.voteTargets((terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsRequest) request,
-              (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsResponse>) responseObserver);
+          serviceImpl.voteTargets((jmes.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsRequest) request,
+              (io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryVoteTargetsResponse>) responseObserver);
           break;
         case METHODID_FEEDER_DELEGATION:
-          serviceImpl.feederDelegation((terra.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationRequest) request,
-              (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationResponse>) responseObserver);
+          serviceImpl.feederDelegation((jmes.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationRequest) request,
+              (io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryFeederDelegationResponse>) responseObserver);
           break;
         case METHODID_MISS_COUNTER:
-          serviceImpl.missCounter((terra.oracle.v1beta1.QueryOuterClass.QueryMissCounterRequest) request,
-              (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryMissCounterResponse>) responseObserver);
+          serviceImpl.missCounter((jmes.oracle.v1beta1.QueryOuterClass.QueryMissCounterRequest) request,
+              (io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryMissCounterResponse>) responseObserver);
           break;
         case METHODID_AGGREGATE_PREVOTE:
-          serviceImpl.aggregatePrevote((terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteRequest) request,
-              (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteResponse>) responseObserver);
+          serviceImpl.aggregatePrevote((jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteRequest) request,
+              (io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevoteResponse>) responseObserver);
           break;
         case METHODID_AGGREGATE_PREVOTES:
-          serviceImpl.aggregatePrevotes((terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesRequest) request,
-              (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesResponse>) responseObserver);
+          serviceImpl.aggregatePrevotes((jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesRequest) request,
+              (io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryAggregatePrevotesResponse>) responseObserver);
           break;
         case METHODID_AGGREGATE_VOTE:
-          serviceImpl.aggregateVote((terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteRequest) request,
-              (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteResponse>) responseObserver);
+          serviceImpl.aggregateVote((jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteRequest) request,
+              (io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVoteResponse>) responseObserver);
           break;
         case METHODID_AGGREGATE_VOTES:
-          serviceImpl.aggregateVotes((terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesRequest) request,
-              (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesResponse>) responseObserver);
+          serviceImpl.aggregateVotes((jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesRequest) request,
+              (io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryAggregateVotesResponse>) responseObserver);
           break;
         case METHODID_PARAMS:
-          serviceImpl.params((terra.oracle.v1beta1.QueryOuterClass.QueryParamsRequest) request,
-              (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.QueryOuterClass.QueryParamsResponse>) responseObserver);
+          serviceImpl.params((jmes.oracle.v1beta1.QueryOuterClass.QueryParamsRequest) request,
+              (io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.QueryOuterClass.QueryParamsResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -1274,7 +1274,7 @@ public final class QueryGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return terra.oracle.v1beta1.QueryOuterClass.getDescriptor();
+      return jmes.oracle.v1beta1.QueryOuterClass.getDescriptor();
     }
 
     @java.lang.Override

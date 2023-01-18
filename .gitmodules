@@ -3,5 +3,5 @@
 	url = git@github.com:jmesworld/core.git
 [submodule "allianced"]
 	path = allianced
-	url = git@github.com:terra-money/alliance.git
+	url = git@github.com:jmes-money/alliance.git
 	branch = v0.0.1-beta1/v0.45-sdk
