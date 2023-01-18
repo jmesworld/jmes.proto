@@ -2,7 +2,7 @@ import Long from "long";
 import { grpc } from "@improbable-eng/grpc-web";
 import _m0 from "protobufjs/minimal";
 import { AccessConfig } from "../../../cosmwasm/wasm/v1/types";
-import { Coin } from "../../../cosmos/base/v1beta1/coin";
+import { Coin } from "../../../src/cosmos/base/v1beta1/coin";
 export declare const protobufPackage = "cosmwasm.wasm.v1";
 /** MsgStoreCode submit Wasm code to the system */
 export interface MsgStoreCode {

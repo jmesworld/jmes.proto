@@ -7,7 +7,7 @@ exports.Model = exports.AbsoluteTxPosition = exports.ContractCodeHistoryEntry = 
 /* eslint-disable */
 const long_1 = __importDefault(require("long"));
 const minimal_1 = __importDefault(require("protobufjs/minimal"));
-const any_1 = require("../../../google/protobuf/any");
+const any_1 = require("../../../src/google/protobuf/any");
 exports.protobufPackage = "cosmwasm.wasm.v1";
 /** AccessType permission types */
 var AccessType;

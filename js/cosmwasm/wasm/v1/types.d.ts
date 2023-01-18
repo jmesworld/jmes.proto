@@ -1,6 +1,6 @@
 import Long from "long";
 import _m0 from "protobufjs/minimal";
-import { Any } from "../../../google/protobuf/any";
+import { Any } from "../../../src/google/protobuf/any";
 export declare const protobufPackage = "cosmwasm.wasm.v1";
 /** AccessType permission types */
 export declare enum AccessType {
