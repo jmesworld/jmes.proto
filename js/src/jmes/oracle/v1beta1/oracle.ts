@@ -2,7 +2,7 @@
 import Long from "long";
 import _m0 from "protobufjs/minimal";
 
-export const protobufPackage = "terra.oracle.v1beta1";
+export const protobufPackage = "jmes.oracle.v1beta1";
 
 /** Params defines the parameters for the oracle module. */
 export interface Params {
@@ -35,7 +35,7 @@ export interface AggregateExchangeRatePrevote {
 
 /**
  * MsgAggregateExchangeRateVote - struct for voting on
- * the exchange rates of Luna denominated in various Terra assets.
+ * the exchange rates of Luna denominated in various Jmes assets.
  */
 export interface AggregateExchangeRateVote {
   exchangeRateTuples: ExchangeRateTuple[];

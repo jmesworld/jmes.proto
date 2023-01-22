@@ -1,4 +1,4 @@
-package terra.market.v1beta1
+package jmes.market.v1beta1
 
 import io.grpc.CallOptions
 import io.grpc.CallOptions.DEFAULT
@@ -23,10 +23,10 @@ import kotlin.coroutines.CoroutineContext
 import kotlin.coroutines.EmptyCoroutineContext
 import kotlin.jvm.JvmOverloads
 import kotlin.jvm.JvmStatic
-import terra.market.v1beta1.MsgGrpc.getServiceDescriptor
+import jmes.market.v1beta1.MsgGrpc.getServiceDescriptor
 
 /**
- * Holder for Kotlin coroutine-based client and server APIs for terra.market.v1beta1.Msg.
+ * Holder for Kotlin coroutine-based client and server APIs for jmes.market.v1beta1.Msg.
  */
 object MsgGrpcKt {
   const val SERVICE_NAME: String = MsgGrpc.SERVICE_NAME
@@ -44,7 +44,7 @@ object MsgGrpcKt {
     get() = MsgGrpc.getSwapSendMethod()
 
   /**
-   * A stub for issuing RPCs to a(n) terra.market.v1beta1.Msg service as suspending coroutines.
+   * A stub for issuing RPCs to a(n) jmes.market.v1beta1.Msg service as suspending coroutines.
    */
   @StubFor(MsgGrpc::class)
   class MsgCoroutineStub @JvmOverloads constructor(
@@ -90,13 +90,13 @@ object MsgGrpcKt {
     )}
 
   /**
-   * Skeletal implementation of the terra.market.v1beta1.Msg service based on Kotlin coroutines.
+   * Skeletal implementation of the jmes.market.v1beta1.Msg service based on Kotlin coroutines.
    */
   abstract class MsgCoroutineImplBase(
     coroutineContext: CoroutineContext = EmptyCoroutineContext
   ) : AbstractCoroutineServerImpl(coroutineContext) {
     /**
-     * Returns the response to an RPC for terra.market.v1beta1.Msg.Swap.
+     * Returns the response to an RPC for jmes.market.v1beta1.Msg.Swap.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -107,10 +107,10 @@ object MsgGrpcKt {
      * @param request The request from the client.
      */
     open suspend fun swap(request: Tx.MsgSwap): Tx.MsgSwapResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.market.v1beta1.Msg.Swap is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.market.v1beta1.Msg.Swap is unimplemented"))
 
     /**
-     * Returns the response to an RPC for terra.market.v1beta1.Msg.SwapSend.
+     * Returns the response to an RPC for jmes.market.v1beta1.Msg.SwapSend.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -121,7 +121,7 @@ object MsgGrpcKt {
      * @param request The request from the client.
      */
     open suspend fun swapSend(request: Tx.MsgSwapSend): Tx.MsgSwapSendResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.market.v1beta1.Msg.SwapSend is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.market.v1beta1.Msg.SwapSend is unimplemented"))
 
     final override fun bindService(): ServerServiceDefinition = builder(getServiceDescriptor())
       .addMethod(unaryServerMethodDefinition(

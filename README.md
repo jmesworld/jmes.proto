@@ -1,4 +1,4 @@
-# terra.proto
+# jmes.proto
 
 This project provides code generation from the proto files. 
 

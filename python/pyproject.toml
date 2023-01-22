@@ -1,6 +1,6 @@
 [tool.poetry]
-name = "terra-proto"
-authors = ["Terraform Labs, PTE. <engineering@terra.money>"]
+name = "jmes-proto"
+authors = ["Jmesform Labs, PTE. <engineering@jmes.money>"]
 classifiers = [
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
@@ -11,13 +11,13 @@ classifiers = [
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
 ]
-description = "The Python Protobuf implementation for Terra"
-homepage = "https://github.com/terra-money/terra.proto"
-keywords = ["jigu", "blockchain", "terra", "defi", "crypto"]
+description = "The Python Protobuf implementation for Jmes"
+homepage = "https://github.com/jmes-money/jmes.proto"
+keywords = ["jigu", "blockchain", "jmes", "defi", "crypto"]
 license = "MIT"
-packages = [{ include = "terra_proto" }]
+packages = [{ include = "jmes_proto" }]
 readme = "README.md"
-repository = "https://github.com/terra-money/terra.proto"
+repository = "https://github.com/jmes-money/jmes.proto"
 version = "2.1.0"
 
 [tool.poetry.dependencies]

@@ -1,16 +1,16 @@
 /* eslint-disable */
 import Long from "long";
 import _m0 from "protobufjs/minimal";
-import { Params } from "../../../terra/market/v1beta1/market";
+import { Params } from "./market";
 
-export const protobufPackage = "terra.market.v1beta1";
+export const protobufPackage = "jmes.market.v1beta1";
 
 /** GenesisState defines the market module's genesis state. */
 export interface GenesisState {
   /** params defines all the paramaters of the module. */
   params?: Params;
-  /** the gap between the TerraPool and the BasePool */
-  terraPoolDelta: Uint8Array;
+  /** the gap between the JmesPool and the BasePool */
+  jmesPoolDelta: Uint8Array;
 }
 
 const baseGenesisState: object = {};
@@ -20,8 +20,8 @@ export const GenesisState = {
     if (message.params !== undefined) {
       Params.encode(message.params, writer.uint32(10).fork()).ldelim();
     }
-    if (message.terraPoolDelta.length !== 0) {
-      writer.uint32(18).bytes(message.terraPoolDelta);
+    if (message.jmesPoolDelta.length !== 0) {
+      writer.uint32(18).bytes(message.jmesPoolDelta);
     }
     return writer;
   },
@@ -30,7 +30,7 @@ export const GenesisState = {
     const reader = input instanceof _m0.Reader ? input : new _m0.Reader(input);
     let end = length === undefined ? reader.len : reader.pos + length;
     const message = { ...baseGenesisState } as GenesisState;
-    message.terraPoolDelta = new Uint8Array();
+    message.jmesPoolDelta = new Uint8Array();
     while (reader.pos < end) {
       const tag = reader.uint32();
       switch (tag >>> 3) {
@@ -38,7 +38,7 @@ export const GenesisState = {
           message.params = Params.decode(reader, reader.uint32());
           break;
         case 2:
-          message.terraPoolDelta = reader.bytes();
+          message.jmesPoolDelta = reader.bytes();
           break;
         default:
           reader.skipType(tag & 7);
@@ -50,14 +50,14 @@ export const GenesisState = {
 
   fromJSON(object: any): GenesisState {
     const message = { ...baseGenesisState } as GenesisState;
-    message.terraPoolDelta = new Uint8Array();
+    message.jmesPoolDelta = new Uint8Array();
     if (object.params !== undefined && object.params !== null) {
       message.params = Params.fromJSON(object.params);
     } else {
       message.params = undefined;
     }
-    if (object.terraPoolDelta !== undefined && object.terraPoolDelta !== null) {
-      message.terraPoolDelta = bytesFromBase64(object.terraPoolDelta);
+    if (object.jmesPoolDelta !== undefined && object.jmesPoolDelta !== null) {
+      message.jmesPoolDelta = bytesFromBase64(object.jmesPoolDelta);
     }
     return message;
   },
@@ -65,9 +65,9 @@ export const GenesisState = {
   toJSON(message: GenesisState): unknown {
     const obj: any = {};
     message.params !== undefined && (obj.params = message.params ? Params.toJSON(message.params) : undefined);
-    message.terraPoolDelta !== undefined &&
-      (obj.terraPoolDelta = base64FromBytes(
-        message.terraPoolDelta !== undefined ? message.terraPoolDelta : new Uint8Array(),
+    message.jmesPoolDelta !== undefined &&
+      (obj.jmesPoolDelta = base64FromBytes(
+        message.jmesPoolDelta !== undefined ? message.jmesPoolDelta : new Uint8Array(),
       ));
     return obj;
   },
@@ -79,10 +79,10 @@ export const GenesisState = {
     } else {
       message.params = undefined;
     }
-    if (object.terraPoolDelta !== undefined && object.terraPoolDelta !== null) {
-      message.terraPoolDelta = object.terraPoolDelta;
+    if (object.jmesPoolDelta !== undefined && object.jmesPoolDelta !== null) {
+      message.jmesPoolDelta = object.jmesPoolDelta;
     } else {
-      message.terraPoolDelta = new Uint8Array();
+      message.jmesPoolDelta = new Uint8Array();
     }
     return message;
   },

@@ -2,10 +2,10 @@
 import Long from "long";
 import { grpc } from "@improbable-eng/grpc-web";
 import _m0 from "protobufjs/minimal";
-import { CodeInfo, ContractInfo, Params } from "../../../terra/wasm/v1beta1/wasm";
+import { CodeInfo, ContractInfo, Params } from "./wasm";
 import { BrowserHeaders } from "browser-headers";
 
-export const protobufPackage = "terra.wasm.v1beta1";
+export const protobufPackage = "jmes.wasm.v1beta1";
 
 /** QueryCodeInfoRequest is the request type for the QueryyCodeInfo RPC method. */
 export interface QueryCodeInfoRequest {
@@ -857,7 +857,7 @@ export class QueryClientImpl implements Query {
 }
 
 export const QueryDesc = {
-  serviceName: "terra.wasm.v1beta1.Query",
+  serviceName: "jmes.wasm.v1beta1.Query",
 };
 
 export const QueryCodeInfoDesc: UnaryMethodDefinitionish = {

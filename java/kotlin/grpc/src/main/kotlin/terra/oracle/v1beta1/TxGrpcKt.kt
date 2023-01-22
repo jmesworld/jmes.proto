@@ -1,4 +1,4 @@
-package terra.oracle.v1beta1
+package jmes.oracle.v1beta1
 
 import io.grpc.CallOptions
 import io.grpc.CallOptions.DEFAULT
@@ -23,10 +23,10 @@ import kotlin.coroutines.CoroutineContext
 import kotlin.coroutines.EmptyCoroutineContext
 import kotlin.jvm.JvmOverloads
 import kotlin.jvm.JvmStatic
-import terra.oracle.v1beta1.MsgGrpc.getServiceDescriptor
+import jmes.oracle.v1beta1.MsgGrpc.getServiceDescriptor
 
 /**
- * Holder for Kotlin coroutine-based client and server APIs for terra.oracle.v1beta1.Msg.
+ * Holder for Kotlin coroutine-based client and server APIs for jmes.oracle.v1beta1.Msg.
  */
 object MsgGrpcKt {
   const val SERVICE_NAME: String = MsgGrpc.SERVICE_NAME
@@ -51,7 +51,7 @@ object MsgGrpcKt {
     get() = MsgGrpc.getDelegateFeedConsentMethod()
 
   /**
-   * A stub for issuing RPCs to a(n) terra.oracle.v1beta1.Msg service as suspending coroutines.
+   * A stub for issuing RPCs to a(n) jmes.oracle.v1beta1.Msg service as suspending coroutines.
    */
   @StubFor(MsgGrpc::class)
   class MsgCoroutineStub @JvmOverloads constructor(
@@ -117,13 +117,13 @@ object MsgGrpcKt {
     )}
 
   /**
-   * Skeletal implementation of the terra.oracle.v1beta1.Msg service based on Kotlin coroutines.
+   * Skeletal implementation of the jmes.oracle.v1beta1.Msg service based on Kotlin coroutines.
    */
   abstract class MsgCoroutineImplBase(
     coroutineContext: CoroutineContext = EmptyCoroutineContext
   ) : AbstractCoroutineServerImpl(coroutineContext) {
     /**
-     * Returns the response to an RPC for terra.oracle.v1beta1.Msg.AggregateExchangeRatePrevote.
+     * Returns the response to an RPC for jmes.oracle.v1beta1.Msg.AggregateExchangeRatePrevote.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -135,10 +135,10 @@ object MsgGrpcKt {
      */
     open suspend fun aggregateExchangeRatePrevote(request: Tx.MsgAggregateExchangeRatePrevote):
         Tx.MsgAggregateExchangeRatePrevoteResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.oracle.v1beta1.Msg.AggregateExchangeRatePrevote is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.oracle.v1beta1.Msg.AggregateExchangeRatePrevote is unimplemented"))
 
     /**
-     * Returns the response to an RPC for terra.oracle.v1beta1.Msg.AggregateExchangeRateVote.
+     * Returns the response to an RPC for jmes.oracle.v1beta1.Msg.AggregateExchangeRateVote.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -150,10 +150,10 @@ object MsgGrpcKt {
      */
     open suspend fun aggregateExchangeRateVote(request: Tx.MsgAggregateExchangeRateVote):
         Tx.MsgAggregateExchangeRateVoteResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.oracle.v1beta1.Msg.AggregateExchangeRateVote is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.oracle.v1beta1.Msg.AggregateExchangeRateVote is unimplemented"))
 
     /**
-     * Returns the response to an RPC for terra.oracle.v1beta1.Msg.DelegateFeedConsent.
+     * Returns the response to an RPC for jmes.oracle.v1beta1.Msg.DelegateFeedConsent.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -165,7 +165,7 @@ object MsgGrpcKt {
      */
     open suspend fun delegateFeedConsent(request: Tx.MsgDelegateFeedConsent):
         Tx.MsgDelegateFeedConsentResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.oracle.v1beta1.Msg.DelegateFeedConsent is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.oracle.v1beta1.Msg.DelegateFeedConsent is unimplemented"))
 
     final override fun bindService(): ServerServiceDefinition = builder(getServiceDescriptor())
       .addMethod(unaryServerMethodDefinition(

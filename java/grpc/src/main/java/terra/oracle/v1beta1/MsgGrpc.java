@@ -1,4 +1,4 @@
-package terra.oracle.v1beta1;
+package jmes.oracle.v1beta1;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
@@ -9,38 +9,38 @@ import static io.grpc.MethodDescriptor.generateFullMethodName;
  */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler (version 1.40.1)",
-    comments = "Source: terra/oracle/v1beta1/tx.proto")
+    comments = "Source: jmes/oracle/v1beta1/tx.proto")
 @io.grpc.stub.annotations.GrpcGenerated
 public final class MsgGrpc {
 
   private MsgGrpc() {}
 
-  public static final String SERVICE_NAME = "terra.oracle.v1beta1.Msg";
+  public static final String SERVICE_NAME = "jmes.oracle.v1beta1.Msg";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<terra.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevote,
-      terra.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevoteResponse> getAggregateExchangeRatePrevoteMethod;
+  private static volatile io.grpc.MethodDescriptor<jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevote,
+      jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevoteResponse> getAggregateExchangeRatePrevoteMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "AggregateExchangeRatePrevote",
-      requestType = terra.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevote.class,
-      responseType = terra.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevoteResponse.class,
+      requestType = jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevote.class,
+      responseType = jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevoteResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevote,
-      terra.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevoteResponse> getAggregateExchangeRatePrevoteMethod() {
-    io.grpc.MethodDescriptor<terra.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevote, terra.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevoteResponse> getAggregateExchangeRatePrevoteMethod;
+  public static io.grpc.MethodDescriptor<jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevote,
+      jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevoteResponse> getAggregateExchangeRatePrevoteMethod() {
+    io.grpc.MethodDescriptor<jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevote, jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevoteResponse> getAggregateExchangeRatePrevoteMethod;
     if ((getAggregateExchangeRatePrevoteMethod = MsgGrpc.getAggregateExchangeRatePrevoteMethod) == null) {
       synchronized (MsgGrpc.class) {
         if ((getAggregateExchangeRatePrevoteMethod = MsgGrpc.getAggregateExchangeRatePrevoteMethod) == null) {
           MsgGrpc.getAggregateExchangeRatePrevoteMethod = getAggregateExchangeRatePrevoteMethod =
-              io.grpc.MethodDescriptor.<terra.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevote, terra.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevoteResponse>newBuilder()
+              io.grpc.MethodDescriptor.<jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevote, jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevoteResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "AggregateExchangeRatePrevote"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevote.getDefaultInstance()))
+                  jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevote.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevoteResponse.getDefaultInstance()))
+                  jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevoteResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MsgMethodDescriptorSupplier("AggregateExchangeRatePrevote"))
               .build();
         }
@@ -49,29 +49,29 @@ public final class MsgGrpc {
     return getAggregateExchangeRatePrevoteMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<terra.oracle.v1beta1.Tx.MsgAggregateExchangeRateVote,
-      terra.oracle.v1beta1.Tx.MsgAggregateExchangeRateVoteResponse> getAggregateExchangeRateVoteMethod;
+  private static volatile io.grpc.MethodDescriptor<jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRateVote,
+      jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRateVoteResponse> getAggregateExchangeRateVoteMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "AggregateExchangeRateVote",
-      requestType = terra.oracle.v1beta1.Tx.MsgAggregateExchangeRateVote.class,
-      responseType = terra.oracle.v1beta1.Tx.MsgAggregateExchangeRateVoteResponse.class,
+      requestType = jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRateVote.class,
+      responseType = jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRateVoteResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.oracle.v1beta1.Tx.MsgAggregateExchangeRateVote,
-      terra.oracle.v1beta1.Tx.MsgAggregateExchangeRateVoteResponse> getAggregateExchangeRateVoteMethod() {
-    io.grpc.MethodDescriptor<terra.oracle.v1beta1.Tx.MsgAggregateExchangeRateVote, terra.oracle.v1beta1.Tx.MsgAggregateExchangeRateVoteResponse> getAggregateExchangeRateVoteMethod;
+  public static io.grpc.MethodDescriptor<jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRateVote,
+      jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRateVoteResponse> getAggregateExchangeRateVoteMethod() {
+    io.grpc.MethodDescriptor<jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRateVote, jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRateVoteResponse> getAggregateExchangeRateVoteMethod;
     if ((getAggregateExchangeRateVoteMethod = MsgGrpc.getAggregateExchangeRateVoteMethod) == null) {
       synchronized (MsgGrpc.class) {
         if ((getAggregateExchangeRateVoteMethod = MsgGrpc.getAggregateExchangeRateVoteMethod) == null) {
           MsgGrpc.getAggregateExchangeRateVoteMethod = getAggregateExchangeRateVoteMethod =
-              io.grpc.MethodDescriptor.<terra.oracle.v1beta1.Tx.MsgAggregateExchangeRateVote, terra.oracle.v1beta1.Tx.MsgAggregateExchangeRateVoteResponse>newBuilder()
+              io.grpc.MethodDescriptor.<jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRateVote, jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRateVoteResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "AggregateExchangeRateVote"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.oracle.v1beta1.Tx.MsgAggregateExchangeRateVote.getDefaultInstance()))
+                  jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRateVote.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.oracle.v1beta1.Tx.MsgAggregateExchangeRateVoteResponse.getDefaultInstance()))
+                  jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRateVoteResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MsgMethodDescriptorSupplier("AggregateExchangeRateVote"))
               .build();
         }
@@ -80,29 +80,29 @@ public final class MsgGrpc {
     return getAggregateExchangeRateVoteMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<terra.oracle.v1beta1.Tx.MsgDelegateFeedConsent,
-      terra.oracle.v1beta1.Tx.MsgDelegateFeedConsentResponse> getDelegateFeedConsentMethod;
+  private static volatile io.grpc.MethodDescriptor<jmes.oracle.v1beta1.Tx.MsgDelegateFeedConsent,
+      jmes.oracle.v1beta1.Tx.MsgDelegateFeedConsentResponse> getDelegateFeedConsentMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "DelegateFeedConsent",
-      requestType = terra.oracle.v1beta1.Tx.MsgDelegateFeedConsent.class,
-      responseType = terra.oracle.v1beta1.Tx.MsgDelegateFeedConsentResponse.class,
+      requestType = jmes.oracle.v1beta1.Tx.MsgDelegateFeedConsent.class,
+      responseType = jmes.oracle.v1beta1.Tx.MsgDelegateFeedConsentResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.oracle.v1beta1.Tx.MsgDelegateFeedConsent,
-      terra.oracle.v1beta1.Tx.MsgDelegateFeedConsentResponse> getDelegateFeedConsentMethod() {
-    io.grpc.MethodDescriptor<terra.oracle.v1beta1.Tx.MsgDelegateFeedConsent, terra.oracle.v1beta1.Tx.MsgDelegateFeedConsentResponse> getDelegateFeedConsentMethod;
+  public static io.grpc.MethodDescriptor<jmes.oracle.v1beta1.Tx.MsgDelegateFeedConsent,
+      jmes.oracle.v1beta1.Tx.MsgDelegateFeedConsentResponse> getDelegateFeedConsentMethod() {
+    io.grpc.MethodDescriptor<jmes.oracle.v1beta1.Tx.MsgDelegateFeedConsent, jmes.oracle.v1beta1.Tx.MsgDelegateFeedConsentResponse> getDelegateFeedConsentMethod;
     if ((getDelegateFeedConsentMethod = MsgGrpc.getDelegateFeedConsentMethod) == null) {
       synchronized (MsgGrpc.class) {
         if ((getDelegateFeedConsentMethod = MsgGrpc.getDelegateFeedConsentMethod) == null) {
           MsgGrpc.getDelegateFeedConsentMethod = getDelegateFeedConsentMethod =
-              io.grpc.MethodDescriptor.<terra.oracle.v1beta1.Tx.MsgDelegateFeedConsent, terra.oracle.v1beta1.Tx.MsgDelegateFeedConsentResponse>newBuilder()
+              io.grpc.MethodDescriptor.<jmes.oracle.v1beta1.Tx.MsgDelegateFeedConsent, jmes.oracle.v1beta1.Tx.MsgDelegateFeedConsentResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "DelegateFeedConsent"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.oracle.v1beta1.Tx.MsgDelegateFeedConsent.getDefaultInstance()))
+                  jmes.oracle.v1beta1.Tx.MsgDelegateFeedConsent.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.oracle.v1beta1.Tx.MsgDelegateFeedConsentResponse.getDefaultInstance()))
+                  jmes.oracle.v1beta1.Tx.MsgDelegateFeedConsentResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MsgMethodDescriptorSupplier("DelegateFeedConsent"))
               .build();
         }
@@ -168,8 +168,8 @@ public final class MsgGrpc {
      * aggregate exchange rate prevote
      * </pre>
      */
-    public void aggregateExchangeRatePrevote(terra.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevote request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevoteResponse> responseObserver) {
+    public void aggregateExchangeRatePrevote(jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevote request,
+        io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevoteResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getAggregateExchangeRatePrevoteMethod(), responseObserver);
     }
 
@@ -179,8 +179,8 @@ public final class MsgGrpc {
      * aggregate exchange rate vote
      * </pre>
      */
-    public void aggregateExchangeRateVote(terra.oracle.v1beta1.Tx.MsgAggregateExchangeRateVote request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.Tx.MsgAggregateExchangeRateVoteResponse> responseObserver) {
+    public void aggregateExchangeRateVote(jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRateVote request,
+        io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRateVoteResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getAggregateExchangeRateVoteMethod(), responseObserver);
     }
 
@@ -189,8 +189,8 @@ public final class MsgGrpc {
      * DelegateFeedConsent defines a method for setting the feeder delegation
      * </pre>
      */
-    public void delegateFeedConsent(terra.oracle.v1beta1.Tx.MsgDelegateFeedConsent request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.Tx.MsgDelegateFeedConsentResponse> responseObserver) {
+    public void delegateFeedConsent(jmes.oracle.v1beta1.Tx.MsgDelegateFeedConsent request,
+        io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.Tx.MsgDelegateFeedConsentResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getDelegateFeedConsentMethod(), responseObserver);
     }
 
@@ -200,22 +200,22 @@ public final class MsgGrpc {
             getAggregateExchangeRatePrevoteMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevote,
-                terra.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevoteResponse>(
+                jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevote,
+                jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevoteResponse>(
                   this, METHODID_AGGREGATE_EXCHANGE_RATE_PREVOTE)))
           .addMethod(
             getAggregateExchangeRateVoteMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.oracle.v1beta1.Tx.MsgAggregateExchangeRateVote,
-                terra.oracle.v1beta1.Tx.MsgAggregateExchangeRateVoteResponse>(
+                jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRateVote,
+                jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRateVoteResponse>(
                   this, METHODID_AGGREGATE_EXCHANGE_RATE_VOTE)))
           .addMethod(
             getDelegateFeedConsentMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.oracle.v1beta1.Tx.MsgDelegateFeedConsent,
-                terra.oracle.v1beta1.Tx.MsgDelegateFeedConsentResponse>(
+                jmes.oracle.v1beta1.Tx.MsgDelegateFeedConsent,
+                jmes.oracle.v1beta1.Tx.MsgDelegateFeedConsentResponse>(
                   this, METHODID_DELEGATE_FEED_CONSENT)))
           .build();
     }
@@ -244,8 +244,8 @@ public final class MsgGrpc {
      * aggregate exchange rate prevote
      * </pre>
      */
-    public void aggregateExchangeRatePrevote(terra.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevote request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevoteResponse> responseObserver) {
+    public void aggregateExchangeRatePrevote(jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevote request,
+        io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevoteResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getAggregateExchangeRatePrevoteMethod(), getCallOptions()), request, responseObserver);
     }
@@ -256,8 +256,8 @@ public final class MsgGrpc {
      * aggregate exchange rate vote
      * </pre>
      */
-    public void aggregateExchangeRateVote(terra.oracle.v1beta1.Tx.MsgAggregateExchangeRateVote request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.Tx.MsgAggregateExchangeRateVoteResponse> responseObserver) {
+    public void aggregateExchangeRateVote(jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRateVote request,
+        io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRateVoteResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getAggregateExchangeRateVoteMethod(), getCallOptions()), request, responseObserver);
     }
@@ -267,8 +267,8 @@ public final class MsgGrpc {
      * DelegateFeedConsent defines a method for setting the feeder delegation
      * </pre>
      */
-    public void delegateFeedConsent(terra.oracle.v1beta1.Tx.MsgDelegateFeedConsent request,
-        io.grpc.stub.StreamObserver<terra.oracle.v1beta1.Tx.MsgDelegateFeedConsentResponse> responseObserver) {
+    public void delegateFeedConsent(jmes.oracle.v1beta1.Tx.MsgDelegateFeedConsent request,
+        io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.Tx.MsgDelegateFeedConsentResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getDelegateFeedConsentMethod(), getCallOptions()), request, responseObserver);
     }
@@ -297,7 +297,7 @@ public final class MsgGrpc {
      * aggregate exchange rate prevote
      * </pre>
      */
-    public terra.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevoteResponse aggregateExchangeRatePrevote(terra.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevote request) {
+    public jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevoteResponse aggregateExchangeRatePrevote(jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevote request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getAggregateExchangeRatePrevoteMethod(), getCallOptions(), request);
     }
@@ -308,7 +308,7 @@ public final class MsgGrpc {
      * aggregate exchange rate vote
      * </pre>
      */
-    public terra.oracle.v1beta1.Tx.MsgAggregateExchangeRateVoteResponse aggregateExchangeRateVote(terra.oracle.v1beta1.Tx.MsgAggregateExchangeRateVote request) {
+    public jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRateVoteResponse aggregateExchangeRateVote(jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRateVote request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getAggregateExchangeRateVoteMethod(), getCallOptions(), request);
     }
@@ -318,7 +318,7 @@ public final class MsgGrpc {
      * DelegateFeedConsent defines a method for setting the feeder delegation
      * </pre>
      */
-    public terra.oracle.v1beta1.Tx.MsgDelegateFeedConsentResponse delegateFeedConsent(terra.oracle.v1beta1.Tx.MsgDelegateFeedConsent request) {
+    public jmes.oracle.v1beta1.Tx.MsgDelegateFeedConsentResponse delegateFeedConsent(jmes.oracle.v1beta1.Tx.MsgDelegateFeedConsent request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getDelegateFeedConsentMethod(), getCallOptions(), request);
     }
@@ -347,8 +347,8 @@ public final class MsgGrpc {
      * aggregate exchange rate prevote
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevoteResponse> aggregateExchangeRatePrevote(
-        terra.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevote request) {
+    public com.google.common.util.concurrent.ListenableFuture<jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevoteResponse> aggregateExchangeRatePrevote(
+        jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevote request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getAggregateExchangeRatePrevoteMethod(), getCallOptions()), request);
     }
@@ -359,8 +359,8 @@ public final class MsgGrpc {
      * aggregate exchange rate vote
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.oracle.v1beta1.Tx.MsgAggregateExchangeRateVoteResponse> aggregateExchangeRateVote(
-        terra.oracle.v1beta1.Tx.MsgAggregateExchangeRateVote request) {
+    public com.google.common.util.concurrent.ListenableFuture<jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRateVoteResponse> aggregateExchangeRateVote(
+        jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRateVote request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getAggregateExchangeRateVoteMethod(), getCallOptions()), request);
     }
@@ -370,8 +370,8 @@ public final class MsgGrpc {
      * DelegateFeedConsent defines a method for setting the feeder delegation
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.oracle.v1beta1.Tx.MsgDelegateFeedConsentResponse> delegateFeedConsent(
-        terra.oracle.v1beta1.Tx.MsgDelegateFeedConsent request) {
+    public com.google.common.util.concurrent.ListenableFuture<jmes.oracle.v1beta1.Tx.MsgDelegateFeedConsentResponse> delegateFeedConsent(
+        jmes.oracle.v1beta1.Tx.MsgDelegateFeedConsent request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getDelegateFeedConsentMethod(), getCallOptions()), request);
     }
@@ -399,16 +399,16 @@ public final class MsgGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_AGGREGATE_EXCHANGE_RATE_PREVOTE:
-          serviceImpl.aggregateExchangeRatePrevote((terra.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevote) request,
-              (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevoteResponse>) responseObserver);
+          serviceImpl.aggregateExchangeRatePrevote((jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevote) request,
+              (io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRatePrevoteResponse>) responseObserver);
           break;
         case METHODID_AGGREGATE_EXCHANGE_RATE_VOTE:
-          serviceImpl.aggregateExchangeRateVote((terra.oracle.v1beta1.Tx.MsgAggregateExchangeRateVote) request,
-              (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.Tx.MsgAggregateExchangeRateVoteResponse>) responseObserver);
+          serviceImpl.aggregateExchangeRateVote((jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRateVote) request,
+              (io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.Tx.MsgAggregateExchangeRateVoteResponse>) responseObserver);
           break;
         case METHODID_DELEGATE_FEED_CONSENT:
-          serviceImpl.delegateFeedConsent((terra.oracle.v1beta1.Tx.MsgDelegateFeedConsent) request,
-              (io.grpc.stub.StreamObserver<terra.oracle.v1beta1.Tx.MsgDelegateFeedConsentResponse>) responseObserver);
+          serviceImpl.delegateFeedConsent((jmes.oracle.v1beta1.Tx.MsgDelegateFeedConsent) request,
+              (io.grpc.stub.StreamObserver<jmes.oracle.v1beta1.Tx.MsgDelegateFeedConsentResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -432,7 +432,7 @@ public final class MsgGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return terra.oracle.v1beta1.Tx.getDescriptor();
+      return jmes.oracle.v1beta1.Tx.getDescriptor();
     }
 
     @java.lang.Override

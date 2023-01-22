@@ -7,11 +7,11 @@ import {
   AggregateExchangeRateVote,
   Params,
   Denom,
-} from "../../../terra/oracle/v1beta1/oracle";
+} from "./oracle";
 import { BrowserHeaders } from "browser-headers";
 import { DecCoin } from "../../../cosmos/base/v1beta1/coin";
 
-export const protobufPackage = "terra.oracle.v1beta1";
+export const protobufPackage = "jmes.oracle.v1beta1";
 
 /** QueryExchangeRateRequest is the request type for the Query/ExchangeRate RPC method. */
 export interface QueryExchangeRateRequest {
@@ -24,7 +24,7 @@ export interface QueryExchangeRateRequest {
  * Query/ExchangeRate RPC method.
  */
 export interface QueryExchangeRateResponse {
-  /** exchange_rate defines the exchange rate of Luna denominated in various Terra */
+  /** exchange_rate defines the exchange rate of Luna denominated in various Jmes */
   exchangeRate: string;
 }
 
@@ -1735,7 +1735,7 @@ export class QueryClientImpl implements Query {
 }
 
 export const QueryDesc = {
-  serviceName: "terra.oracle.v1beta1.Query",
+  serviceName: "jmes.oracle.v1beta1.Query",
 };
 
 export const QueryExchangeRateDesc: UnaryMethodDefinitionish = {

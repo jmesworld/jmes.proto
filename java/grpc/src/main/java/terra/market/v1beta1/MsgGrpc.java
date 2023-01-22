@@ -1,4 +1,4 @@
-package terra.market.v1beta1;
+package jmes.market.v1beta1;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
@@ -9,38 +9,38 @@ import static io.grpc.MethodDescriptor.generateFullMethodName;
  */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler (version 1.40.1)",
-    comments = "Source: terra/market/v1beta1/tx.proto")
+    comments = "Source: jmes/market/v1beta1/tx.proto")
 @io.grpc.stub.annotations.GrpcGenerated
 public final class MsgGrpc {
 
   private MsgGrpc() {}
 
-  public static final String SERVICE_NAME = "terra.market.v1beta1.Msg";
+  public static final String SERVICE_NAME = "jmes.market.v1beta1.Msg";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<terra.market.v1beta1.Tx.MsgSwap,
-      terra.market.v1beta1.Tx.MsgSwapResponse> getSwapMethod;
+  private static volatile io.grpc.MethodDescriptor<jmes.market.v1beta1.Tx.MsgSwap,
+      jmes.market.v1beta1.Tx.MsgSwapResponse> getSwapMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "Swap",
-      requestType = terra.market.v1beta1.Tx.MsgSwap.class,
-      responseType = terra.market.v1beta1.Tx.MsgSwapResponse.class,
+      requestType = jmes.market.v1beta1.Tx.MsgSwap.class,
+      responseType = jmes.market.v1beta1.Tx.MsgSwapResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.market.v1beta1.Tx.MsgSwap,
-      terra.market.v1beta1.Tx.MsgSwapResponse> getSwapMethod() {
-    io.grpc.MethodDescriptor<terra.market.v1beta1.Tx.MsgSwap, terra.market.v1beta1.Tx.MsgSwapResponse> getSwapMethod;
+  public static io.grpc.MethodDescriptor<jmes.market.v1beta1.Tx.MsgSwap,
+      jmes.market.v1beta1.Tx.MsgSwapResponse> getSwapMethod() {
+    io.grpc.MethodDescriptor<jmes.market.v1beta1.Tx.MsgSwap, jmes.market.v1beta1.Tx.MsgSwapResponse> getSwapMethod;
     if ((getSwapMethod = MsgGrpc.getSwapMethod) == null) {
       synchronized (MsgGrpc.class) {
         if ((getSwapMethod = MsgGrpc.getSwapMethod) == null) {
           MsgGrpc.getSwapMethod = getSwapMethod =
-              io.grpc.MethodDescriptor.<terra.market.v1beta1.Tx.MsgSwap, terra.market.v1beta1.Tx.MsgSwapResponse>newBuilder()
+              io.grpc.MethodDescriptor.<jmes.market.v1beta1.Tx.MsgSwap, jmes.market.v1beta1.Tx.MsgSwapResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "Swap"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.market.v1beta1.Tx.MsgSwap.getDefaultInstance()))
+                  jmes.market.v1beta1.Tx.MsgSwap.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.market.v1beta1.Tx.MsgSwapResponse.getDefaultInstance()))
+                  jmes.market.v1beta1.Tx.MsgSwapResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MsgMethodDescriptorSupplier("Swap"))
               .build();
         }
@@ -49,29 +49,29 @@ public final class MsgGrpc {
     return getSwapMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<terra.market.v1beta1.Tx.MsgSwapSend,
-      terra.market.v1beta1.Tx.MsgSwapSendResponse> getSwapSendMethod;
+  private static volatile io.grpc.MethodDescriptor<jmes.market.v1beta1.Tx.MsgSwapSend,
+      jmes.market.v1beta1.Tx.MsgSwapSendResponse> getSwapSendMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "SwapSend",
-      requestType = terra.market.v1beta1.Tx.MsgSwapSend.class,
-      responseType = terra.market.v1beta1.Tx.MsgSwapSendResponse.class,
+      requestType = jmes.market.v1beta1.Tx.MsgSwapSend.class,
+      responseType = jmes.market.v1beta1.Tx.MsgSwapSendResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.market.v1beta1.Tx.MsgSwapSend,
-      terra.market.v1beta1.Tx.MsgSwapSendResponse> getSwapSendMethod() {
-    io.grpc.MethodDescriptor<terra.market.v1beta1.Tx.MsgSwapSend, terra.market.v1beta1.Tx.MsgSwapSendResponse> getSwapSendMethod;
+  public static io.grpc.MethodDescriptor<jmes.market.v1beta1.Tx.MsgSwapSend,
+      jmes.market.v1beta1.Tx.MsgSwapSendResponse> getSwapSendMethod() {
+    io.grpc.MethodDescriptor<jmes.market.v1beta1.Tx.MsgSwapSend, jmes.market.v1beta1.Tx.MsgSwapSendResponse> getSwapSendMethod;
     if ((getSwapSendMethod = MsgGrpc.getSwapSendMethod) == null) {
       synchronized (MsgGrpc.class) {
         if ((getSwapSendMethod = MsgGrpc.getSwapSendMethod) == null) {
           MsgGrpc.getSwapSendMethod = getSwapSendMethod =
-              io.grpc.MethodDescriptor.<terra.market.v1beta1.Tx.MsgSwapSend, terra.market.v1beta1.Tx.MsgSwapSendResponse>newBuilder()
+              io.grpc.MethodDescriptor.<jmes.market.v1beta1.Tx.MsgSwapSend, jmes.market.v1beta1.Tx.MsgSwapSendResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "SwapSend"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.market.v1beta1.Tx.MsgSwapSend.getDefaultInstance()))
+                  jmes.market.v1beta1.Tx.MsgSwapSend.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.market.v1beta1.Tx.MsgSwapSendResponse.getDefaultInstance()))
+                  jmes.market.v1beta1.Tx.MsgSwapSendResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MsgMethodDescriptorSupplier("SwapSend"))
               .build();
         }
@@ -137,8 +137,8 @@ public final class MsgGrpc {
      * denom.
      * </pre>
      */
-    public void swap(terra.market.v1beta1.Tx.MsgSwap request,
-        io.grpc.stub.StreamObserver<terra.market.v1beta1.Tx.MsgSwapResponse> responseObserver) {
+    public void swap(jmes.market.v1beta1.Tx.MsgSwap request,
+        io.grpc.stub.StreamObserver<jmes.market.v1beta1.Tx.MsgSwapResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getSwapMethod(), responseObserver);
     }
 
@@ -148,8 +148,8 @@ public final class MsgGrpc {
      * account.
      * </pre>
      */
-    public void swapSend(terra.market.v1beta1.Tx.MsgSwapSend request,
-        io.grpc.stub.StreamObserver<terra.market.v1beta1.Tx.MsgSwapSendResponse> responseObserver) {
+    public void swapSend(jmes.market.v1beta1.Tx.MsgSwapSend request,
+        io.grpc.stub.StreamObserver<jmes.market.v1beta1.Tx.MsgSwapSendResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getSwapSendMethod(), responseObserver);
     }
 
@@ -159,15 +159,15 @@ public final class MsgGrpc {
             getSwapMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.market.v1beta1.Tx.MsgSwap,
-                terra.market.v1beta1.Tx.MsgSwapResponse>(
+                jmes.market.v1beta1.Tx.MsgSwap,
+                jmes.market.v1beta1.Tx.MsgSwapResponse>(
                   this, METHODID_SWAP)))
           .addMethod(
             getSwapSendMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.market.v1beta1.Tx.MsgSwapSend,
-                terra.market.v1beta1.Tx.MsgSwapSendResponse>(
+                jmes.market.v1beta1.Tx.MsgSwapSend,
+                jmes.market.v1beta1.Tx.MsgSwapSendResponse>(
                   this, METHODID_SWAP_SEND)))
           .build();
     }
@@ -196,8 +196,8 @@ public final class MsgGrpc {
      * denom.
      * </pre>
      */
-    public void swap(terra.market.v1beta1.Tx.MsgSwap request,
-        io.grpc.stub.StreamObserver<terra.market.v1beta1.Tx.MsgSwapResponse> responseObserver) {
+    public void swap(jmes.market.v1beta1.Tx.MsgSwap request,
+        io.grpc.stub.StreamObserver<jmes.market.v1beta1.Tx.MsgSwapResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getSwapMethod(), getCallOptions()), request, responseObserver);
     }
@@ -208,8 +208,8 @@ public final class MsgGrpc {
      * account.
      * </pre>
      */
-    public void swapSend(terra.market.v1beta1.Tx.MsgSwapSend request,
-        io.grpc.stub.StreamObserver<terra.market.v1beta1.Tx.MsgSwapSendResponse> responseObserver) {
+    public void swapSend(jmes.market.v1beta1.Tx.MsgSwapSend request,
+        io.grpc.stub.StreamObserver<jmes.market.v1beta1.Tx.MsgSwapSendResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getSwapSendMethod(), getCallOptions()), request, responseObserver);
     }
@@ -238,7 +238,7 @@ public final class MsgGrpc {
      * denom.
      * </pre>
      */
-    public terra.market.v1beta1.Tx.MsgSwapResponse swap(terra.market.v1beta1.Tx.MsgSwap request) {
+    public jmes.market.v1beta1.Tx.MsgSwapResponse swap(jmes.market.v1beta1.Tx.MsgSwap request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getSwapMethod(), getCallOptions(), request);
     }
@@ -249,7 +249,7 @@ public final class MsgGrpc {
      * account.
      * </pre>
      */
-    public terra.market.v1beta1.Tx.MsgSwapSendResponse swapSend(terra.market.v1beta1.Tx.MsgSwapSend request) {
+    public jmes.market.v1beta1.Tx.MsgSwapSendResponse swapSend(jmes.market.v1beta1.Tx.MsgSwapSend request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getSwapSendMethod(), getCallOptions(), request);
     }
@@ -278,8 +278,8 @@ public final class MsgGrpc {
      * denom.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.market.v1beta1.Tx.MsgSwapResponse> swap(
-        terra.market.v1beta1.Tx.MsgSwap request) {
+    public com.google.common.util.concurrent.ListenableFuture<jmes.market.v1beta1.Tx.MsgSwapResponse> swap(
+        jmes.market.v1beta1.Tx.MsgSwap request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getSwapMethod(), getCallOptions()), request);
     }
@@ -290,8 +290,8 @@ public final class MsgGrpc {
      * account.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.market.v1beta1.Tx.MsgSwapSendResponse> swapSend(
-        terra.market.v1beta1.Tx.MsgSwapSend request) {
+    public com.google.common.util.concurrent.ListenableFuture<jmes.market.v1beta1.Tx.MsgSwapSendResponse> swapSend(
+        jmes.market.v1beta1.Tx.MsgSwapSend request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getSwapSendMethod(), getCallOptions()), request);
     }
@@ -318,12 +318,12 @@ public final class MsgGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_SWAP:
-          serviceImpl.swap((terra.market.v1beta1.Tx.MsgSwap) request,
-              (io.grpc.stub.StreamObserver<terra.market.v1beta1.Tx.MsgSwapResponse>) responseObserver);
+          serviceImpl.swap((jmes.market.v1beta1.Tx.MsgSwap) request,
+              (io.grpc.stub.StreamObserver<jmes.market.v1beta1.Tx.MsgSwapResponse>) responseObserver);
           break;
         case METHODID_SWAP_SEND:
-          serviceImpl.swapSend((terra.market.v1beta1.Tx.MsgSwapSend) request,
-              (io.grpc.stub.StreamObserver<terra.market.v1beta1.Tx.MsgSwapSendResponse>) responseObserver);
+          serviceImpl.swapSend((jmes.market.v1beta1.Tx.MsgSwapSend) request,
+              (io.grpc.stub.StreamObserver<jmes.market.v1beta1.Tx.MsgSwapSendResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -347,7 +347,7 @@ public final class MsgGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return terra.market.v1beta1.Tx.getDescriptor();
+      return jmes.market.v1beta1.Tx.getDescriptor();
     }
 
     @java.lang.Override

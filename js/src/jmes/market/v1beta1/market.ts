@@ -2,7 +2,7 @@
 import Long from "long";
 import _m0 from "protobufjs/minimal";
 
-export const protobufPackage = "terra.market.v1beta1";
+export const protobufPackage = "jmes.market.v1beta1";
 
 /** Params defines the parameters for the market module. */
 export interface Params {

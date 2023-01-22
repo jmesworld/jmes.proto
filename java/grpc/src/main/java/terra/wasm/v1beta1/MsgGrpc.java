@@ -1,4 +1,4 @@
-package terra.wasm.v1beta1;
+package jmes.wasm.v1beta1;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
@@ -9,38 +9,38 @@ import static io.grpc.MethodDescriptor.generateFullMethodName;
  */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler (version 1.40.1)",
-    comments = "Source: terra/wasm/v1beta1/tx.proto")
+    comments = "Source: jmes/wasm/v1beta1/tx.proto")
 @io.grpc.stub.annotations.GrpcGenerated
 public final class MsgGrpc {
 
   private MsgGrpc() {}
 
-  public static final String SERVICE_NAME = "terra.wasm.v1beta1.Msg";
+  public static final String SERVICE_NAME = "jmes.wasm.v1beta1.Msg";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<terra.wasm.v1beta1.Tx.MsgStoreCode,
-      terra.wasm.v1beta1.Tx.MsgStoreCodeResponse> getStoreCodeMethod;
+  private static volatile io.grpc.MethodDescriptor<jmes.wasm.v1beta1.Tx.MsgStoreCode,
+      jmes.wasm.v1beta1.Tx.MsgStoreCodeResponse> getStoreCodeMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "StoreCode",
-      requestType = terra.wasm.v1beta1.Tx.MsgStoreCode.class,
-      responseType = terra.wasm.v1beta1.Tx.MsgStoreCodeResponse.class,
+      requestType = jmes.wasm.v1beta1.Tx.MsgStoreCode.class,
+      responseType = jmes.wasm.v1beta1.Tx.MsgStoreCodeResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.wasm.v1beta1.Tx.MsgStoreCode,
-      terra.wasm.v1beta1.Tx.MsgStoreCodeResponse> getStoreCodeMethod() {
-    io.grpc.MethodDescriptor<terra.wasm.v1beta1.Tx.MsgStoreCode, terra.wasm.v1beta1.Tx.MsgStoreCodeResponse> getStoreCodeMethod;
+  public static io.grpc.MethodDescriptor<jmes.wasm.v1beta1.Tx.MsgStoreCode,
+      jmes.wasm.v1beta1.Tx.MsgStoreCodeResponse> getStoreCodeMethod() {
+    io.grpc.MethodDescriptor<jmes.wasm.v1beta1.Tx.MsgStoreCode, jmes.wasm.v1beta1.Tx.MsgStoreCodeResponse> getStoreCodeMethod;
     if ((getStoreCodeMethod = MsgGrpc.getStoreCodeMethod) == null) {
       synchronized (MsgGrpc.class) {
         if ((getStoreCodeMethod = MsgGrpc.getStoreCodeMethod) == null) {
           MsgGrpc.getStoreCodeMethod = getStoreCodeMethod =
-              io.grpc.MethodDescriptor.<terra.wasm.v1beta1.Tx.MsgStoreCode, terra.wasm.v1beta1.Tx.MsgStoreCodeResponse>newBuilder()
+              io.grpc.MethodDescriptor.<jmes.wasm.v1beta1.Tx.MsgStoreCode, jmes.wasm.v1beta1.Tx.MsgStoreCodeResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "StoreCode"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.wasm.v1beta1.Tx.MsgStoreCode.getDefaultInstance()))
+                  jmes.wasm.v1beta1.Tx.MsgStoreCode.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.wasm.v1beta1.Tx.MsgStoreCodeResponse.getDefaultInstance()))
+                  jmes.wasm.v1beta1.Tx.MsgStoreCodeResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MsgMethodDescriptorSupplier("StoreCode"))
               .build();
         }
@@ -49,29 +49,29 @@ public final class MsgGrpc {
     return getStoreCodeMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<terra.wasm.v1beta1.Tx.MsgMigrateCode,
-      terra.wasm.v1beta1.Tx.MsgMigrateCodeResponse> getMigrateCodeMethod;
+  private static volatile io.grpc.MethodDescriptor<jmes.wasm.v1beta1.Tx.MsgMigrateCode,
+      jmes.wasm.v1beta1.Tx.MsgMigrateCodeResponse> getMigrateCodeMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "MigrateCode",
-      requestType = terra.wasm.v1beta1.Tx.MsgMigrateCode.class,
-      responseType = terra.wasm.v1beta1.Tx.MsgMigrateCodeResponse.class,
+      requestType = jmes.wasm.v1beta1.Tx.MsgMigrateCode.class,
+      responseType = jmes.wasm.v1beta1.Tx.MsgMigrateCodeResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.wasm.v1beta1.Tx.MsgMigrateCode,
-      terra.wasm.v1beta1.Tx.MsgMigrateCodeResponse> getMigrateCodeMethod() {
-    io.grpc.MethodDescriptor<terra.wasm.v1beta1.Tx.MsgMigrateCode, terra.wasm.v1beta1.Tx.MsgMigrateCodeResponse> getMigrateCodeMethod;
+  public static io.grpc.MethodDescriptor<jmes.wasm.v1beta1.Tx.MsgMigrateCode,
+      jmes.wasm.v1beta1.Tx.MsgMigrateCodeResponse> getMigrateCodeMethod() {
+    io.grpc.MethodDescriptor<jmes.wasm.v1beta1.Tx.MsgMigrateCode, jmes.wasm.v1beta1.Tx.MsgMigrateCodeResponse> getMigrateCodeMethod;
     if ((getMigrateCodeMethod = MsgGrpc.getMigrateCodeMethod) == null) {
       synchronized (MsgGrpc.class) {
         if ((getMigrateCodeMethod = MsgGrpc.getMigrateCodeMethod) == null) {
           MsgGrpc.getMigrateCodeMethod = getMigrateCodeMethod =
-              io.grpc.MethodDescriptor.<terra.wasm.v1beta1.Tx.MsgMigrateCode, terra.wasm.v1beta1.Tx.MsgMigrateCodeResponse>newBuilder()
+              io.grpc.MethodDescriptor.<jmes.wasm.v1beta1.Tx.MsgMigrateCode, jmes.wasm.v1beta1.Tx.MsgMigrateCodeResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "MigrateCode"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.wasm.v1beta1.Tx.MsgMigrateCode.getDefaultInstance()))
+                  jmes.wasm.v1beta1.Tx.MsgMigrateCode.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.wasm.v1beta1.Tx.MsgMigrateCodeResponse.getDefaultInstance()))
+                  jmes.wasm.v1beta1.Tx.MsgMigrateCodeResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MsgMethodDescriptorSupplier("MigrateCode"))
               .build();
         }
@@ -80,29 +80,29 @@ public final class MsgGrpc {
     return getMigrateCodeMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<terra.wasm.v1beta1.Tx.MsgInstantiateContract,
-      terra.wasm.v1beta1.Tx.MsgInstantiateContractResponse> getInstantiateContractMethod;
+  private static volatile io.grpc.MethodDescriptor<jmes.wasm.v1beta1.Tx.MsgInstantiateContract,
+      jmes.wasm.v1beta1.Tx.MsgInstantiateContractResponse> getInstantiateContractMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "InstantiateContract",
-      requestType = terra.wasm.v1beta1.Tx.MsgInstantiateContract.class,
-      responseType = terra.wasm.v1beta1.Tx.MsgInstantiateContractResponse.class,
+      requestType = jmes.wasm.v1beta1.Tx.MsgInstantiateContract.class,
+      responseType = jmes.wasm.v1beta1.Tx.MsgInstantiateContractResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.wasm.v1beta1.Tx.MsgInstantiateContract,
-      terra.wasm.v1beta1.Tx.MsgInstantiateContractResponse> getInstantiateContractMethod() {
-    io.grpc.MethodDescriptor<terra.wasm.v1beta1.Tx.MsgInstantiateContract, terra.wasm.v1beta1.Tx.MsgInstantiateContractResponse> getInstantiateContractMethod;
+  public static io.grpc.MethodDescriptor<jmes.wasm.v1beta1.Tx.MsgInstantiateContract,
+      jmes.wasm.v1beta1.Tx.MsgInstantiateContractResponse> getInstantiateContractMethod() {
+    io.grpc.MethodDescriptor<jmes.wasm.v1beta1.Tx.MsgInstantiateContract, jmes.wasm.v1beta1.Tx.MsgInstantiateContractResponse> getInstantiateContractMethod;
     if ((getInstantiateContractMethod = MsgGrpc.getInstantiateContractMethod) == null) {
       synchronized (MsgGrpc.class) {
         if ((getInstantiateContractMethod = MsgGrpc.getInstantiateContractMethod) == null) {
           MsgGrpc.getInstantiateContractMethod = getInstantiateContractMethod =
-              io.grpc.MethodDescriptor.<terra.wasm.v1beta1.Tx.MsgInstantiateContract, terra.wasm.v1beta1.Tx.MsgInstantiateContractResponse>newBuilder()
+              io.grpc.MethodDescriptor.<jmes.wasm.v1beta1.Tx.MsgInstantiateContract, jmes.wasm.v1beta1.Tx.MsgInstantiateContractResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "InstantiateContract"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.wasm.v1beta1.Tx.MsgInstantiateContract.getDefaultInstance()))
+                  jmes.wasm.v1beta1.Tx.MsgInstantiateContract.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.wasm.v1beta1.Tx.MsgInstantiateContractResponse.getDefaultInstance()))
+                  jmes.wasm.v1beta1.Tx.MsgInstantiateContractResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MsgMethodDescriptorSupplier("InstantiateContract"))
               .build();
         }
@@ -111,29 +111,29 @@ public final class MsgGrpc {
     return getInstantiateContractMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<terra.wasm.v1beta1.Tx.MsgExecuteContract,
-      terra.wasm.v1beta1.Tx.MsgExecuteContractResponse> getExecuteContractMethod;
+  private static volatile io.grpc.MethodDescriptor<jmes.wasm.v1beta1.Tx.MsgExecuteContract,
+      jmes.wasm.v1beta1.Tx.MsgExecuteContractResponse> getExecuteContractMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "ExecuteContract",
-      requestType = terra.wasm.v1beta1.Tx.MsgExecuteContract.class,
-      responseType = terra.wasm.v1beta1.Tx.MsgExecuteContractResponse.class,
+      requestType = jmes.wasm.v1beta1.Tx.MsgExecuteContract.class,
+      responseType = jmes.wasm.v1beta1.Tx.MsgExecuteContractResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.wasm.v1beta1.Tx.MsgExecuteContract,
-      terra.wasm.v1beta1.Tx.MsgExecuteContractResponse> getExecuteContractMethod() {
-    io.grpc.MethodDescriptor<terra.wasm.v1beta1.Tx.MsgExecuteContract, terra.wasm.v1beta1.Tx.MsgExecuteContractResponse> getExecuteContractMethod;
+  public static io.grpc.MethodDescriptor<jmes.wasm.v1beta1.Tx.MsgExecuteContract,
+      jmes.wasm.v1beta1.Tx.MsgExecuteContractResponse> getExecuteContractMethod() {
+    io.grpc.MethodDescriptor<jmes.wasm.v1beta1.Tx.MsgExecuteContract, jmes.wasm.v1beta1.Tx.MsgExecuteContractResponse> getExecuteContractMethod;
     if ((getExecuteContractMethod = MsgGrpc.getExecuteContractMethod) == null) {
       synchronized (MsgGrpc.class) {
         if ((getExecuteContractMethod = MsgGrpc.getExecuteContractMethod) == null) {
           MsgGrpc.getExecuteContractMethod = getExecuteContractMethod =
-              io.grpc.MethodDescriptor.<terra.wasm.v1beta1.Tx.MsgExecuteContract, terra.wasm.v1beta1.Tx.MsgExecuteContractResponse>newBuilder()
+              io.grpc.MethodDescriptor.<jmes.wasm.v1beta1.Tx.MsgExecuteContract, jmes.wasm.v1beta1.Tx.MsgExecuteContractResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ExecuteContract"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.wasm.v1beta1.Tx.MsgExecuteContract.getDefaultInstance()))
+                  jmes.wasm.v1beta1.Tx.MsgExecuteContract.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.wasm.v1beta1.Tx.MsgExecuteContractResponse.getDefaultInstance()))
+                  jmes.wasm.v1beta1.Tx.MsgExecuteContractResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MsgMethodDescriptorSupplier("ExecuteContract"))
               .build();
         }
@@ -142,29 +142,29 @@ public final class MsgGrpc {
     return getExecuteContractMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<terra.wasm.v1beta1.Tx.MsgMigrateContract,
-      terra.wasm.v1beta1.Tx.MsgMigrateContractResponse> getMigrateContractMethod;
+  private static volatile io.grpc.MethodDescriptor<jmes.wasm.v1beta1.Tx.MsgMigrateContract,
+      jmes.wasm.v1beta1.Tx.MsgMigrateContractResponse> getMigrateContractMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "MigrateContract",
-      requestType = terra.wasm.v1beta1.Tx.MsgMigrateContract.class,
-      responseType = terra.wasm.v1beta1.Tx.MsgMigrateContractResponse.class,
+      requestType = jmes.wasm.v1beta1.Tx.MsgMigrateContract.class,
+      responseType = jmes.wasm.v1beta1.Tx.MsgMigrateContractResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.wasm.v1beta1.Tx.MsgMigrateContract,
-      terra.wasm.v1beta1.Tx.MsgMigrateContractResponse> getMigrateContractMethod() {
-    io.grpc.MethodDescriptor<terra.wasm.v1beta1.Tx.MsgMigrateContract, terra.wasm.v1beta1.Tx.MsgMigrateContractResponse> getMigrateContractMethod;
+  public static io.grpc.MethodDescriptor<jmes.wasm.v1beta1.Tx.MsgMigrateContract,
+      jmes.wasm.v1beta1.Tx.MsgMigrateContractResponse> getMigrateContractMethod() {
+    io.grpc.MethodDescriptor<jmes.wasm.v1beta1.Tx.MsgMigrateContract, jmes.wasm.v1beta1.Tx.MsgMigrateContractResponse> getMigrateContractMethod;
     if ((getMigrateContractMethod = MsgGrpc.getMigrateContractMethod) == null) {
       synchronized (MsgGrpc.class) {
         if ((getMigrateContractMethod = MsgGrpc.getMigrateContractMethod) == null) {
           MsgGrpc.getMigrateContractMethod = getMigrateContractMethod =
-              io.grpc.MethodDescriptor.<terra.wasm.v1beta1.Tx.MsgMigrateContract, terra.wasm.v1beta1.Tx.MsgMigrateContractResponse>newBuilder()
+              io.grpc.MethodDescriptor.<jmes.wasm.v1beta1.Tx.MsgMigrateContract, jmes.wasm.v1beta1.Tx.MsgMigrateContractResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "MigrateContract"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.wasm.v1beta1.Tx.MsgMigrateContract.getDefaultInstance()))
+                  jmes.wasm.v1beta1.Tx.MsgMigrateContract.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.wasm.v1beta1.Tx.MsgMigrateContractResponse.getDefaultInstance()))
+                  jmes.wasm.v1beta1.Tx.MsgMigrateContractResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MsgMethodDescriptorSupplier("MigrateContract"))
               .build();
         }
@@ -173,29 +173,29 @@ public final class MsgGrpc {
     return getMigrateContractMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<terra.wasm.v1beta1.Tx.MsgUpdateContractAdmin,
-      terra.wasm.v1beta1.Tx.MsgUpdateContractAdminResponse> getUpdateContractAdminMethod;
+  private static volatile io.grpc.MethodDescriptor<jmes.wasm.v1beta1.Tx.MsgUpdateContractAdmin,
+      jmes.wasm.v1beta1.Tx.MsgUpdateContractAdminResponse> getUpdateContractAdminMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "UpdateContractAdmin",
-      requestType = terra.wasm.v1beta1.Tx.MsgUpdateContractAdmin.class,
-      responseType = terra.wasm.v1beta1.Tx.MsgUpdateContractAdminResponse.class,
+      requestType = jmes.wasm.v1beta1.Tx.MsgUpdateContractAdmin.class,
+      responseType = jmes.wasm.v1beta1.Tx.MsgUpdateContractAdminResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.wasm.v1beta1.Tx.MsgUpdateContractAdmin,
-      terra.wasm.v1beta1.Tx.MsgUpdateContractAdminResponse> getUpdateContractAdminMethod() {
-    io.grpc.MethodDescriptor<terra.wasm.v1beta1.Tx.MsgUpdateContractAdmin, terra.wasm.v1beta1.Tx.MsgUpdateContractAdminResponse> getUpdateContractAdminMethod;
+  public static io.grpc.MethodDescriptor<jmes.wasm.v1beta1.Tx.MsgUpdateContractAdmin,
+      jmes.wasm.v1beta1.Tx.MsgUpdateContractAdminResponse> getUpdateContractAdminMethod() {
+    io.grpc.MethodDescriptor<jmes.wasm.v1beta1.Tx.MsgUpdateContractAdmin, jmes.wasm.v1beta1.Tx.MsgUpdateContractAdminResponse> getUpdateContractAdminMethod;
     if ((getUpdateContractAdminMethod = MsgGrpc.getUpdateContractAdminMethod) == null) {
       synchronized (MsgGrpc.class) {
         if ((getUpdateContractAdminMethod = MsgGrpc.getUpdateContractAdminMethod) == null) {
           MsgGrpc.getUpdateContractAdminMethod = getUpdateContractAdminMethod =
-              io.grpc.MethodDescriptor.<terra.wasm.v1beta1.Tx.MsgUpdateContractAdmin, terra.wasm.v1beta1.Tx.MsgUpdateContractAdminResponse>newBuilder()
+              io.grpc.MethodDescriptor.<jmes.wasm.v1beta1.Tx.MsgUpdateContractAdmin, jmes.wasm.v1beta1.Tx.MsgUpdateContractAdminResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "UpdateContractAdmin"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.wasm.v1beta1.Tx.MsgUpdateContractAdmin.getDefaultInstance()))
+                  jmes.wasm.v1beta1.Tx.MsgUpdateContractAdmin.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.wasm.v1beta1.Tx.MsgUpdateContractAdminResponse.getDefaultInstance()))
+                  jmes.wasm.v1beta1.Tx.MsgUpdateContractAdminResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MsgMethodDescriptorSupplier("UpdateContractAdmin"))
               .build();
         }
@@ -204,29 +204,29 @@ public final class MsgGrpc {
     return getUpdateContractAdminMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<terra.wasm.v1beta1.Tx.MsgClearContractAdmin,
-      terra.wasm.v1beta1.Tx.MsgClearContractAdminResponse> getClearContractAdminMethod;
+  private static volatile io.grpc.MethodDescriptor<jmes.wasm.v1beta1.Tx.MsgClearContractAdmin,
+      jmes.wasm.v1beta1.Tx.MsgClearContractAdminResponse> getClearContractAdminMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "ClearContractAdmin",
-      requestType = terra.wasm.v1beta1.Tx.MsgClearContractAdmin.class,
-      responseType = terra.wasm.v1beta1.Tx.MsgClearContractAdminResponse.class,
+      requestType = jmes.wasm.v1beta1.Tx.MsgClearContractAdmin.class,
+      responseType = jmes.wasm.v1beta1.Tx.MsgClearContractAdminResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<terra.wasm.v1beta1.Tx.MsgClearContractAdmin,
-      terra.wasm.v1beta1.Tx.MsgClearContractAdminResponse> getClearContractAdminMethod() {
-    io.grpc.MethodDescriptor<terra.wasm.v1beta1.Tx.MsgClearContractAdmin, terra.wasm.v1beta1.Tx.MsgClearContractAdminResponse> getClearContractAdminMethod;
+  public static io.grpc.MethodDescriptor<jmes.wasm.v1beta1.Tx.MsgClearContractAdmin,
+      jmes.wasm.v1beta1.Tx.MsgClearContractAdminResponse> getClearContractAdminMethod() {
+    io.grpc.MethodDescriptor<jmes.wasm.v1beta1.Tx.MsgClearContractAdmin, jmes.wasm.v1beta1.Tx.MsgClearContractAdminResponse> getClearContractAdminMethod;
     if ((getClearContractAdminMethod = MsgGrpc.getClearContractAdminMethod) == null) {
       synchronized (MsgGrpc.class) {
         if ((getClearContractAdminMethod = MsgGrpc.getClearContractAdminMethod) == null) {
           MsgGrpc.getClearContractAdminMethod = getClearContractAdminMethod =
-              io.grpc.MethodDescriptor.<terra.wasm.v1beta1.Tx.MsgClearContractAdmin, terra.wasm.v1beta1.Tx.MsgClearContractAdminResponse>newBuilder()
+              io.grpc.MethodDescriptor.<jmes.wasm.v1beta1.Tx.MsgClearContractAdmin, jmes.wasm.v1beta1.Tx.MsgClearContractAdminResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ClearContractAdmin"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.wasm.v1beta1.Tx.MsgClearContractAdmin.getDefaultInstance()))
+                  jmes.wasm.v1beta1.Tx.MsgClearContractAdmin.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  terra.wasm.v1beta1.Tx.MsgClearContractAdminResponse.getDefaultInstance()))
+                  jmes.wasm.v1beta1.Tx.MsgClearContractAdminResponse.getDefaultInstance()))
               .setSchemaDescriptor(new MsgMethodDescriptorSupplier("ClearContractAdmin"))
               .build();
         }
@@ -291,8 +291,8 @@ public final class MsgGrpc {
      * StoreCode to submit Wasm code to the system
      * </pre>
      */
-    public void storeCode(terra.wasm.v1beta1.Tx.MsgStoreCode request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgStoreCodeResponse> responseObserver) {
+    public void storeCode(jmes.wasm.v1beta1.Tx.MsgStoreCode request,
+        io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.Tx.MsgStoreCodeResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getStoreCodeMethod(), responseObserver);
     }
 
@@ -301,8 +301,8 @@ public final class MsgGrpc {
      * MigrateCode to submit new version Wasm code to the system
      * </pre>
      */
-    public void migrateCode(terra.wasm.v1beta1.Tx.MsgMigrateCode request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgMigrateCodeResponse> responseObserver) {
+    public void migrateCode(jmes.wasm.v1beta1.Tx.MsgMigrateCode request,
+        io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.Tx.MsgMigrateCodeResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getMigrateCodeMethod(), responseObserver);
     }
 
@@ -311,8 +311,8 @@ public final class MsgGrpc {
      *  Instantiate creates a new smart contract instance for the given code id.
      * </pre>
      */
-    public void instantiateContract(terra.wasm.v1beta1.Tx.MsgInstantiateContract request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgInstantiateContractResponse> responseObserver) {
+    public void instantiateContract(jmes.wasm.v1beta1.Tx.MsgInstantiateContract request,
+        io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.Tx.MsgInstantiateContractResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getInstantiateContractMethod(), responseObserver);
     }
 
@@ -321,8 +321,8 @@ public final class MsgGrpc {
      * Execute submits the given message data to a smart contract
      * </pre>
      */
-    public void executeContract(terra.wasm.v1beta1.Tx.MsgExecuteContract request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgExecuteContractResponse> responseObserver) {
+    public void executeContract(jmes.wasm.v1beta1.Tx.MsgExecuteContract request,
+        io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.Tx.MsgExecuteContractResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getExecuteContractMethod(), responseObserver);
     }
 
@@ -331,8 +331,8 @@ public final class MsgGrpc {
      * Migrate runs a code upgrade/ downgrade for a smart contract
      * </pre>
      */
-    public void migrateContract(terra.wasm.v1beta1.Tx.MsgMigrateContract request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgMigrateContractResponse> responseObserver) {
+    public void migrateContract(jmes.wasm.v1beta1.Tx.MsgMigrateContract request,
+        io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.Tx.MsgMigrateContractResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getMigrateContractMethod(), responseObserver);
     }
 
@@ -341,8 +341,8 @@ public final class MsgGrpc {
      * UpdateContractAdmin sets a new admin for a smart contract
      * </pre>
      */
-    public void updateContractAdmin(terra.wasm.v1beta1.Tx.MsgUpdateContractAdmin request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgUpdateContractAdminResponse> responseObserver) {
+    public void updateContractAdmin(jmes.wasm.v1beta1.Tx.MsgUpdateContractAdmin request,
+        io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.Tx.MsgUpdateContractAdminResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getUpdateContractAdminMethod(), responseObserver);
     }
 
@@ -351,8 +351,8 @@ public final class MsgGrpc {
      * ClearContractAdmin remove admin flag from a smart contract
      * </pre>
      */
-    public void clearContractAdmin(terra.wasm.v1beta1.Tx.MsgClearContractAdmin request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgClearContractAdminResponse> responseObserver) {
+    public void clearContractAdmin(jmes.wasm.v1beta1.Tx.MsgClearContractAdmin request,
+        io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.Tx.MsgClearContractAdminResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getClearContractAdminMethod(), responseObserver);
     }
 
@@ -362,50 +362,50 @@ public final class MsgGrpc {
             getStoreCodeMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.wasm.v1beta1.Tx.MsgStoreCode,
-                terra.wasm.v1beta1.Tx.MsgStoreCodeResponse>(
+                jmes.wasm.v1beta1.Tx.MsgStoreCode,
+                jmes.wasm.v1beta1.Tx.MsgStoreCodeResponse>(
                   this, METHODID_STORE_CODE)))
           .addMethod(
             getMigrateCodeMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.wasm.v1beta1.Tx.MsgMigrateCode,
-                terra.wasm.v1beta1.Tx.MsgMigrateCodeResponse>(
+                jmes.wasm.v1beta1.Tx.MsgMigrateCode,
+                jmes.wasm.v1beta1.Tx.MsgMigrateCodeResponse>(
                   this, METHODID_MIGRATE_CODE)))
           .addMethod(
             getInstantiateContractMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.wasm.v1beta1.Tx.MsgInstantiateContract,
-                terra.wasm.v1beta1.Tx.MsgInstantiateContractResponse>(
+                jmes.wasm.v1beta1.Tx.MsgInstantiateContract,
+                jmes.wasm.v1beta1.Tx.MsgInstantiateContractResponse>(
                   this, METHODID_INSTANTIATE_CONTRACT)))
           .addMethod(
             getExecuteContractMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.wasm.v1beta1.Tx.MsgExecuteContract,
-                terra.wasm.v1beta1.Tx.MsgExecuteContractResponse>(
+                jmes.wasm.v1beta1.Tx.MsgExecuteContract,
+                jmes.wasm.v1beta1.Tx.MsgExecuteContractResponse>(
                   this, METHODID_EXECUTE_CONTRACT)))
           .addMethod(
             getMigrateContractMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.wasm.v1beta1.Tx.MsgMigrateContract,
-                terra.wasm.v1beta1.Tx.MsgMigrateContractResponse>(
+                jmes.wasm.v1beta1.Tx.MsgMigrateContract,
+                jmes.wasm.v1beta1.Tx.MsgMigrateContractResponse>(
                   this, METHODID_MIGRATE_CONTRACT)))
           .addMethod(
             getUpdateContractAdminMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.wasm.v1beta1.Tx.MsgUpdateContractAdmin,
-                terra.wasm.v1beta1.Tx.MsgUpdateContractAdminResponse>(
+                jmes.wasm.v1beta1.Tx.MsgUpdateContractAdmin,
+                jmes.wasm.v1beta1.Tx.MsgUpdateContractAdminResponse>(
                   this, METHODID_UPDATE_CONTRACT_ADMIN)))
           .addMethod(
             getClearContractAdminMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                terra.wasm.v1beta1.Tx.MsgClearContractAdmin,
-                terra.wasm.v1beta1.Tx.MsgClearContractAdminResponse>(
+                jmes.wasm.v1beta1.Tx.MsgClearContractAdmin,
+                jmes.wasm.v1beta1.Tx.MsgClearContractAdminResponse>(
                   this, METHODID_CLEAR_CONTRACT_ADMIN)))
           .build();
     }
@@ -433,8 +433,8 @@ public final class MsgGrpc {
      * StoreCode to submit Wasm code to the system
      * </pre>
      */
-    public void storeCode(terra.wasm.v1beta1.Tx.MsgStoreCode request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgStoreCodeResponse> responseObserver) {
+    public void storeCode(jmes.wasm.v1beta1.Tx.MsgStoreCode request,
+        io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.Tx.MsgStoreCodeResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getStoreCodeMethod(), getCallOptions()), request, responseObserver);
     }
@@ -444,8 +444,8 @@ public final class MsgGrpc {
      * MigrateCode to submit new version Wasm code to the system
      * </pre>
      */
-    public void migrateCode(terra.wasm.v1beta1.Tx.MsgMigrateCode request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgMigrateCodeResponse> responseObserver) {
+    public void migrateCode(jmes.wasm.v1beta1.Tx.MsgMigrateCode request,
+        io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.Tx.MsgMigrateCodeResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getMigrateCodeMethod(), getCallOptions()), request, responseObserver);
     }
@@ -455,8 +455,8 @@ public final class MsgGrpc {
      *  Instantiate creates a new smart contract instance for the given code id.
      * </pre>
      */
-    public void instantiateContract(terra.wasm.v1beta1.Tx.MsgInstantiateContract request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgInstantiateContractResponse> responseObserver) {
+    public void instantiateContract(jmes.wasm.v1beta1.Tx.MsgInstantiateContract request,
+        io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.Tx.MsgInstantiateContractResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getInstantiateContractMethod(), getCallOptions()), request, responseObserver);
     }
@@ -466,8 +466,8 @@ public final class MsgGrpc {
      * Execute submits the given message data to a smart contract
      * </pre>
      */
-    public void executeContract(terra.wasm.v1beta1.Tx.MsgExecuteContract request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgExecuteContractResponse> responseObserver) {
+    public void executeContract(jmes.wasm.v1beta1.Tx.MsgExecuteContract request,
+        io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.Tx.MsgExecuteContractResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getExecuteContractMethod(), getCallOptions()), request, responseObserver);
     }
@@ -477,8 +477,8 @@ public final class MsgGrpc {
      * Migrate runs a code upgrade/ downgrade for a smart contract
      * </pre>
      */
-    public void migrateContract(terra.wasm.v1beta1.Tx.MsgMigrateContract request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgMigrateContractResponse> responseObserver) {
+    public void migrateContract(jmes.wasm.v1beta1.Tx.MsgMigrateContract request,
+        io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.Tx.MsgMigrateContractResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getMigrateContractMethod(), getCallOptions()), request, responseObserver);
     }
@@ -488,8 +488,8 @@ public final class MsgGrpc {
      * UpdateContractAdmin sets a new admin for a smart contract
      * </pre>
      */
-    public void updateContractAdmin(terra.wasm.v1beta1.Tx.MsgUpdateContractAdmin request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgUpdateContractAdminResponse> responseObserver) {
+    public void updateContractAdmin(jmes.wasm.v1beta1.Tx.MsgUpdateContractAdmin request,
+        io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.Tx.MsgUpdateContractAdminResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getUpdateContractAdminMethod(), getCallOptions()), request, responseObserver);
     }
@@ -499,8 +499,8 @@ public final class MsgGrpc {
      * ClearContractAdmin remove admin flag from a smart contract
      * </pre>
      */
-    public void clearContractAdmin(terra.wasm.v1beta1.Tx.MsgClearContractAdmin request,
-        io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgClearContractAdminResponse> responseObserver) {
+    public void clearContractAdmin(jmes.wasm.v1beta1.Tx.MsgClearContractAdmin request,
+        io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.Tx.MsgClearContractAdminResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getClearContractAdminMethod(), getCallOptions()), request, responseObserver);
     }
@@ -528,7 +528,7 @@ public final class MsgGrpc {
      * StoreCode to submit Wasm code to the system
      * </pre>
      */
-    public terra.wasm.v1beta1.Tx.MsgStoreCodeResponse storeCode(terra.wasm.v1beta1.Tx.MsgStoreCode request) {
+    public jmes.wasm.v1beta1.Tx.MsgStoreCodeResponse storeCode(jmes.wasm.v1beta1.Tx.MsgStoreCode request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getStoreCodeMethod(), getCallOptions(), request);
     }
@@ -538,7 +538,7 @@ public final class MsgGrpc {
      * MigrateCode to submit new version Wasm code to the system
      * </pre>
      */
-    public terra.wasm.v1beta1.Tx.MsgMigrateCodeResponse migrateCode(terra.wasm.v1beta1.Tx.MsgMigrateCode request) {
+    public jmes.wasm.v1beta1.Tx.MsgMigrateCodeResponse migrateCode(jmes.wasm.v1beta1.Tx.MsgMigrateCode request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getMigrateCodeMethod(), getCallOptions(), request);
     }
@@ -548,7 +548,7 @@ public final class MsgGrpc {
      *  Instantiate creates a new smart contract instance for the given code id.
      * </pre>
      */
-    public terra.wasm.v1beta1.Tx.MsgInstantiateContractResponse instantiateContract(terra.wasm.v1beta1.Tx.MsgInstantiateContract request) {
+    public jmes.wasm.v1beta1.Tx.MsgInstantiateContractResponse instantiateContract(jmes.wasm.v1beta1.Tx.MsgInstantiateContract request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getInstantiateContractMethod(), getCallOptions(), request);
     }
@@ -558,7 +558,7 @@ public final class MsgGrpc {
      * Execute submits the given message data to a smart contract
      * </pre>
      */
-    public terra.wasm.v1beta1.Tx.MsgExecuteContractResponse executeContract(terra.wasm.v1beta1.Tx.MsgExecuteContract request) {
+    public jmes.wasm.v1beta1.Tx.MsgExecuteContractResponse executeContract(jmes.wasm.v1beta1.Tx.MsgExecuteContract request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getExecuteContractMethod(), getCallOptions(), request);
     }
@@ -568,7 +568,7 @@ public final class MsgGrpc {
      * Migrate runs a code upgrade/ downgrade for a smart contract
      * </pre>
      */
-    public terra.wasm.v1beta1.Tx.MsgMigrateContractResponse migrateContract(terra.wasm.v1beta1.Tx.MsgMigrateContract request) {
+    public jmes.wasm.v1beta1.Tx.MsgMigrateContractResponse migrateContract(jmes.wasm.v1beta1.Tx.MsgMigrateContract request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getMigrateContractMethod(), getCallOptions(), request);
     }
@@ -578,7 +578,7 @@ public final class MsgGrpc {
      * UpdateContractAdmin sets a new admin for a smart contract
      * </pre>
      */
-    public terra.wasm.v1beta1.Tx.MsgUpdateContractAdminResponse updateContractAdmin(terra.wasm.v1beta1.Tx.MsgUpdateContractAdmin request) {
+    public jmes.wasm.v1beta1.Tx.MsgUpdateContractAdminResponse updateContractAdmin(jmes.wasm.v1beta1.Tx.MsgUpdateContractAdmin request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getUpdateContractAdminMethod(), getCallOptions(), request);
     }
@@ -588,7 +588,7 @@ public final class MsgGrpc {
      * ClearContractAdmin remove admin flag from a smart contract
      * </pre>
      */
-    public terra.wasm.v1beta1.Tx.MsgClearContractAdminResponse clearContractAdmin(terra.wasm.v1beta1.Tx.MsgClearContractAdmin request) {
+    public jmes.wasm.v1beta1.Tx.MsgClearContractAdminResponse clearContractAdmin(jmes.wasm.v1beta1.Tx.MsgClearContractAdmin request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getClearContractAdminMethod(), getCallOptions(), request);
     }
@@ -616,8 +616,8 @@ public final class MsgGrpc {
      * StoreCode to submit Wasm code to the system
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.wasm.v1beta1.Tx.MsgStoreCodeResponse> storeCode(
-        terra.wasm.v1beta1.Tx.MsgStoreCode request) {
+    public com.google.common.util.concurrent.ListenableFuture<jmes.wasm.v1beta1.Tx.MsgStoreCodeResponse> storeCode(
+        jmes.wasm.v1beta1.Tx.MsgStoreCode request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getStoreCodeMethod(), getCallOptions()), request);
     }
@@ -627,8 +627,8 @@ public final class MsgGrpc {
      * MigrateCode to submit new version Wasm code to the system
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.wasm.v1beta1.Tx.MsgMigrateCodeResponse> migrateCode(
-        terra.wasm.v1beta1.Tx.MsgMigrateCode request) {
+    public com.google.common.util.concurrent.ListenableFuture<jmes.wasm.v1beta1.Tx.MsgMigrateCodeResponse> migrateCode(
+        jmes.wasm.v1beta1.Tx.MsgMigrateCode request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getMigrateCodeMethod(), getCallOptions()), request);
     }
@@ -638,8 +638,8 @@ public final class MsgGrpc {
      *  Instantiate creates a new smart contract instance for the given code id.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.wasm.v1beta1.Tx.MsgInstantiateContractResponse> instantiateContract(
-        terra.wasm.v1beta1.Tx.MsgInstantiateContract request) {
+    public com.google.common.util.concurrent.ListenableFuture<jmes.wasm.v1beta1.Tx.MsgInstantiateContractResponse> instantiateContract(
+        jmes.wasm.v1beta1.Tx.MsgInstantiateContract request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getInstantiateContractMethod(), getCallOptions()), request);
     }
@@ -649,8 +649,8 @@ public final class MsgGrpc {
      * Execute submits the given message data to a smart contract
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.wasm.v1beta1.Tx.MsgExecuteContractResponse> executeContract(
-        terra.wasm.v1beta1.Tx.MsgExecuteContract request) {
+    public com.google.common.util.concurrent.ListenableFuture<jmes.wasm.v1beta1.Tx.MsgExecuteContractResponse> executeContract(
+        jmes.wasm.v1beta1.Tx.MsgExecuteContract request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getExecuteContractMethod(), getCallOptions()), request);
     }
@@ -660,8 +660,8 @@ public final class MsgGrpc {
      * Migrate runs a code upgrade/ downgrade for a smart contract
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.wasm.v1beta1.Tx.MsgMigrateContractResponse> migrateContract(
-        terra.wasm.v1beta1.Tx.MsgMigrateContract request) {
+    public com.google.common.util.concurrent.ListenableFuture<jmes.wasm.v1beta1.Tx.MsgMigrateContractResponse> migrateContract(
+        jmes.wasm.v1beta1.Tx.MsgMigrateContract request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getMigrateContractMethod(), getCallOptions()), request);
     }
@@ -671,8 +671,8 @@ public final class MsgGrpc {
      * UpdateContractAdmin sets a new admin for a smart contract
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.wasm.v1beta1.Tx.MsgUpdateContractAdminResponse> updateContractAdmin(
-        terra.wasm.v1beta1.Tx.MsgUpdateContractAdmin request) {
+    public com.google.common.util.concurrent.ListenableFuture<jmes.wasm.v1beta1.Tx.MsgUpdateContractAdminResponse> updateContractAdmin(
+        jmes.wasm.v1beta1.Tx.MsgUpdateContractAdmin request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getUpdateContractAdminMethod(), getCallOptions()), request);
     }
@@ -682,8 +682,8 @@ public final class MsgGrpc {
      * ClearContractAdmin remove admin flag from a smart contract
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<terra.wasm.v1beta1.Tx.MsgClearContractAdminResponse> clearContractAdmin(
-        terra.wasm.v1beta1.Tx.MsgClearContractAdmin request) {
+    public com.google.common.util.concurrent.ListenableFuture<jmes.wasm.v1beta1.Tx.MsgClearContractAdminResponse> clearContractAdmin(
+        jmes.wasm.v1beta1.Tx.MsgClearContractAdmin request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getClearContractAdminMethod(), getCallOptions()), request);
     }
@@ -715,32 +715,32 @@ public final class MsgGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_STORE_CODE:
-          serviceImpl.storeCode((terra.wasm.v1beta1.Tx.MsgStoreCode) request,
-              (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgStoreCodeResponse>) responseObserver);
+          serviceImpl.storeCode((jmes.wasm.v1beta1.Tx.MsgStoreCode) request,
+              (io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.Tx.MsgStoreCodeResponse>) responseObserver);
           break;
         case METHODID_MIGRATE_CODE:
-          serviceImpl.migrateCode((terra.wasm.v1beta1.Tx.MsgMigrateCode) request,
-              (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgMigrateCodeResponse>) responseObserver);
+          serviceImpl.migrateCode((jmes.wasm.v1beta1.Tx.MsgMigrateCode) request,
+              (io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.Tx.MsgMigrateCodeResponse>) responseObserver);
           break;
         case METHODID_INSTANTIATE_CONTRACT:
-          serviceImpl.instantiateContract((terra.wasm.v1beta1.Tx.MsgInstantiateContract) request,
-              (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgInstantiateContractResponse>) responseObserver);
+          serviceImpl.instantiateContract((jmes.wasm.v1beta1.Tx.MsgInstantiateContract) request,
+              (io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.Tx.MsgInstantiateContractResponse>) responseObserver);
           break;
         case METHODID_EXECUTE_CONTRACT:
-          serviceImpl.executeContract((terra.wasm.v1beta1.Tx.MsgExecuteContract) request,
-              (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgExecuteContractResponse>) responseObserver);
+          serviceImpl.executeContract((jmes.wasm.v1beta1.Tx.MsgExecuteContract) request,
+              (io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.Tx.MsgExecuteContractResponse>) responseObserver);
           break;
         case METHODID_MIGRATE_CONTRACT:
-          serviceImpl.migrateContract((terra.wasm.v1beta1.Tx.MsgMigrateContract) request,
-              (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgMigrateContractResponse>) responseObserver);
+          serviceImpl.migrateContract((jmes.wasm.v1beta1.Tx.MsgMigrateContract) request,
+              (io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.Tx.MsgMigrateContractResponse>) responseObserver);
           break;
         case METHODID_UPDATE_CONTRACT_ADMIN:
-          serviceImpl.updateContractAdmin((terra.wasm.v1beta1.Tx.MsgUpdateContractAdmin) request,
-              (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgUpdateContractAdminResponse>) responseObserver);
+          serviceImpl.updateContractAdmin((jmes.wasm.v1beta1.Tx.MsgUpdateContractAdmin) request,
+              (io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.Tx.MsgUpdateContractAdminResponse>) responseObserver);
           break;
         case METHODID_CLEAR_CONTRACT_ADMIN:
-          serviceImpl.clearContractAdmin((terra.wasm.v1beta1.Tx.MsgClearContractAdmin) request,
-              (io.grpc.stub.StreamObserver<terra.wasm.v1beta1.Tx.MsgClearContractAdminResponse>) responseObserver);
+          serviceImpl.clearContractAdmin((jmes.wasm.v1beta1.Tx.MsgClearContractAdmin) request,
+              (io.grpc.stub.StreamObserver<jmes.wasm.v1beta1.Tx.MsgClearContractAdminResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -764,7 +764,7 @@ public final class MsgGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return terra.wasm.v1beta1.Tx.getDescriptor();
+      return jmes.wasm.v1beta1.Tx.getDescriptor();
     }
 
     @java.lang.Override

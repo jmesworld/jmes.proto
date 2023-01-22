@@ -1,4 +1,4 @@
-package terra.oracle.v1beta1
+package jmes.oracle.v1beta1
 
 import io.grpc.CallOptions
 import io.grpc.CallOptions.DEFAULT
@@ -23,10 +23,10 @@ import kotlin.coroutines.CoroutineContext
 import kotlin.coroutines.EmptyCoroutineContext
 import kotlin.jvm.JvmOverloads
 import kotlin.jvm.JvmStatic
-import terra.oracle.v1beta1.QueryGrpc.getServiceDescriptor
+import jmes.oracle.v1beta1.QueryGrpc.getServiceDescriptor
 
 /**
- * Holder for Kotlin coroutine-based client and server APIs for terra.oracle.v1beta1.Query.
+ * Holder for Kotlin coroutine-based client and server APIs for jmes.oracle.v1beta1.Query.
  */
 object QueryGrpcKt {
   const val SERVICE_NAME: String = QueryGrpc.SERVICE_NAME
@@ -101,7 +101,7 @@ object QueryGrpcKt {
     get() = QueryGrpc.getParamsMethod()
 
   /**
-   * A stub for issuing RPCs to a(n) terra.oracle.v1beta1.Query service as suspending coroutines.
+   * A stub for issuing RPCs to a(n) jmes.oracle.v1beta1.Query service as suspending coroutines.
    */
   @StubFor(QueryGrpc::class)
   class QueryCoroutineStub @JvmOverloads constructor(
@@ -347,13 +347,13 @@ object QueryGrpcKt {
     )}
 
   /**
-   * Skeletal implementation of the terra.oracle.v1beta1.Query service based on Kotlin coroutines.
+   * Skeletal implementation of the jmes.oracle.v1beta1.Query service based on Kotlin coroutines.
    */
   abstract class QueryCoroutineImplBase(
     coroutineContext: CoroutineContext = EmptyCoroutineContext
   ) : AbstractCoroutineServerImpl(coroutineContext) {
     /**
-     * Returns the response to an RPC for terra.oracle.v1beta1.Query.ExchangeRate.
+     * Returns the response to an RPC for jmes.oracle.v1beta1.Query.ExchangeRate.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -365,10 +365,10 @@ object QueryGrpcKt {
      */
     open suspend fun exchangeRate(request: QueryOuterClass.QueryExchangeRateRequest):
         QueryOuterClass.QueryExchangeRateResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.oracle.v1beta1.Query.ExchangeRate is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.oracle.v1beta1.Query.ExchangeRate is unimplemented"))
 
     /**
-     * Returns the response to an RPC for terra.oracle.v1beta1.Query.ExchangeRates.
+     * Returns the response to an RPC for jmes.oracle.v1beta1.Query.ExchangeRates.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -380,10 +380,10 @@ object QueryGrpcKt {
      */
     open suspend fun exchangeRates(request: QueryOuterClass.QueryExchangeRatesRequest):
         QueryOuterClass.QueryExchangeRatesResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.oracle.v1beta1.Query.ExchangeRates is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.oracle.v1beta1.Query.ExchangeRates is unimplemented"))
 
     /**
-     * Returns the response to an RPC for terra.oracle.v1beta1.Query.TobinTax.
+     * Returns the response to an RPC for jmes.oracle.v1beta1.Query.TobinTax.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -395,10 +395,10 @@ object QueryGrpcKt {
      */
     open suspend fun tobinTax(request: QueryOuterClass.QueryTobinTaxRequest):
         QueryOuterClass.QueryTobinTaxResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.oracle.v1beta1.Query.TobinTax is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.oracle.v1beta1.Query.TobinTax is unimplemented"))
 
     /**
-     * Returns the response to an RPC for terra.oracle.v1beta1.Query.TobinTaxes.
+     * Returns the response to an RPC for jmes.oracle.v1beta1.Query.TobinTaxes.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -410,10 +410,10 @@ object QueryGrpcKt {
      */
     open suspend fun tobinTaxes(request: QueryOuterClass.QueryTobinTaxesRequest):
         QueryOuterClass.QueryTobinTaxesResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.oracle.v1beta1.Query.TobinTaxes is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.oracle.v1beta1.Query.TobinTaxes is unimplemented"))
 
     /**
-     * Returns the response to an RPC for terra.oracle.v1beta1.Query.Actives.
+     * Returns the response to an RPC for jmes.oracle.v1beta1.Query.Actives.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -425,10 +425,10 @@ object QueryGrpcKt {
      */
     open suspend fun actives(request: QueryOuterClass.QueryActivesRequest):
         QueryOuterClass.QueryActivesResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.oracle.v1beta1.Query.Actives is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.oracle.v1beta1.Query.Actives is unimplemented"))
 
     /**
-     * Returns the response to an RPC for terra.oracle.v1beta1.Query.VoteTargets.
+     * Returns the response to an RPC for jmes.oracle.v1beta1.Query.VoteTargets.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -440,10 +440,10 @@ object QueryGrpcKt {
      */
     open suspend fun voteTargets(request: QueryOuterClass.QueryVoteTargetsRequest):
         QueryOuterClass.QueryVoteTargetsResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.oracle.v1beta1.Query.VoteTargets is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.oracle.v1beta1.Query.VoteTargets is unimplemented"))
 
     /**
-     * Returns the response to an RPC for terra.oracle.v1beta1.Query.FeederDelegation.
+     * Returns the response to an RPC for jmes.oracle.v1beta1.Query.FeederDelegation.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -455,10 +455,10 @@ object QueryGrpcKt {
      */
     open suspend fun feederDelegation(request: QueryOuterClass.QueryFeederDelegationRequest):
         QueryOuterClass.QueryFeederDelegationResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.oracle.v1beta1.Query.FeederDelegation is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.oracle.v1beta1.Query.FeederDelegation is unimplemented"))
 
     /**
-     * Returns the response to an RPC for terra.oracle.v1beta1.Query.MissCounter.
+     * Returns the response to an RPC for jmes.oracle.v1beta1.Query.MissCounter.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -470,10 +470,10 @@ object QueryGrpcKt {
      */
     open suspend fun missCounter(request: QueryOuterClass.QueryMissCounterRequest):
         QueryOuterClass.QueryMissCounterResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.oracle.v1beta1.Query.MissCounter is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.oracle.v1beta1.Query.MissCounter is unimplemented"))
 
     /**
-     * Returns the response to an RPC for terra.oracle.v1beta1.Query.AggregatePrevote.
+     * Returns the response to an RPC for jmes.oracle.v1beta1.Query.AggregatePrevote.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -485,10 +485,10 @@ object QueryGrpcKt {
      */
     open suspend fun aggregatePrevote(request: QueryOuterClass.QueryAggregatePrevoteRequest):
         QueryOuterClass.QueryAggregatePrevoteResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.oracle.v1beta1.Query.AggregatePrevote is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.oracle.v1beta1.Query.AggregatePrevote is unimplemented"))
 
     /**
-     * Returns the response to an RPC for terra.oracle.v1beta1.Query.AggregatePrevotes.
+     * Returns the response to an RPC for jmes.oracle.v1beta1.Query.AggregatePrevotes.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -500,10 +500,10 @@ object QueryGrpcKt {
      */
     open suspend fun aggregatePrevotes(request: QueryOuterClass.QueryAggregatePrevotesRequest):
         QueryOuterClass.QueryAggregatePrevotesResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.oracle.v1beta1.Query.AggregatePrevotes is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.oracle.v1beta1.Query.AggregatePrevotes is unimplemented"))
 
     /**
-     * Returns the response to an RPC for terra.oracle.v1beta1.Query.AggregateVote.
+     * Returns the response to an RPC for jmes.oracle.v1beta1.Query.AggregateVote.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -515,10 +515,10 @@ object QueryGrpcKt {
      */
     open suspend fun aggregateVote(request: QueryOuterClass.QueryAggregateVoteRequest):
         QueryOuterClass.QueryAggregateVoteResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.oracle.v1beta1.Query.AggregateVote is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.oracle.v1beta1.Query.AggregateVote is unimplemented"))
 
     /**
-     * Returns the response to an RPC for terra.oracle.v1beta1.Query.AggregateVotes.
+     * Returns the response to an RPC for jmes.oracle.v1beta1.Query.AggregateVotes.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -530,10 +530,10 @@ object QueryGrpcKt {
      */
     open suspend fun aggregateVotes(request: QueryOuterClass.QueryAggregateVotesRequest):
         QueryOuterClass.QueryAggregateVotesResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.oracle.v1beta1.Query.AggregateVotes is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.oracle.v1beta1.Query.AggregateVotes is unimplemented"))
 
     /**
-     * Returns the response to an RPC for terra.oracle.v1beta1.Query.Params.
+     * Returns the response to an RPC for jmes.oracle.v1beta1.Query.Params.
      *
      * If this method fails with a [StatusException], the RPC will fail with the corresponding
      * [Status].  If this method fails with a [java.util.concurrent.CancellationException], the RPC
@@ -545,7 +545,7 @@ object QueryGrpcKt {
      */
     open suspend fun params(request: QueryOuterClass.QueryParamsRequest):
         QueryOuterClass.QueryParamsResponse = throw
-        StatusException(UNIMPLEMENTED.withDescription("Method terra.oracle.v1beta1.Query.Params is unimplemented"))
+        StatusException(UNIMPLEMENTED.withDescription("Method jmes.oracle.v1beta1.Query.Params is unimplemented"))
 
     final override fun bindService(): ServerServiceDefinition = builder(getServiceDescriptor())
       .addMethod(unaryServerMethodDefinition(
