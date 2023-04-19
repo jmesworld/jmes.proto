@@ -63,6 +63,11 @@ export interface PermanentLockedAccount {
   baseVestingAccount?: BaseVestingAccount;
 }
 
+export interface ForeverVestingAccount {
+  baseVestingAccount?: BaseVestingAccount;
+  vestingSupplyPercentage: string;
+}
+
 const baseBaseVestingAccount: object = { endTime: Long.ZERO };
 
 export const BaseVestingAccount = {
@@ -572,6 +577,79 @@ export const PermanentLockedAccount = {
       message.baseVestingAccount = BaseVestingAccount.fromPartial(object.baseVestingAccount);
     } else {
       message.baseVestingAccount = undefined;
+    }
+    return message;
+  },
+};
+
+const baseForeverVestingAccount: object = { vestingSupplyPercentage: Long.ZERO };
+
+export const ForeverVestingAccount = {
+  encode(message: ForeverVestingAccount, writer: _m0.Writer = _m0.Writer.create()): _m0.Writer {
+    if (message.baseVestingAccount !== undefined) {
+      BaseVestingAccount.encode(message.baseVestingAccount, writer.uint32(10).fork()).ldelim();
+    }
+    writer.string(message.vestingSupplyPercentage);
+    return writer;
+  },
+
+  decode(input: _m0.Reader | Uint8Array, length?: number): ForeverVestingAccount {
+    const reader = input instanceof _m0.Reader ? input : new _m0.Reader(input);
+    let end = length === undefined ? reader.len : reader.pos + length;
+    const message = { ...baseForeverVestingAccount } as ForeverVestingAccount;
+    while (reader.pos < end) {
+      const tag = reader.uint32();
+      switch (tag >>> 3) {
+        case 1:
+          message.baseVestingAccount = BaseVestingAccount.decode(reader, reader.uint32());
+          break;
+        case 2:
+          message.vestingSupplyPercentage = reader.string();
+          break;
+        default:
+          reader.skipType(tag & 7);
+          break;
+      }
+    }
+    return message;
+  },
+
+  fromJSON(object: any): ForeverVestingAccount {
+    const message = { ...baseForeverVestingAccount } as ForeverVestingAccount;
+    if (object.baseVestingAccount !== undefined && object.baseVestingAccount !== null) {
+      message.baseVestingAccount = BaseVestingAccount.fromJSON(object.baseVestingAccount);
+    } else {
+      message.baseVestingAccount = undefined;
+    }
+    if (object.vestingSupplyPercentage !== undefined && object.vestingSupplyPercentage !== null) {
+      message.vestingSupplyPercentage = object.vestingSupplyPercentage;
+    } else {
+      message.vestingSupplyPercentage = "0";
+    }
+    return message;
+  },
+
+  toJSON(message: ForeverVestingAccount): unknown {
+    const obj: any = {};
+    message.baseVestingAccount !== undefined &&
+    (obj.baseVestingAccount = message.baseVestingAccount
+      ? BaseVestingAccount.toJSON(message.baseVestingAccount)
+      : undefined);
+    message.vestingSupplyPercentage !== undefined && (obj.vestingSupplyPercentage = (message.vestingSupplyPercentage || "0").toString());
+    return obj;
+  },
+
+  fromPartial(object: DeepPartial<ForeverVestingAccount>): ForeverVestingAccount {
+    const message = { ...baseForeverVestingAccount } as ForeverVestingAccount;
+    if (object.baseVestingAccount !== undefined && object.baseVestingAccount !== null) {
+      message.baseVestingAccount = BaseVestingAccount.fromPartial(object.baseVestingAccount);
+    } else {
+      message.baseVestingAccount = undefined;
+    }
+    if (object.vestingSupplyPercentage !== undefined && object.vestingSupplyPercentage !== null) {
+      message.vestingSupplyPercentage = object.vestingSupplyPercentage;
+    } else {
+      message.vestingSupplyPercentage = "0";
     }
     return message;
   },
